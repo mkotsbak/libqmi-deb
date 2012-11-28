@@ -1,0 +1,32 @@
+Description: Add cleaning of *.pyc to generated Makefile.in
+ Updated the resulting Makefile.in contained in the tarball
+ to clean build-aux/qmi-codegen/*.pyc. As automake is not
+ run in the packaging, the patch "qmi-codegen-clean-up-compiled-python-files.patch"
+ does not have any effect. This patch can be removed when upstream
+ tarballs have that patch included.
+ .
+ libqmi-glib (1.0-1~pre0) unstable; urgency=low
+ .
+   * Initial release (Closes: #692564)
+Author: Marius B. Kotsbak <marius@kotsbak.com>
+Bug-Debian: http://bugs.debian.org/692564
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: other
+Forwarded: not-needed
+
+--- libqmi-glib-1.0.orig/build-aux/qmi-codegen/Makefile.in
++++ libqmi-glib-1.0/build-aux/qmi-codegen/Makefile.in
+@@ -62,7 +62,7 @@ am__configure_deps = $(am__aclocal_m4_de
+ 	$(ACLOCAL_M4)
+ mkinstalldirs = $(install_sh) -d
+ CONFIG_HEADER = $(top_builddir)/config.h
+-CONFIG_CLEAN_FILES =
++CONFIG_CLEAN_FILES = *.pyc
+ CONFIG_CLEAN_VPATH_FILES =
+ AM_V_GEN = $(am__v_GEN_@AM_V@)
+ am__v_GEN_ = $(am__v_GEN_@AM_DEFAULT_V@)

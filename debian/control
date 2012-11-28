@@ -1,0 +1,41 @@
+Source: libqmi
+Priority: optional
+Maintainer: Marius B. Kotsbak <marius@kotsbak.com>
+Build-Depends: debhelper (>= 8.0.0), dh-autoreconf, libglib2.0-dev (>= 2.32), pkg-config, intltool, gtk-doc-tools, python
+Standards-Version: 3.9.3
+Section: libs
+Homepage: http://www.freedesktop.org/software/libqmi
+#Vcs-Git: git://git.debian.org/collab-maint/libqmi-glib.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/libqmi-glib.git;a=summary
+
+Package: libqmi-glib-dev
+Section: libdevel
+Architecture: any
+Depends: libqmi-glib0 (= ${binary:Version}), ${misc:Depends}
+Suggests: libqmi-glib-doc
+Description: Header files for adding QMI support to applications that use glib
+ This package contains the header and pkg-config files for development
+ applications using QMI functionality from applications that use glib.
+
+Package: libqmi-glib-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: API documentation for libqmi-glib
+ This package provides the API documentation for libqmi-glib for adding
+ QMI support to applications that use glib.
+
+Package: libqmi-glib0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Support library to use the Qualcomm MSM Interface (QMI) protocol
+ Libraries for adding QMI support to applications that use glib.
+
+Package: libqmi-utils
+Section: net
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Utilities to use the QMI protocol from the command line
+ This package contains the utilities that make it easier to use QMI
+ functionality from the command line.
