@@ -1,0 +1,5 @@
+libqmi (1.0-1~pre0) unstable; urgency=low
+
+  * Initial release (Closes: #692564)
+
+ -- Marius B. Kotsbak <marius@kotsbak.com>  Wed, 28 Nov 2012 21:34:06 +0100
