@@ -32,6 +32,14 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Support library to use the Qualcomm MSM Interface (QMI) protocol
  Libraries for adding QMI support to applications that use glib.
 
+Package: libqmi-glib0-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: libqmi-glib0 (= ${binary:Version}), ${misc:Depends}
+Description: Support library to use the Qualcomm MSM Interface (QMI) protocol
+ This package contains detached debugging symbols.
+
 Package: libqmi-utils
 Section: net
 Architecture: any

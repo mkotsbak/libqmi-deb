@@ -1,3 +1,9 @@
+libqmi (1.0-1~pre1) UNRELEASED; urgency=low
+
+  * Added debug symbols package
+
+ -- Marius B. Kotsbak <marius@kotsbak.com>  Thu, 27 Dec 2012 10:34:04 +0100
+
 libqmi (1.0-1~pre0) unstable; urgency=low
 
   * Initial release (Closes: #692564)
