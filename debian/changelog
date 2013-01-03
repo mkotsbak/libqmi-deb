@@ -1,6 +1,8 @@
-libqmi (1.0-1~pre1) UNRELEASED; urgency=low
+libqmi (1.0-1~pre2) UNRELEASED; urgency=low
 
+  [ Marius B. Kotsbak ]
   * Added debug symbols package
+  * debian/rules: clean up comments
 
  -- Marius B. Kotsbak <marius@kotsbak.com>  Thu, 27 Dec 2012 10:34:04 +0100
 
