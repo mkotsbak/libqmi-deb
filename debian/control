@@ -11,6 +11,8 @@ Homepage: http://www.freedesktop.org/software/libqmi
 Package: libqmi-glib-dev
 Section: libdevel
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: libqmi-glib0 (= ${binary:Version}), ${misc:Depends}
 Suggests: libqmi-glib-doc
 Description: Header files for adding QMI support to applications that use glib
