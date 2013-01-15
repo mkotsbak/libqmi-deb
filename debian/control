@@ -23,6 +23,7 @@ Package: libqmi-glib-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
+Suggests: devhelp
 Description: API documentation for libqmi-glib
  This package provides the API documentation for libqmi-glib for adding
  QMI support to applications that use glib.
