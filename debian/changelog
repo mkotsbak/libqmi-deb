@@ -1,16 +1,5 @@
-libqmi (1.0-1~pre2) UNRELEASED; urgency=low
-
-  [ Marius B. Kotsbak ]
-  * Added debug symbols package
-  * debian/rules: clean up comments
-  * debian/compat: bump to 9, which is the latest version
-  * Added support for multiarch
-  * Removed postinst/postrm files with just dh boilerplate
-
- -- Marius B. Kotsbak <marius@kotsbak.com>  Thu, 27 Dec 2012 10:34:04 +0100
-
-libqmi (1.0-1~pre0) unstable; urgency=low
+libqmi (1.0-1) UNRELEASED; urgency=low
 
   * Initial release (Closes: #692564)
 
- -- Marius B. Kotsbak <marius@kotsbak.com>  Wed, 28 Nov 2012 21:34:06 +0100
+ -- Marius B. Kotsbak <marius@kotsbak.com>  Wed, 16 Jan 2013 19:39:39 +0100
