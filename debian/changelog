@@ -1,5 +1,6 @@
-libqmi (1.0-1) UNRELEASED; urgency=low
+libqmi (1.0-1) unstable; urgency=low
 
+  [ Marius B. Kotsbak ]
   * Initial release (Closes: #692564)
 
- -- Marius B. Kotsbak <marius@kotsbak.com>  Wed, 16 Jan 2013 19:39:39 +0100
+ -- Marius B. Kotsbak <marius@kotsbak.com>  Thu, 17 Jan 2013 21:12:14 +0100
