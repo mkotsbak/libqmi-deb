@@ -1,3 +1,9 @@
+libqmi (1.0-2) UNRELEASED; urgency=low
+
+  * Updated control Vcs-* fields to point to the Alioth hosted project
+
+ -- Marius B. Kotsbak <marius@kotsbak.com>  Fri, 18 Jan 2013 09:43:52 +0100
+
 libqmi (1.0-1) unstable; urgency=low
 
   [ Marius B. Kotsbak ]

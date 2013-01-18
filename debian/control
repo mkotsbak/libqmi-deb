@@ -5,8 +5,8 @@ Build-Depends: debhelper (>= 9), dh-autoreconf, libglib2.0-dev (>= 2.32), pkg-co
 Standards-Version: 3.9.4
 Section: libs
 Homepage: http://www.freedesktop.org/software/libqmi
-#Vcs-Git: git://git.debian.org/collab-maint/libqmi-glib.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/libqmi-glib.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-libqmi/pkg-libqmi.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-libqmi/pkg-libqmi.git;a=summary
 
 Package: libqmi-glib-dev
 Section: libdevel
