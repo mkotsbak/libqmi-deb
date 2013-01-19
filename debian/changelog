@@ -1,6 +1,9 @@
 libqmi (1.0-2) UNRELEASED; urgency=low
 
+  [ Marius B. Kotsbak ]
   * Updated control Vcs-* fields to point to the Alioth hosted project
+  * Corrected debian/copyright: cli/* are GPL 2+. Changed packaging to
+    GPL 2+ too, as LGPL does not make sense here.
 
  -- Marius B. Kotsbak <marius@kotsbak.com>  Fri, 18 Jan 2013 09:43:52 +0100
 
