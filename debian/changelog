@@ -4,6 +4,9 @@ libqmi (1.0-2) UNRELEASED; urgency=low
   * Updated control Vcs-* fields to point to the Alioth hosted project
   * Corrected debian/copyright: cli/* and libqmi-glib/test/* are GPL 2+.
     Changed packaging to GPL 2+ too, as LGPL does not make sense here.
+  * Added help2man generating of manpages (new debian/rules target
+    "generate_manpages:". Edited result for qmi-network as it lacked
+    complete help. Workaround for upstream bgo #58755.
 
  -- Marius B. Kotsbak <marius@kotsbak.com>  Fri, 18 Jan 2013 09:43:52 +0100
 
