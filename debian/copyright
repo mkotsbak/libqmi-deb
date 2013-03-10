@@ -10,7 +10,7 @@ Copyright: 2012 Aleksander Morgado <aleksander@gnu.org>
            2012 The Chromium OS Authors. All rights reserved
 License: LGPL-2.0+
 
-Files: cli/*
+Files: cli/* libqmi-glib/test/*
 Copyright: 2012 Aleksander Morgado <aleksander@gnu.org>
            2012 Lanedo GmbH
 License: GPL-2+
