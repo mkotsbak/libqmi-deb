@@ -5,6 +5,9 @@ libqmi (1.2-1) UNRELEASED; urgency=low
     - Builds with Python3
     - Fixed DMS activation code string handling
     - Enhanced "start network" functionality in qmicli
+  * Drop patches applied upstream:
+    - "qmi-codegen-clean-up-compiled-python-files_git_1822155"
+    - "cli-all-sources-are-GPLv2_git_a5631ea"
   * Updated control Vcs-* fields to point to the Alioth hosted project
   * Corrected debian/copyright: cli/* and libqmi-glib/test/* are GPL 2+.
     Changed packaging to GPL 2+ too, as LGPL does not make sense here.
