@@ -1,4 +1,4 @@
-libqmi (1.2-1) UNRELEASED; urgency=low
+libqmi (1.2-1) unstable; urgency=low
 
   [ Marius B. Kotsbak ]
   * New upstream stable release 1.2.0
@@ -16,7 +16,7 @@ libqmi (1.2-1) UNRELEASED; urgency=low
     "generate_manpages:". Edited result for qmi-network as it lacked
     complete help. Workaround for upstream bgo #58755.
 
- -- Marius Kotsbak <marius@kotsbak.com>  Sun, 24 Mar 2013 17:34:00 +0100
+ -- Marius B. Kotsbak <marius@kotsbak.com>  Sun, 24 Mar 2013 18:53:23 +0100
 
 libqmi (1.0-1) unstable; urgency=low
 
