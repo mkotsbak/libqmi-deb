@@ -4,7 +4,7 @@
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
+ * the Free Software Foundation, either version 2 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -3201,12 +3201,12 @@ qmicli_dms_run (QmiDevice *device,
             shutdown (FALSE);
             return;
         }
-        qmi_client_dms_get_activation_state (ctx->client,
-                                             NULL,
-                                             10,
-                                             ctx->cancellable,
-                                             (GAsyncReadyCallback)activate_automatic_ready,
-                                             NULL);
+        qmi_client_dms_activate_automatic (ctx->client,
+                                           input,
+                                           10,
+                                           ctx->cancellable,
+                                           (GAsyncReadyCallback)activate_automatic_ready,
+                                           NULL);
         qmi_message_dms_activate_automatic_input_unref (input);
         return;
     }

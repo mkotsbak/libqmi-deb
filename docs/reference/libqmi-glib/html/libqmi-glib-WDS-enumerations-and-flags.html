@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WDS enumerations and flags</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<meta name="generator" content="DocBook XSL Stylesheets V1.77.1">
 <link rel="home" href="index.html" title="libqmi-glib Reference Manual">
 <link rel="up" href="ch04.html" title="Wireless Data Service (WDS)">
 <link rel="prev" href="QmiClientWds.html" title="QmiClientWds">
@@ -236,8 +236,11 @@ interface.
 <p>
 Type of IP family preference.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-IP-FAMILY-IPV4:CAPS"></a><span class="term"><code class="literal">QMI_WDS_IP_FAMILY_IPV4</code></span></p></td>
@@ -268,8 +271,11 @@ Type of IP family preference.
 <p>
 Type of network allowed when trying to connect.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-TECHNOLOGY-PREFERENCE-ALLOW-3GPP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_TECHNOLOGY_PREFERENCE_ALLOW_3GPP</code></span></p></td>
@@ -298,8 +304,11 @@ Type of network allowed when trying to connect.
 <p>
 Type of network allowed when trying to connect.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-EXTENDED-TECHNOLOGY-PREFERENCE-CDMA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_EXTENDED_TECHNOLOGY_PREFERENCE_CDMA</code></span></p></td>
@@ -340,8 +349,11 @@ Type of network allowed when trying to connect.
 <p>
 Type of call to originate.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-CALL-TYPE-LAPTOP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_TYPE_LAPTOP</code></span></p></td>
@@ -444,8 +456,11 @@ Type of call to originate.
 <p>
 Reason for ending the call.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-CALL-END-REASON-GENERIC-UNSPECIFIED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GENERIC_UNSPECIFIED</code></span></p></td>
@@ -826,8 +841,11 @@ Reason for ending the call.
 <p>
 Type of verbose call end reason.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-MIP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_MIP</code></span></p></td>
@@ -911,8 +929,11 @@ Type of verbose call end reason.
 <p>
 Mobile IP specific call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-MIP:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_MIP</span></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-ERROR-REASON-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_ERROR_REASON_UNKNOWN</code></span></p></td>
@@ -1088,8 +1109,11 @@ Mobile IP specific call end reasons, given when the <em class="parameter"><code>
 <p>
 Internal call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-INTERNAL:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_INTERNAL</span></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-INTERNAL-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_ERROR</code></span></p></td>
@@ -1192,8 +1216,11 @@ Internal call end reasons, given when the <em class="parameter"><code>QmiWdsVerb
 <p>
 Call manager specific call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-CM:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_CM</span></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-CDMA-LOCK:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_CDMA_LOCK</code></span></p></td>
@@ -1507,8 +1534,11 @@ Call manager specific call end reasons, given when the <em class="parameter"><co
 <p>
 3GPP-specific call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-3GPP:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_3GPP</span></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-OPERATOR-DETERMINED-BARRING:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_OPERATOR_DETERMINED_BARRING</code></span></p></td>
@@ -1725,8 +1755,11 @@ Call manager specific call end reasons, given when the <em class="parameter"><co
 <p>
 PPP-specific call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-PPP:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_PPP</span></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-PPP-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_PPP_UNKNOWN</code></span></p></td>
@@ -1787,8 +1820,11 @@ PPP-specific call end reasons, given when the <em class="parameter"><code>QmiWds
 <p>
 eHRPD-specific call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-EHRPD:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_EHRPD</span></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-SUBSCRIPTION-LIMITED-TO-IPV4:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_SUBSCRIPTION_LIMITED_TO_IPV4</code></span></p></td>
@@ -1884,8 +1920,11 @@ eHRPD-specific call end reasons, given when the <em class="parameter"><code>QmiW
 <p>
 IPv6-specific call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-IPV6:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_IPV6</span></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-IPV6-PREFIX-UNAVAILABLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_IPV6_PREFIX_UNAVAILABLE</code></span></p></td>
@@ -1914,8 +1953,11 @@ IPv6-specific call end reasons, given when the <em class="parameter"><code>QmiWd
 <p>
 Status of the network connection.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-CONNECTION-STATUS-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CONNECTION_STATUS_UNKNOWN</code></span></p></td>
@@ -1970,8 +2012,11 @@ Status of the network connection.
 <p>
 Data bearer technology.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_UNKNOWN</code></span></p></td>
@@ -2068,8 +2113,11 @@ Data bearer technology.
 <p>
 Network type of the data bearer.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-NETWORK-TYPE-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_NETWORK_TYPE_UNKNOWN</code></span></p></td>
@@ -2106,8 +2154,11 @@ Network type of the data bearer.
 Flags specifying the 3GPP2-specific Radio Access Technology, when the data
 bearer network type is <em class="parameter"><code>QMI_WDS_NETWORK_TYPE_3GPP2</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-RAT-3GPP2-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP2_NONE</code></span></p></td>
@@ -2163,8 +2214,11 @@ bearer network type is <em class="parameter"><code>QMI_WDS_NETWORK_TYPE_3GPP2</c
 Flags specifying the 3GPP-specific Radio Access Technology, when the data
 bearer network type is <em class="parameter"><code>QMI_WDS_NETWORK_TYPE_3GPP</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-RAT-3GPP-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP_NONE</code></span></p></td>
@@ -2234,8 +2288,11 @@ Flags specifying the Service Option when the bearer network type is
 <em class="parameter"><code>QMI_WDS_NETWORK_TYPE_3GPP2</code></em> and when the Radio Access Technology mask
 contains <em class="parameter"><code>QMI_WDS_RAT_3GPP2_CDMA1X</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-SO-CDMA1X-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_SO_CDMA1X_NONE</code></span></p></td>
@@ -2277,8 +2334,11 @@ Flags specifying the Service Option when the bearer network type is
 <em class="parameter"><code>QMI_WDS_NETWORK_TYPE_3GPP2</code></em> and when the Radio Access Technology mask
 contains <em class="parameter"><code>QMI_WDS_RAT_3GPP2_EVDO_REVA</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-SO-EVDO-REVA-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_SO_EVDO_REVA_NONE</code></span></p></td>
@@ -2338,8 +2398,11 @@ contains <em class="parameter"><code>QMI_WDS_RAT_3GPP2_EVDO_REVA</code></em>.
 Flags specifying which specific settings to return when requesting the
 current WDS bearer settings.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_NONE</code></span></p></td>
@@ -2453,8 +2516,11 @@ current WDS bearer settings.
 <p>
 PDP context type.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-PDP-TYPE-IPV4:CAPS"></a><span class="term"><code class="literal">QMI_WDS_PDP_TYPE_IPV4</code></span></p></td>
@@ -2494,8 +2560,11 @@ PDP context type.
 <p>
 QoS Traffic Classes.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-TRAFFIC-CLASS-SUBSCRIBED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_TRAFFIC_CLASS_SUBSCRIBED</code></span></p></td>
@@ -2538,8 +2607,11 @@ QoS Traffic Classes.
 <p>
 PDP context authentication protocols.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-AUTHENTICATION-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_AUTHENTICATION_NONE</code></span></p></td>
@@ -2570,8 +2642,11 @@ PDP context authentication protocols.
 <p>
 Profile network type family.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-WDS-PROFILE-TYPE-3GPP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_PROFILE_TYPE_3GPP</code></span></p></td>
@@ -2593,8 +2668,11 @@ Profile network type family.
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsIpFamily"><span class="type">QmiWdsIpFamily</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2617,8 +2695,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 Builds a string containing a comma-separated list of nicknames for
 each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTechnologyPreference"><span class="type">QmiWdsTechnologyPreference</span></a> in <em class="parameter"><code>mask</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
@@ -2640,8 +2721,11 @@ each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTec
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsExtendedTechnologyPreference"><span class="type">QmiWdsExtendedTechnologyPreference</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2662,8 +2746,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsCallType"><span class="type">QmiWdsCallType</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2684,8 +2771,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsCallEndReason"><span class="type">QmiWdsCallEndReason</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2716,8 +2806,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonType"><span class="type">QmiWdsVerboseCallEndReasonType</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2739,8 +2832,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonMip"><span class="type">QmiWdsVerboseCallEndReasonMip</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2762,8 +2858,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonInternal"><span class="type">QmiWdsVerboseCallEndReasonInternal</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2785,8 +2884,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonCm"><span class="type">QmiWdsVerboseCallEndReasonCm</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2808,8 +2910,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReason3gpp"><span class="type">QmiWdsVerboseCallEndReason3gpp</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2831,8 +2936,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonPpp"><span class="type">QmiWdsVerboseCallEndReasonPpp</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2854,8 +2962,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonEhrpd"><span class="type">QmiWdsVerboseCallEndReasonEhrpd</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2877,8 +2988,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonIpv6"><span class="type">QmiWdsVerboseCallEndReasonIpv6</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2900,8 +3014,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsConnectionStatus"><span class="type">QmiWdsConnectionStatus</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2923,8 +3040,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsDataBearerTechnology"><span class="type">QmiWdsDataBearerTechnology</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2945,8 +3065,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsNetworkType"><span class="type">QmiWdsNetworkType</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -2969,8 +3092,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 Builds a string containing a comma-separated list of nicknames for
 each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat3gpp2"><span class="type">QmiWdsRat3gpp2</span></a> in <em class="parameter"><code>mask</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
@@ -2993,8 +3119,11 @@ each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat
 Builds a string containing a comma-separated list of nicknames for
 each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat3gpp"><span class="type">QmiWdsRat3gpp</span></a> in <em class="parameter"><code>mask</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
@@ -3017,8 +3146,11 @@ each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat
 Builds a string containing a comma-separated list of nicknames for
 each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoCdma1x"><span class="type">QmiWdsSoCdma1x</span></a> in <em class="parameter"><code>mask</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
@@ -3041,8 +3173,11 @@ each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoC
 Builds a string containing a comma-separated list of nicknames for
 each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoEvdoRevA"><span class="type">QmiWdsSoEvdoRevA</span></a> in <em class="parameter"><code>mask</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
@@ -3064,8 +3199,11 @@ each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoE
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsGetCurrentSettingsRequestedSettings"><span class="type">QmiWdsGetCurrentSettingsRequestedSettings</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -3086,8 +3224,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsPdpType"><span class="type">QmiWdsPdpType</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -3108,8 +3249,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTrafficClass"><span class="type">QmiWdsTrafficClass</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
@@ -3132,8 +3276,11 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerati
 Builds a string containing a comma-separated list of nicknames for
 each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsAuthentication"><span class="type">QmiWdsAuthentication</span></a> in <em class="parameter"><code>mask</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
@@ -3154,8 +3301,11 @@ each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsAut
 <p>
 Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsProfileType"><span class="type">QmiWdsProfileType</span></a> specified at <em class="parameter"><code>val</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
