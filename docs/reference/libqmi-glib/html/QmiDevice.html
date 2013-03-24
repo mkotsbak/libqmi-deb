@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>QmiDevice</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<meta name="generator" content="DocBook XSL Stylesheets V1.77.1">
 <link rel="home" href="index.html" title="libqmi-glib Reference Manual">
 <link rel="up" href="ch01.html" title="Core">
 <link rel="prev" href="libqmi-glib-QmiMessage.html" title="QmiMessage">
@@ -169,8 +169,11 @@ Asynchronously creates a <a class="link" href="QmiDevice.html" title="QmiDevice"
 When the operation is finished, <em class="parameter"><code>callback</code></em> will be invoked. You can then call
 <a class="link" href="QmiDevice.html#qmi-device-new-finish" title="qmi_device_new_finish ()"><code class="function">qmi_device_new_finish()</code></a> to get the result of the operation.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>file</code></em> :</span></p></td>
@@ -199,8 +202,11 @@ When the operation is finished, <em class="parameter"><code>callback</code></em>
 <p>
 Finishes an operation started with <a class="link" href="QmiDevice.html#qmi-device-new" title="qmi_device_new ()"><code class="function">qmi_device_new()</code></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>res</code></em> :</span></p></td>
@@ -224,8 +230,11 @@ Finishes an operation started with <a class="link" href="QmiDevice.html#qmi-devi
 <p>
 Get the <a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> associated with this <a class="link" href="QmiDevice.html" title="QmiDevice"><span class="type">QmiDevice</span></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -246,8 +255,11 @@ Get the <a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span c
 Get the <a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> associated with this <a class="link" href="QmiDevice.html" title="QmiDevice"><span class="type">QmiDevice</span></a>, without increasing the reference count
 on the returned object.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -267,8 +279,11 @@ on the returned object.
 <p>
 Get the system path of the underlying QMI device.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -288,8 +303,11 @@ Get the system path of the underlying QMI device.
 <p>
 Get the system path of the underlying QMI device in UTF-8.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -309,8 +327,11 @@ Get the system path of the underlying QMI device in UTF-8.
 <p>
 Checks whether the <a class="link" href="QmiDevice.html" title="QmiDevice"><span class="type">QmiDevice</span></a> is open for I/O.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -340,8 +361,11 @@ Checks whether the <a class="link" href="QmiDevice.html" title="QmiDevice"><span
 <p>
 Flags to specify which actions to be performed when the device is open.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-DEVICE-OPEN-FLAGS-NONE:CAPS"></a><span class="term"><code class="literal">QMI_DEVICE_OPEN_FLAGS_NONE</code></span></p></td>
@@ -397,8 +421,11 @@ Asynchronously opens a <a class="link" href="QmiDevice.html" title="QmiDevice"><
 When the operation is finished <em class="parameter"><code>callback</code></em> will be called. You can then call
 <a class="link" href="QmiDevice.html#qmi-device-open-finish" title="qmi_device_open_finish ()"><code class="function">qmi_device_open_finish()</code></a> to get the result of the operation.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -436,8 +463,11 @@ When the operation is finished <em class="parameter"><code>callback</code></em> 
 <p>
 Finishes an asynchronous open operation started with <a class="link" href="QmiDevice.html#qmi-device-open" title="qmi_device_open ()"><code class="function">qmi_device_open()</code></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -470,8 +500,11 @@ Synchronously closes a <a class="link" href="QmiDevice.html" title="QmiDevice"><
 <p>
 Closing a <a class="link" href="QmiDevice.html" title="QmiDevice"><span class="type">QmiDevice</span></a> multiple times will not return an error.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -515,8 +548,11 @@ When the operation is finished <em class="parameter"><code>callback</code></em> 
 Note: Clients for the <a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-CTL:CAPS"><span class="type">QMI_SERVICE_CTL</span></a> cannot be created with this method;
 instead get/peek the implicit one from <em class="parameter"><code>self</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -558,8 +594,11 @@ instead get/peek the implicit one from <em class="parameter"><code>self</code></
 <p>
 Finishes an operation started with <a class="link" href="QmiDevice.html#qmi-device-allocate-client" title="qmi_device_allocate_client ()"><code class="function">qmi_device_allocate_client()</code></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -591,8 +630,11 @@ Finishes an operation started with <a class="link" href="QmiDevice.html#qmi-devi
 <p>
 Flags to specify which actions to be performed when releasing the client.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><a name="QMI-DEVICE-RELEASE-CLIENT-FLAGS-NONE:CAPS"></a><span class="term"><code class="literal">QMI_DEVICE_RELEASE_CLIENT_FLAGS_NONE</code></span></p></td>
@@ -628,8 +670,11 @@ perform operations.
 When the operation is finished <em class="parameter"><code>callback</code></em> will be called. You can then call
 <a class="link" href="QmiDevice.html#qmi-device-release-client-finish" title="qmi_device_release_client_finish ()"><code class="function">qmi_device_release_client_finish()</code></a> to get the result of the operation.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -675,8 +720,11 @@ Finishes an operation started with <a class="link" href="QmiDevice.html#qmi-devi
 Note that even if the release operation returns an error, the client should
 anyway be considered released, and shouldn't be used afterwards.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -714,8 +762,11 @@ Sets the instance ID of the <a class="link" href="QmiDevice.html" title="QmiDevi
 When the operation is finished <em class="parameter"><code>callback</code></em> will be called. You can then call
 <a class="link" href="QmiDevice.html#qmi-device-set-instance-id-finish" title="qmi_device_set_instance_id_finish ()"><code class="function">qmi_device_set_instance_id_finish()</code></a> to get the result of the operation.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -754,8 +805,11 @@ When the operation is finished <em class="parameter"><code>callback</code></em> 
 <p>
 Finishes an operation started with <a class="link" href="QmiDevice.html#qmi-device-set-instance-id" title="qmi_device_set_instance_id ()"><code class="function">qmi_device_set_instance_id()</code></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -797,8 +851,11 @@ Asynchronously sends a <a class="link" href="libqmi-glib-QmiMessage.html#QmiMess
 When the operation is finished <em class="parameter"><code>callback</code></em> will be called. You can then call
 <a class="link" href="QmiDevice.html#qmi-device-command-finish" title="qmi_device_command_finish ()"><code class="function">qmi_device_command_finish()</code></a> to get the result of the operation.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
@@ -836,8 +893,11 @@ When the operation is finished <em class="parameter"><code>callback</code></em> 
 <p>
 Finishes an operation started with <a class="link" href="QmiDevice.html#qmi-device-command" title="qmi_device_command ()"><code class="function">qmi_device_command()</code></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>

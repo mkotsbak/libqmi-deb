@@ -13,7 +13,7 @@
     <sub name="Device Management Service (DMS)" link="ch02.html">
       <sub name="QmiClientDms" link="QmiClientDms.html"/>
       <sub name="DMS enumerations and flags" link="libqmi-glib-DMS-enumerations-and-flags.html"/>
-      <sub name="DMS Indications" link="ch02.html#idp3484656">
+      <sub name="DMS Indications" link="ch02.html#idp2388576">
         <sub name="DMS Event Report" link="libqmi-glib-DMS-Event-Report.html"/>
       </sub>
       <sub name="DMS Requests" link="ch02s02.html">
@@ -70,7 +70,7 @@
     <sub name="Network Access Service (NAS)" link="ch03.html">
       <sub name="QmiClientNas" link="QmiClientNas.html"/>
       <sub name="NAS enumerations and flags" link="libqmi-glib-NAS-enumerations-and-flags.html"/>
-      <sub name="NAS Indications" link="ch03.html#idp3875328">
+      <sub name="NAS Indications" link="ch03.html#idp55936">
         <sub name="NAS Event Report" link="libqmi-glib-NAS-Event-Report.html"/>
         <sub name="NAS Serving System" link="libqmi-glib-NAS-Serving-System.html"/>
         <sub name="NAS System Info" link="libqmi-glib-NAS-System-Info.html"/>
@@ -99,7 +99,7 @@
     <sub name="Wireless Data Service (WDS)" link="ch04.html">
       <sub name="QmiClientWds" link="QmiClientWds.html"/>
       <sub name="WDS enumerations and flags" link="libqmi-glib-WDS-enumerations-and-flags.html"/>
-      <sub name="WDS Requests" link="ch04.html#idp266352">
+      <sub name="WDS Requests" link="ch04.html#idp77488">
         <sub name="WDS Reset" link="libqmi-glib-WDS-Reset.html"/>
         <sub name="WDS Start Network" link="libqmi-glib-WDS-Start-Network.html"/>
         <sub name="WDS Stop Network" link="libqmi-glib-WDS-Stop-Network.html"/>
@@ -113,7 +113,7 @@
     <sub name="Wireless Messaging Service (WMS)" link="ch05.html">
       <sub name="QmiClientWms" link="QmiClientWms.html"/>
       <sub name="WMS enumerations and flags" link="libqmi-glib-WMS-enumerations-and-flags.html"/>
-      <sub name="WMS Indications" link="ch05.html#idp273184">
+      <sub name="WMS Indications" link="ch05.html#idp84320">
         <sub name="WMS Event Report" link="libqmi-glib-WMS-Event-Report.html"/>
       </sub>
       <sub name="WMS Requests" link="ch05s02.html">
@@ -134,7 +134,7 @@
     <sub name="Position Determination Service (PDS)" link="ch06.html">
       <sub name="QmiClientPds" link="QmiClientPds.html"/>
       <sub name="PDS enumerations and flags" link="libqmi-glib-PDS-enumerations-and-flags.html"/>
-      <sub name="PDS Indications" link="ch06.html#idp99072">
+      <sub name="PDS Indications" link="ch06.html#idp94720">
         <sub name="PDS Event Report" link="libqmi-glib-PDS-Event-Report.html"/>
       </sub>
       <sub name="PDS Requests" link="ch06s02.html">
