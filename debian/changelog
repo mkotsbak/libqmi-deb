@@ -1,6 +1,10 @@
-libqmi (1.0-2) UNRELEASED; urgency=low
+libqmi (1.2-1) UNRELEASED; urgency=low
 
   [ Marius B. Kotsbak ]
+  * New upstream stable release 1.2.0
+    - Builds with Python3
+    - Fixed DMS activation code string handling
+    - Enhanced "start network" functionality in qmicli
   * Updated control Vcs-* fields to point to the Alioth hosted project
   * Corrected debian/copyright: cli/* and libqmi-glib/test/* are GPL 2+.
     Changed packaging to GPL 2+ too, as LGPL does not make sense here.
@@ -8,7 +12,7 @@ libqmi (1.0-2) UNRELEASED; urgency=low
     "generate_manpages:". Edited result for qmi-network as it lacked
     complete help. Workaround for upstream bgo #58755.
 
- -- Marius B. Kotsbak <marius@kotsbak.com>  Fri, 18 Jan 2013 09:43:52 +0100
+ -- Marius Kotsbak <marius@kotsbak.com>  Sun, 24 Mar 2013 17:34:00 +0100
 
 libqmi (1.0-1) unstable; urgency=low
 
