@@ -293,6 +293,13 @@ libqmi-glib.so.0 libqmi-glib0 #MINVER#
  qmi_indication_nas_event_report_output_get_type@Base 1.0
  qmi_indication_nas_event_report_output_ref@Base 1.0
  qmi_indication_nas_event_report_output_unref@Base 1.0
+ qmi_indication_nas_network_time_output_get_daylight_savings_adjustment@Base 1.4.0
+ qmi_indication_nas_network_time_output_get_radio_interface@Base 1.4.0
+ qmi_indication_nas_network_time_output_get_timezone_offset@Base 1.4.0
+ qmi_indication_nas_network_time_output_get_type@Base 1.4.0
+ qmi_indication_nas_network_time_output_get_universal_time@Base 1.4.0
+ qmi_indication_nas_network_time_output_ref@Base 1.4.0
+ qmi_indication_nas_network_time_output_unref@Base 1.4.0
  qmi_indication_nas_serving_system_output_get_call_barring_status@Base 1.0
  qmi_indication_nas_serving_system_output_get_cdma_base_station_info@Base 1.0
  qmi_indication_nas_serving_system_output_get_cdma_p_rev@Base 1.0
@@ -1507,6 +1514,10 @@ libqmi-glib.so.0 libqmi-glib0 #MINVER#
  qmi_nas_change_duration_get_type@Base 1.0
  qmi_nas_data_capability_get_string@Base 1.0
  qmi_nas_data_capability_get_type@Base 1.0
+ qmi_nas_day_of_week_get_string@Base 1.4.0
+ qmi_nas_day_of_week_get_type@Base 1.4.0
+ qmi_nas_daylight_savings_adjustment_get_string@Base 1.4.0
+ qmi_nas_daylight_savings_adjustment_get_type@Base 1.4.0
  qmi_nas_evdo_sinr_level_get_string@Base 1.0
  qmi_nas_evdo_sinr_level_get_type@Base 1.0
  qmi_nas_gsm_wcdma_acquisition_order_preference_get_string@Base 1.0
