@@ -9,10 +9,12 @@ QmiClientNas
 
 </para>
 
+
 <!-- ##### SECTION See_Also ##### -->
 <para>
 
 </para>
+
 
 <!-- ##### SECTION Stability_Level ##### -->
 
@@ -27,6 +29,14 @@ QmiClientNas
 
 
 <!-- ##### SIGNAL QmiClientNas::event-report ##### -->
+<para>
+
+</para>
+
+@qmiclientnas: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL QmiClientNas::network-time ##### -->
 <para>
 
 </para>

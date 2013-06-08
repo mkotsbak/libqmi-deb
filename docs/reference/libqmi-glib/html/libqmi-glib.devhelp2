@@ -13,7 +13,7 @@
     <sub name="Device Management Service (DMS)" link="ch02.html">
       <sub name="QmiClientDms" link="QmiClientDms.html"/>
       <sub name="DMS enumerations and flags" link="libqmi-glib-DMS-enumerations-and-flags.html"/>
-      <sub name="DMS Indications" link="ch02.html#idp2388576">
+      <sub name="DMS Indications" link="ch02.html#idm258755077168">
         <sub name="DMS Event Report" link="libqmi-glib-DMS-Event-Report.html"/>
       </sub>
       <sub name="DMS Requests" link="ch02s02.html">
@@ -70,8 +70,9 @@
     <sub name="Network Access Service (NAS)" link="ch03.html">
       <sub name="QmiClientNas" link="QmiClientNas.html"/>
       <sub name="NAS enumerations and flags" link="libqmi-glib-NAS-enumerations-and-flags.html"/>
-      <sub name="NAS Indications" link="ch03.html#idp55936">
+      <sub name="NAS Indications" link="ch03.html#idm258757748752">
         <sub name="NAS Event Report" link="libqmi-glib-NAS-Event-Report.html"/>
+        <sub name="NAS Network Time" link="libqmi-glib-NAS-Network-Time.html"/>
         <sub name="NAS Serving System" link="libqmi-glib-NAS-Serving-System.html"/>
         <sub name="NAS System Info" link="libqmi-glib-NAS-System-Info.html"/>
         <sub name="NAS Signal Info" link="libqmi-glib-NAS-Signal-Info.html"/>
@@ -99,7 +100,7 @@
     <sub name="Wireless Data Service (WDS)" link="ch04.html">
       <sub name="QmiClientWds" link="QmiClientWds.html"/>
       <sub name="WDS enumerations and flags" link="libqmi-glib-WDS-enumerations-and-flags.html"/>
-      <sub name="WDS Requests" link="ch04.html#idp77488">
+      <sub name="WDS Requests" link="ch04.html#idm258757726704">
         <sub name="WDS Reset" link="libqmi-glib-WDS-Reset.html"/>
         <sub name="WDS Start Network" link="libqmi-glib-WDS-Start-Network.html"/>
         <sub name="WDS Stop Network" link="libqmi-glib-WDS-Stop-Network.html"/>
@@ -113,7 +114,7 @@
     <sub name="Wireless Messaging Service (WMS)" link="ch05.html">
       <sub name="QmiClientWms" link="QmiClientWms.html"/>
       <sub name="WMS enumerations and flags" link="libqmi-glib-WMS-enumerations-and-flags.html"/>
-      <sub name="WMS Indications" link="ch05.html#idp84320">
+      <sub name="WMS Indications" link="ch05.html#idm258757719872">
         <sub name="WMS Event Report" link="libqmi-glib-WMS-Event-Report.html"/>
       </sub>
       <sub name="WMS Requests" link="ch05s02.html">
@@ -134,7 +135,7 @@
     <sub name="Position Determination Service (PDS)" link="ch06.html">
       <sub name="QmiClientPds" link="QmiClientPds.html"/>
       <sub name="PDS enumerations and flags" link="libqmi-glib-PDS-enumerations-and-flags.html"/>
-      <sub name="PDS Indications" link="ch06.html#idp94720">
+      <sub name="PDS Indications" link="ch06.html#idm258757709472">
         <sub name="PDS Event Report" link="libqmi-glib-PDS-Event-Report.html"/>
       </sub>
       <sub name="PDS Requests" link="ch06s02.html">
@@ -795,6 +796,7 @@
     <keyword type="function" name="qmi_client_dms_set_service_programming_code_finish ()" link="libqmi-glib-DMS-Set-Service-Programming-Code.html#qmi-client-dms-set-service-programming-code-finish"/>
     <keyword type="struct" name="struct QmiClientNas" link="QmiClientNas.html#QmiClientNas-struct"/>
     <keyword type="signal" name="The &quot;event-report&quot; signal" link="QmiClientNas.html#QmiClientNas-event-report"/>
+    <keyword type="signal" name="The &quot;network-time&quot; signal" link="QmiClientNas.html#QmiClientNas-network-time"/>
     <keyword type="signal" name="The &quot;serving-system&quot; signal" link="QmiClientNas.html#QmiClientNas-serving-system"/>
     <keyword type="signal" name="The &quot;signal-info&quot; signal" link="QmiClientNas.html#QmiClientNas-signal-info"/>
     <keyword type="signal" name="The &quot;system-info&quot; signal" link="QmiClientNas.html#QmiClientNas-system-info"/>
@@ -834,6 +836,8 @@
     <keyword type="enum" name="enum QmiNasCellBroadcastCapability" link="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasCellBroadcastCapability-enum"/>
     <keyword type="enum" name="enum QmiNasSimRejectState" link="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasSimRejectState-enum"/>
     <keyword type="enum" name="enum QmiNasCdmaPilotType" link="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasCdmaPilotType-enum"/>
+    <keyword type="enum" name="enum QmiNasDayOfWeek" link="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasDayOfWeek-enum"/>
+    <keyword type="enum" name="enum QmiNasDaylightSavingsAdjustment" link="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasDaylightSavingsAdjustment-enum"/>
     <keyword type="function" name="qmi_nas_radio_interface_get_string ()" link="libqmi-glib-NAS-enumerations-and-flags.html#qmi-nas-radio-interface-get-string"/>
     <keyword type="function" name="qmi_nas_active_band_get_string ()" link="libqmi-glib-NAS-enumerations-and-flags.html#qmi-nas-active-band-get-string"/>
     <keyword type="function" name="qmi_nas_network_service_domain_get_string ()" link="libqmi-glib-NAS-enumerations-and-flags.html#qmi-nas-network-service-domain-get-string"/>
@@ -870,6 +874,8 @@
     <keyword type="function" name="qmi_nas_cell_broadcast_capability_get_string ()" link="libqmi-glib-NAS-enumerations-and-flags.html#qmi-nas-cell-broadcast-capability-get-string"/>
     <keyword type="function" name="qmi_nas_sim_reject_state_get_string ()" link="libqmi-glib-NAS-enumerations-and-flags.html#qmi-nas-sim-reject-state-get-string"/>
     <keyword type="function" name="qmi_nas_cdma_pilot_type_get_string ()" link="libqmi-glib-NAS-enumerations-and-flags.html#qmi-nas-cdma-pilot-type-get-string"/>
+    <keyword type="function" name="qmi_nas_day_of_week_get_string ()" link="libqmi-glib-NAS-enumerations-and-flags.html#qmi-nas-day-of-week-get-string"/>
+    <keyword type="function" name="qmi_nas_daylight_savings_adjustment_get_string ()" link="libqmi-glib-NAS-enumerations-and-flags.html#qmi-nas-daylight-savings-adjustment-get-string"/>
     <keyword type="struct" name="QmiIndicationNasEventReportOutput" link="libqmi-glib-NAS-Event-Report.html#QmiIndicationNasEventReportOutput-struct"/>
     <keyword type="struct" name="QmiIndicationNasEventReportOutputRfBandInformationElement" link="libqmi-glib-NAS-Event-Report.html#QmiIndicationNasEventReportOutputRfBandInformationElement"/>
     <keyword type="function" name="qmi_indication_nas_event_report_output_ref ()" link="libqmi-glib-NAS-Event-Report.html#qmi-indication-nas-event-report-output-ref"/>
@@ -885,6 +891,13 @@
     <keyword type="function" name="qmi_indication_nas_event_report_output_get_registration_reject_reason ()" link="libqmi-glib-NAS-Event-Report.html#qmi-indication-nas-event-report-output-get-registration-reject-reason"/>
     <keyword type="function" name="qmi_indication_nas_event_report_output_get_rf_band_information ()" link="libqmi-glib-NAS-Event-Report.html#qmi-indication-nas-event-report-output-get-rf-band-information"/>
     <keyword type="function" name="qmi_indication_nas_event_report_output_get_signal_strength ()" link="libqmi-glib-NAS-Event-Report.html#qmi-indication-nas-event-report-output-get-signal-strength"/>
+    <keyword type="struct" name="QmiIndicationNasNetworkTimeOutput" link="libqmi-glib-NAS-Network-Time.html#QmiIndicationNasNetworkTimeOutput-struct"/>
+    <keyword type="function" name="qmi_indication_nas_network_time_output_ref ()" link="libqmi-glib-NAS-Network-Time.html#qmi-indication-nas-network-time-output-ref"/>
+    <keyword type="function" name="qmi_indication_nas_network_time_output_unref ()" link="libqmi-glib-NAS-Network-Time.html#qmi-indication-nas-network-time-output-unref"/>
+    <keyword type="function" name="qmi_indication_nas_network_time_output_get_radio_interface ()" link="libqmi-glib-NAS-Network-Time.html#qmi-indication-nas-network-time-output-get-radio-interface"/>
+    <keyword type="function" name="qmi_indication_nas_network_time_output_get_daylight_savings_adjustment ()" link="libqmi-glib-NAS-Network-Time.html#qmi-indication-nas-network-time-output-get-daylight-savings-adjustment"/>
+    <keyword type="function" name="qmi_indication_nas_network_time_output_get_timezone_offset ()" link="libqmi-glib-NAS-Network-Time.html#qmi-indication-nas-network-time-output-get-timezone-offset"/>
+    <keyword type="function" name="qmi_indication_nas_network_time_output_get_universal_time ()" link="libqmi-glib-NAS-Network-Time.html#qmi-indication-nas-network-time-output-get-universal-time"/>
     <keyword type="struct" name="QmiIndicationNasServingSystemOutput" link="libqmi-glib-NAS-Serving-System.html#QmiIndicationNasServingSystemOutput-struct"/>
     <keyword type="struct" name="QmiIndicationNasServingSystemOutputRoamingIndicatorListElement" link="libqmi-glib-NAS-Serving-System.html#QmiIndicationNasServingSystemOutputRoamingIndicatorListElement"/>
     <keyword type="function" name="qmi_indication_nas_serving_system_output_ref ()" link="libqmi-glib-NAS-Serving-System.html#qmi-indication-nas-serving-system-output-ref"/>
@@ -2387,6 +2400,16 @@
     <keyword type="constant" name="QMI_NAS_SIM_REJECT_STATE_SIM_CS_PS_INVALID" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-SIM-REJECT-STATE-SIM-CS-PS-INVALID:CAPS"/>
     <keyword type="constant" name="QMI_NAS_CDMA_PILOT_TYPE_ACTIVE" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-CDMA-PILOT-TYPE-ACTIVE:CAPS"/>
     <keyword type="constant" name="QMI_NAS_CDMA_PILOT_TYPE_NEIGHBOR" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-CDMA-PILOT-TYPE-NEIGHBOR:CAPS"/>
+    <keyword type="constant" name="QMI_NAS_DAY_OF_WEEK_MONDAY" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-DAY-OF-WEEK-MONDAY:CAPS"/>
+    <keyword type="constant" name="QMI_NAS_DAY_OF_WEEK_TUESDAY" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-DAY-OF-WEEK-TUESDAY:CAPS"/>
+    <keyword type="constant" name="QMI_NAS_DAY_OF_WEEK_WEDNESDAY" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-DAY-OF-WEEK-WEDNESDAY:CAPS"/>
+    <keyword type="constant" name="QMI_NAS_DAY_OF_WEEK_THURSDAY" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-DAY-OF-WEEK-THURSDAY:CAPS"/>
+    <keyword type="constant" name="QMI_NAS_DAY_OF_WEEK_FRIDAY" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-DAY-OF-WEEK-FRIDAY:CAPS"/>
+    <keyword type="constant" name="QMI_NAS_DAY_OF_WEEK_SATURDAY" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-DAY-OF-WEEK-SATURDAY:CAPS"/>
+    <keyword type="constant" name="QMI_NAS_DAY_OF_WEEK_SUNDAY" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-DAY-OF-WEEK-SUNDAY:CAPS"/>
+    <keyword type="constant" name="QMI_NAS_DAYLIGHT_SAVINGS_ADJUSTMENT_NONE" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-DAYLIGHT-SAVINGS-ADJUSTMENT-NONE:CAPS"/>
+    <keyword type="constant" name="QMI_NAS_DAYLIGHT_SAVINGS_ADJUSTMENT_ONE_HOUR" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-DAYLIGHT-SAVINGS-ADJUSTMENT-ONE-HOUR:CAPS"/>
+    <keyword type="constant" name="QMI_NAS_DAYLIGHT_SAVINGS_ADJUSTMENT_TWO_HOURS" link="libqmi-glib-NAS-enumerations-and-flags.html#QMI-NAS-DAYLIGHT-SAVINGS-ADJUSTMENT-TWO-HOURS:CAPS"/>
     <keyword type="constant" name="QMI_WDS_IP_FAMILY_IPV4" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-IP-FAMILY-IPV4:CAPS"/>
     <keyword type="constant" name="QMI_WDS_IP_FAMILY_IPV6" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-IP-FAMILY-IPV6:CAPS"/>
     <keyword type="constant" name="QMI_WDS_IP_FAMILY_UNSPECIFIED" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-IP-FAMILY-UNSPECIFIED:CAPS"/>
