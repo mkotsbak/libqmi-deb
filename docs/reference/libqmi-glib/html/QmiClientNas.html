@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>QmiClientNas</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.77.1">
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="libqmi-glib Reference Manual">
 <link rel="up" href="ch03.html" title="Network Access Service (NAS)">
 <link rel="prev" href="ch03.html" title="Network Access Service (NAS)">
 <link rel="next" href="libqmi-glib-NAS-enumerations-and-flags.html" title="NAS enumerations and flags">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -56,6 +56,7 @@
 <a name="QmiClientNas.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
   "<a class="link" href="QmiClientNas.html#QmiClientNas-event-report" title='The "event-report" signal'>event-report</a>"                                   : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
+  "<a class="link" href="QmiClientNas.html#QmiClientNas-network-time" title='The "network-time" signal'>network-time</a>"                                   : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
   "<a class="link" href="QmiClientNas.html#QmiClientNas-serving-system" title='The "serving-system" signal'>serving-system</a>"                                 : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
   "<a class="link" href="QmiClientNas.html#QmiClientNas-signal-info" title='The "signal-info" signal'>signal-info</a>"                                    : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
   "<a class="link" href="QmiClientNas.html#QmiClientNas-system-info" title='The "system-info" signal'>system-info</a>"                                    : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
@@ -101,6 +102,36 @@ The ::event-report signal gets emitted when a '<a class="link" href="libqmi-glib
 <tr>
 <td><p><span class="term"><em class="parameter"><code>output</code></em> :</span></p></td>
 <td>A <a class="link" href="libqmi-glib-NAS-Event-Report.html#QmiIndicationNasEventReportOutput"><span class="type">QmiIndicationNasEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiClientNas-network-time"></a><h3>The <code class="literal">"network-time"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="QmiClientNas.html" title="QmiClientNas"><span class="type">QmiClientNas</span></a>                      *object,
+                                                        <a class="link" href="libqmi-glib-NAS-Network-Time.html#QmiIndicationNasNetworkTimeOutput"><span class="type">QmiIndicationNasNetworkTimeOutput</span></a> *output,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>                           user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+<p>
+The ::network-time signal gets emitted when a '<a class="link" href="libqmi-glib-NAS-Network-Time.html#libqmi-glib-NAS-Network-Time.top_of_page">Network Time</a>' indication is received.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>A <a class="link" href="QmiClientNas.html" title="QmiClientNas"><span class="type">QmiClientNas</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>output</code></em> :</span></p></td>
+<td>A <a class="link" href="libqmi-glib-NAS-Network-Time.html#QmiIndicationNasNetworkTimeOutput"><span class="type">QmiIndicationNasNetworkTimeOutput</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
@@ -203,6 +234,6 @@ The ::system-info signal gets emitted when a '<a class="link" href="libqmi-glib-
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>

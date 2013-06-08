@@ -9,10 +9,12 @@ qmi-enums-nas
 
 </para>
 
+
 <!-- ##### SECTION See_Also ##### -->
 <para>
 
 </para>
+
 
 <!-- ##### SECTION Stability_Level ##### -->
 
@@ -557,6 +559,28 @@ qmi-enums-nas
 @QMI_NAS_CDMA_PILOT_TYPE_ACTIVE: 
 @QMI_NAS_CDMA_PILOT_TYPE_NEIGHBOR: 
 
+<!-- ##### ENUM QmiNasDayOfWeek ##### -->
+<para>
+
+</para>
+
+@QMI_NAS_DAY_OF_WEEK_MONDAY: 
+@QMI_NAS_DAY_OF_WEEK_TUESDAY: 
+@QMI_NAS_DAY_OF_WEEK_WEDNESDAY: 
+@QMI_NAS_DAY_OF_WEEK_THURSDAY: 
+@QMI_NAS_DAY_OF_WEEK_FRIDAY: 
+@QMI_NAS_DAY_OF_WEEK_SATURDAY: 
+@QMI_NAS_DAY_OF_WEEK_SUNDAY: 
+
+<!-- ##### ENUM QmiNasDaylightSavingsAdjustment ##### -->
+<para>
+
+</para>
+
+@QMI_NAS_DAYLIGHT_SAVINGS_ADJUSTMENT_NONE: 
+@QMI_NAS_DAYLIGHT_SAVINGS_ADJUSTMENT_ONE_HOUR: 
+@QMI_NAS_DAYLIGHT_SAVINGS_ADJUSTMENT_TWO_HOURS: 
+
 <!-- ##### FUNCTION qmi_nas_radio_interface_get_string ##### -->
 <para>
 
@@ -873,6 +897,24 @@ qmi-enums-nas
 
 
 <!-- ##### FUNCTION qmi_nas_cdma_pilot_type_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION qmi_nas_day_of_week_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION qmi_nas_daylight_savings_adjustment_get_string ##### -->
 <para>
 
 </para>

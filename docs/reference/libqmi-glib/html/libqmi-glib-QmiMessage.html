@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>QmiMessage</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.77.1">
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="libqmi-glib Reference Manual">
 <link rel="up" href="ch01.html" title="Core">
 <link rel="prev" href="ch01.html" title="Core">
 <link rel="next" href="QmiDevice.html" title="QmiDevice">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -182,11 +182,11 @@ Whenever a complete QMI message is read, its raw data gets removed from the <em 
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>return location for error or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+<td>return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a newly created <a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a>, which should be freed with <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-unref" title="qmi_message_unref ()"><code class="function">qmi_message_unref()</code></a>. If <em class="parameter"><code>raw</code></em> doesn't contain a complete QMI message <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><span class="type">NULL</span></a> is returned. If there is a complete QMI message but it appears not to be valid, <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><span class="type">NULL</span></a> is returned and <em class="parameter"><code>error</code></em> is set. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+<td>a newly created <a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a>, which should be freed with <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-unref" title="qmi_message_unref ()"><code class="function">qmi_message_unref()</code></a>. If <em class="parameter"><code>raw</code></em> doesn't contain a complete QMI message <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> is returned. If there is a complete QMI message but it appears not to be valid, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> is returned and <em class="parameter"><code>error</code></em> is set. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
 </td>
 </tr>
 </tbody>
@@ -431,11 +431,11 @@ Gets the raw data buffer of the <a class="link" href="libqmi-glib-QmiMessage.htm
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>return location for error or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+<td>return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>The raw data buffer, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><span class="type">NULL</span></a> if <em class="parameter"><code>error</code></em> is set. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+<td>The raw data buffer, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> if <em class="parameter"><code>error</code></em> is set. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
 </td>
 </tr>
 </tbody>
@@ -546,7 +546,7 @@ Get the raw data buffer of a specific TLV within the <a class="link" href="libqm
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>The raw data buffer of the TLV, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><span class="type">NULL</span></a> if not found. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+<td>The raw data buffer of the TLV, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> if not found. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
 </td>
 </tr>
 </tbody>
@@ -587,7 +587,7 @@ Creates a new <em class="parameter"><code>type</code></em> TLV with the value gi
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>return location for error or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+<td>return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
@@ -683,6 +683,6 @@ This method is the most generic one and doesn't try to translate the TLV content
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>
