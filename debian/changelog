@@ -2,7 +2,6 @@ libqmi (1.4.0-1) UNRELEASED; urgency=low
 
   [ Marius B. Kotsbak ]
   * New upstream stable release 1.4.0
-    - Builds with Python3
     - Fixed DMS activation code string handling
     - Enhanced "start network" functionality in qmicli
     - dms: fix minimum version requirement for DMS Get/Set Operating Mode
