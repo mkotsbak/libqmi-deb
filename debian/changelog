@@ -1,4 +1,4 @@
-libqmi (1.4.0-1) UNRELEASED; urgency=low
+libqmi (1.4.0-1) unstable; urgency=low
 
   [ Marius B. Kotsbak ]
   * New upstream stable release 1.4.0
