@@ -260,3 +260,35 @@ QmiDevice
 @Returns: 
 
 
+<!-- ##### STRUCT QmiDeviceServiceVersionInfo ##### -->
+<para>
+
+</para>
+
+@service: 
+@major_version: 
+@minor_version: 
+
+<!-- ##### FUNCTION qmi_device_get_service_version_info ##### -->
+<para>
+
+</para>
+
+@self: 
+@timeout: 
+@cancellable: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION qmi_device_get_service_version_info_finish ##### -->
+<para>
+
+</para>
+
+@self: 
+@res: 
+@error: 
+@Returns: 
+
+

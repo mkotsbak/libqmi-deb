@@ -60,6 +60,32 @@ DMS Activate Manual
 @self: 
 
 
+<!-- ##### FUNCTION qmi_message_dms_activate_manual_input_get_prl ##### -->
+<para>
+
+</para>
+
+@self: 
+@prl_prl_total_length: 
+@prl_prl_segment_sequence: 
+@prl_prl_segment: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION qmi_message_dms_activate_manual_input_set_prl ##### -->
+<para>
+
+</para>
+
+@self: 
+@prl_prl_total_length: 
+@prl_prl_segment_sequence: 
+@prl_prl_segment: 
+@error: 
+@Returns: 
+
+
 <!-- ##### FUNCTION qmi_message_dms_activate_manual_input_get_mn_aaa_key ##### -->
 <para>
 

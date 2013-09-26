@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>UIM enumerations and flags</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libqmi-glib Reference Manual">
+<link rel="up" href="ch08.html" title="User Identity Module (UIM) service">
+<link rel="prev" href="QmiClientUim.html" title="QmiClientUim">
+<link rel="next" href="libqmi-glib-UIM-Reset.html" title="UIM Reset">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="QmiClientUim.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch08.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libqmi-glib Reference Manual</th>
+<td><a accesskey="n" href="libqmi-glib-UIM-Reset.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libqmi-glib-UIM-enumerations-and-flags.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libqmi-glib-UIM-enumerations-and-flags.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libqmi-glib-UIM-enumerations-and-flags.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libqmi-glib-UIM-enumerations-and-flags"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libqmi-glib-UIM-enumerations-and-flags.top_of_page"></a>UIM enumerations and flags</span></h2>
+<p>UIM enumerations and flags</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libqmi-glib-UIM-enumerations-and-flags.synopsis"></a><h2>Synopsis</h2>
+<a name="QmiUimSessionType"></a><a name="QmiUimFileType"></a><a name="QmiUimSecurityAttributeLogic"></a><a name="QmiUimSecurityAttribute"></a><pre class="synopsis">enum                <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSessionType-enum" title="enum QmiUimSessionType">QmiUimSessionType</a>;
+enum                <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimFileType-enum" title="enum QmiUimFileType">QmiUimFileType</a>;
+enum                <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSecurityAttributeLogic-enum" title="enum QmiUimSecurityAttributeLogic">QmiUimSecurityAttributeLogic</a>;
+enum                <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSecurityAttribute-enum" title="enum QmiUimSecurityAttribute">QmiUimSecurityAttribute</a>;
+
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#qmi-uim-session-type-get-string" title="qmi_uim_session_type_get_string ()">qmi_uim_session_type_get_string</a>     (<em class="parameter"><code><a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSessionType"><span class="type">QmiUimSessionType</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#qmi-uim-file-type-get-string" title="qmi_uim_file_type_get_string ()">qmi_uim_file_type_get_string</a>        (<em class="parameter"><code><a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimFileType"><span class="type">QmiUimFileType</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#qmi-uim-security-attribute-logic-get-string" title="qmi_uim_security_attribute_logic_get_string ()">qmi_uim_security_attribute_logic_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSecurityAttributeLogic"><span class="type">QmiUimSecurityAttributeLogic</span></a> val</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#qmi-uim-security-attribute-build-string-from-mask" title="qmi_uim_security_attribute_build_string_from_mask ()">qmi_uim_security_attribute_build_string_from_mask</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSecurityAttribute"><span class="type">QmiUimSecurityAttribute</span></a> mask</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-UIM-enumerations-and-flags.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GEnum
+   +----QmiUimSessionType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiUimFileType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiUimSecurityAttributeLogic
+</pre>
+<pre class="synopsis">
+  GFlags
+   +----QmiUimSecurityAttribute
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-UIM-enumerations-and-flags.description"></a><h2>Description</h2>
+<p>
+This section defines enumerations and flags used in the UIM service
+interface.
+</p>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-UIM-enumerations-and-flags.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="QmiUimSessionType-enum"></a><h3>enum QmiUimSessionType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_UIM_SESSION_TYPE_PRIMARY_GW_PROVISIONING   = 0,
+    QMI_UIM_SESSION_TYPE_PRIMARY_1X_PROVISIONING   = 1,
+    QMI_UIM_SESSION_TYPE_SECONDARY_GW_PROVISIONING = 2,
+    QMI_UIM_SESSION_TYPE_SECONDARY_1X_PROVISIONING = 3,
+    QMI_UIM_SESSION_TYPE_NONPROVISIONING_SLOT_1    = 4,
+    QMI_UIM_SESSION_TYPE_NONPROVISIONING_SLOT_2    = 5,
+    QMI_UIM_SESSION_TYPE_CARD_SLOT_1               = 6,
+    QMI_UIM_SESSION_TYPE_CARD_SLOT_2               = 7,
+    QMI_UIM_SESSION_TYPE_LOGICAL_CHANNEL_SLOT_1    = 8,
+    QMI_UIM_SESSION_TYPE_LOGICAL_CHANNEL_SLOT_2    = 9
+} QmiUimSessionType;
+</pre>
+<p>
+Type of UIM session.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-UIM-SESSION-TYPE-PRIMARY-GW-PROVISIONING:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SESSION_TYPE_PRIMARY_GW_PROVISIONING</code></span></p></td>
+<td>Primary GSM/WCDMA provisioning.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SESSION-TYPE-PRIMARY-1X-PROVISIONING:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SESSION_TYPE_PRIMARY_1X_PROVISIONING</code></span></p></td>
+<td>Primary CDMA1x provisioning.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SESSION-TYPE-SECONDARY-GW-PROVISIONING:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SESSION_TYPE_SECONDARY_GW_PROVISIONING</code></span></p></td>
+<td>Secondary GSM/WCDMA provisioning.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SESSION-TYPE-SECONDARY-1X-PROVISIONING:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SESSION_TYPE_SECONDARY_1X_PROVISIONING</code></span></p></td>
+<td>Secondary CDMA1x provisioning.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SESSION-TYPE-NONPROVISIONING-SLOT-1:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SESSION_TYPE_NONPROVISIONING_SLOT_1</code></span></p></td>
+<td>Nonprovisioning on slot 1.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SESSION-TYPE-NONPROVISIONING-SLOT-2:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SESSION_TYPE_NONPROVISIONING_SLOT_2</code></span></p></td>
+<td>Nonprovisioning on slot 2.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SESSION-TYPE-CARD-SLOT-1:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SESSION_TYPE_CARD_SLOT_1</code></span></p></td>
+<td>Card on slot 1.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SESSION-TYPE-CARD-SLOT-2:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SESSION_TYPE_CARD_SLOT_2</code></span></p></td>
+<td>Card on slot 2.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SESSION-TYPE-LOGICAL-CHANNEL-SLOT-1:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SESSION_TYPE_LOGICAL_CHANNEL_SLOT_1</code></span></p></td>
+<td>Logical channel on slot 1.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SESSION-TYPE-LOGICAL-CHANNEL-SLOT-2:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SESSION_TYPE_LOGICAL_CHANNEL_SLOT_2</code></span></p></td>
+<td>Logical channel on slot 2.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiUimFileType-enum"></a><h3>enum QmiUimFileType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_UIM_FILE_TYPE_TRANSPARENT    = 0,
+    QMI_UIM_FILE_TYPE_CYCLIC         = 1,
+    QMI_UIM_FILE_TYPE_LINEAR_FIXED   = 2,
+    QMI_UIM_FILE_TYPE_DEDICATED_FILE = 3,
+    QMI_UIM_FILE_TYPE_MASTER_FILE    = 4
+} QmiUimFileType;
+</pre>
+<p>
+Type of UIM file.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-UIM-FILE-TYPE-TRANSPARENT:CAPS"></a><span class="term"><code class="literal">QMI_UIM_FILE_TYPE_TRANSPARENT</code></span></p></td>
+<td>Transparent.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-FILE-TYPE-CYCLIC:CAPS"></a><span class="term"><code class="literal">QMI_UIM_FILE_TYPE_CYCLIC</code></span></p></td>
+<td>Cyclic.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-FILE-TYPE-LINEAR-FIXED:CAPS"></a><span class="term"><code class="literal">QMI_UIM_FILE_TYPE_LINEAR_FIXED</code></span></p></td>
+<td>Linear fixed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-FILE-TYPE-DEDICATED-FILE:CAPS"></a><span class="term"><code class="literal">QMI_UIM_FILE_TYPE_DEDICATED_FILE</code></span></p></td>
+<td>Dedicated file.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-FILE-TYPE-MASTER-FILE:CAPS"></a><span class="term"><code class="literal">QMI_UIM_FILE_TYPE_MASTER_FILE</code></span></p></td>
+<td>Master file.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiUimSecurityAttributeLogic-enum"></a><h3>enum QmiUimSecurityAttributeLogic</h3>
+<pre class="programlisting">typedef enum {
+    QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_ALWAYS = 0,
+    QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_NEVER  = 1,
+    QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_AND    = 2,
+    QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_OR     = 3,
+    QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_SINGLE = 4
+} QmiUimSecurityAttributeLogic;
+</pre>
+<p>
+Logic applicable to security attributes.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-UIM-SECURITY-ATTRIBUTE-LOGIC-ALWAYS:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_ALWAYS</code></span></p></td>
+<td>Always.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SECURITY-ATTRIBUTE-LOGIC-NEVER:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_NEVER</code></span></p></td>
+<td>Never.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SECURITY-ATTRIBUTE-LOGIC-AND:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_AND</code></span></p></td>
+<td>And.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SECURITY-ATTRIBUTE-LOGIC-OR:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_OR</code></span></p></td>
+<td>Or.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SECURITY-ATTRIBUTE-LOGIC-SINGLE:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_SINGLE</code></span></p></td>
+<td>Single.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiUimSecurityAttribute-enum"></a><h3>enum QmiUimSecurityAttribute</h3>
+<pre class="programlisting">typedef enum {
+    QMI_UIM_SECURITY_ATTRIBUTE_PIN1 = 1 &lt;&lt; 0,
+    QMI_UIM_SECURITY_ATTRIBUTE_PIN2 = 1 &lt;&lt; 1,
+    QMI_UIM_SECURITY_ATTRIBUTE_UPIN = 1 &lt;&lt; 2,
+    QMI_UIM_SECURITY_ATTRIBUTE_ADM  = 1 &lt;&lt; 3
+} QmiUimSecurityAttribute;
+</pre>
+<p>
+Security Attributes.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-UIM-SECURITY-ATTRIBUTE-PIN1:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SECURITY_ATTRIBUTE_PIN1</code></span></p></td>
+<td>PIN1.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SECURITY-ATTRIBUTE-PIN2:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SECURITY_ATTRIBUTE_PIN2</code></span></p></td>
+<td>PIN2.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SECURITY-ATTRIBUTE-UPIN:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SECURITY_ATTRIBUTE_UPIN</code></span></p></td>
+<td>UPIN.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-UIM-SECURITY-ATTRIBUTE-ADM:CAPS"></a><span class="term"><code class="literal">QMI_UIM_SECURITY_ATTRIBUTE_ADM</code></span></p></td>
+<td>ADM.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-uim-session-type-get-string"></a><h3>qmi_uim_session_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_uim_session_type_get_string     (<em class="parameter"><code><a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSessionType"><span class="type">QmiUimSessionType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSessionType"><span class="type">QmiUimSessionType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiUimSessionType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-uim-file-type-get-string"></a><h3>qmi_uim_file_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_uim_file_type_get_string        (<em class="parameter"><code><a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimFileType"><span class="type">QmiUimFileType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimFileType"><span class="type">QmiUimFileType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiUimFileType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-uim-security-attribute-logic-get-string"></a><h3>qmi_uim_security_attribute_logic_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_uim_security_attribute_logic_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSecurityAttributeLogic"><span class="type">QmiUimSecurityAttributeLogic</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSecurityAttributeLogic"><span class="type">QmiUimSecurityAttributeLogic</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiUimSecurityAttributeLogic.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-uim-security-attribute-build-string-from-mask"></a><h3>qmi_uim_security_attribute_build_string_from_mask ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_uim_security_attribute_build_string_from_mask
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSecurityAttribute"><span class="type">QmiUimSecurityAttribute</span></a> mask</code></em>);</pre>
+<p>
+Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSecurityAttribute"><span class="type">QmiUimSecurityAttribute</span></a> in <em class="parameter"><code>mask</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
+<td>bitmask of QmiUimSecurityAttribute values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the list of nicknames, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none given. The returned value should be freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>
