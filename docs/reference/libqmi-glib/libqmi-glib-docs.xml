@@ -39,6 +39,7 @@
 
   <chapter>
     <title>Core</title>
+    <xi:include href="xml/qmi-version.xml"/>
     <xi:include href="xml/qmi-message.xml"/>
     <xi:include href="xml/qmi-device.xml"/>
     <xi:include href="xml/qmi-client.xml"/>
@@ -139,6 +140,7 @@
       <xi:include href="xml/qmi-message-nas-get-signal-info.xml"/>
       <xi:include href="xml/qmi-message-nas-config-signal-info.xml"/>
       <xi:include href="xml/qmi-message-nas-get-cdma-position-info.xml"/>
+      <xi:include href="xml/qmi-message-nas-get-tx-rx-info.xml"/>
     </section>
   </chapter>
 
@@ -152,6 +154,7 @@
       <xi:include href="xml/qmi-message-wds-start-network.xml"/>
       <xi:include href="xml/qmi-message-wds-stop-network.xml"/>
       <xi:include href="xml/qmi-message-wds-get-packet-service-status.xml"/>
+      <xi:include href="xml/qmi-message-wds-get-packet-statistics.xml"/>
       <xi:include href="xml/qmi-message-wds-get-current-settings.xml"/>
       <xi:include href="xml/qmi-message-wds-get-data-bearer-technology.xml"/>
       <xi:include href="xml/qmi-message-wds-get-current-data-bearer-technology.xml"/>
@@ -200,6 +203,52 @@
       <xi:include href="xml/qmi-message-pds-set-gps-service-state.xml"/>
       <xi:include href="xml/qmi-message-pds-get-auto-tracking-state.xml"/>
       <xi:include href="xml/qmi-message-pds-set-auto-tracking-state.xml"/>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Phonebook Management Service (PBM)</title>
+    <xi:include href="xml/qmi-client-pbm.xml"/>
+    <xi:include href="xml/qmi-enums-pbm.xml"/>
+    <section>
+      <title>PBM Requests</title>
+      <xi:include href="xml/qmi-message-pbm-indication-register.xml"/>
+      <xi:include href="xml/qmi-message-pbm-get-capabilities.xml"/>
+      <xi:include href="xml/qmi-message-pbm-get-all-capabilities.xml"/>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>User Identity Module (UIM) service</title>
+    <xi:include href="xml/qmi-client-uim.xml"/>
+    <xi:include href="xml/qmi-enums-uim.xml"/>
+    <section>
+      <title>UIM Requests</title>
+      <xi:include href="xml/qmi-message-uim-reset.xml"/>
+      <xi:include href="xml/qmi-message-uim-read-transparent.xml"/>
+      <xi:include href="xml/qmi-message-uim-read-record.xml"/>
+      <xi:include href="xml/qmi-message-uim-get-file-attributes.xml"/>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Open Mobile Alliance Service (OMA)</title>
+    <xi:include href="xml/qmi-client-oma.xml"/>
+    <xi:include href="xml/qmi-enums-oma.xml"/>
+    <section>
+      <title>OMA Indications</title>
+      <xi:include href="xml/qmi-indication-oma-event-report.xml"/>
+    </section>
+    <section>
+      <title>OMA Requests</title>
+      <xi:include href="xml/qmi-message-oma-reset.xml"/>
+      <xi:include href="xml/qmi-message-oma-set-event-report.xml"/>
+      <xi:include href="xml/qmi-message-oma-start-session.xml"/>
+      <xi:include href="xml/qmi-message-oma-cancel-session.xml"/>
+      <xi:include href="xml/qmi-message-oma-get-session-info.xml"/>
+      <xi:include href="xml/qmi-message-oma-send-selection.xml"/>
+      <xi:include href="xml/qmi-message-oma-get-feature-setting.xml"/>
+      <xi:include href="xml/qmi-message-oma-set-feature-setting.xml"/>
     </section>
   </chapter>
 

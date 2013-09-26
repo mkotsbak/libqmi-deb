@@ -28,6 +28,7 @@
 
 /* libqmi-glib headers */
 
+#include "qmi-version.h"
 #include "qmi-device.h"
 #include "qmi-client.h"
 #include "qmi-message.h"
@@ -50,6 +51,15 @@
 
 #include "qmi-enums-pds.h"
 #include "qmi-pds.h"
+
+#include "qmi-enums-pbm.h"
+#include "qmi-pbm.h"
+
+#include "qmi-enums-uim.h"
+#include "qmi-uim.h"
+
+#include "qmi-enums-oma.h"
+#include "qmi-oma.h"
 
 /* generated */
 #include "qmi-error-types.h"

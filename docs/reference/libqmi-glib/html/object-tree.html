@@ -6,14 +6,14 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="libqmi-glib Reference Manual">
 <link rel="up" href="index.html" title="libqmi-glib Reference Manual">
-<link rel="prev" href="libqmi-glib-PDS-Set-Auto-Tracking-State.html" title="PDS Set Auto Tracking State">
+<link rel="prev" href="libqmi-glib-OMA-Set-Feature-Setting.html" title="OMA Set Feature Setting">
 <link rel="next" href="api-index-full.html" title="API Index">
 <meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libqmi-glib-PDS-Set-Auto-Tracking-State.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="p" href="libqmi-glib-OMA-Set-Feature-Setting.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
 <td> </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
 <th width="100%" align="center">libqmi-glib Reference Manual</th>
@@ -27,7 +27,10 @@
         <a class="link" href="QmiClient.html" title="QmiClient">QmiClient</a>
             <a class="link" href="QmiClientDms.html" title="QmiClientDms">QmiClientDms</a>
             <a class="link" href="QmiClientNas.html" title="QmiClientNas">QmiClientNas</a>
+            <a class="link" href="QmiClientOma.html" title="QmiClientOma">QmiClientOma</a>
+            <a class="link" href="QmiClientPbm.html" title="QmiClientPbm">QmiClientPbm</a>
             <a class="link" href="QmiClientPds.html" title="QmiClientPds">QmiClientPds</a>
+            <a class="link" href="QmiClientUim.html" title="QmiClientUim">QmiClientUim</a>
             <a class="link" href="QmiClientWds.html" title="QmiClientWds">QmiClientWds</a>
             <a class="link" href="QmiClientWms.html" title="QmiClientWms">QmiClientWms</a>
         <a class="link" href="QmiDevice.html" title="QmiDevice">QmiDevice</a>
@@ -76,11 +79,19 @@
         <a class="link" href="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasServiceStatus">QmiNasServiceStatus</a>
         <a class="link" href="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasSimRejectState">QmiNasSimRejectState</a>
         <a class="link" href="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasWcdmaHsService">QmiNasWcdmaHsService</a>
+        <a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaHfaFeatureDoneState">QmiOmaHfaFeatureDoneState</a>
+        <a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionFailedReason">QmiOmaSessionFailedReason</a>
+        <a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionState">QmiOmaSessionState</a>
+        <a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionType">QmiOmaSessionType</a>
+        <a class="link" href="libqmi-glib-PBM-enumerations-and-flags.html#QmiPbmSessionType">QmiPbmSessionType</a>
         <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsOperationMode">QmiPdsOperationMode</a>
         <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsPositionSessionStatus">QmiPdsPositionSessionStatus</a>
         <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsTrackingSessionState">QmiPdsTrackingSessionState</a>
         <a class="link" href="libqmi-glib-Errors.html#QmiProtocolError">QmiProtocolError</a>
         <a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QmiService">QmiService</a>
+        <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimFileType">QmiUimFileType</a>
+        <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSecurityAttributeLogic">QmiUimSecurityAttributeLogic</a>
+        <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSessionType">QmiUimSessionType</a>
         <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsCallEndReason">QmiWdsCallEndReason</a>
         <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsCallType">QmiWdsCallType</a>
         <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsConnectionStatus">QmiWdsConnectionStatus</a>
@@ -125,9 +136,13 @@
         <a class="link" href="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasRatModePreference">QmiNasRatModePreference</a>
         <a class="link" href="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasSignalStrengthRequest">QmiNasSignalStrengthRequest</a>
         <a class="link" href="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasTdScdmaBandPreference">QmiNasTdScdmaBandPreference</a>
+        <a class="link" href="libqmi-glib-PBM-enumerations-and-flags.html#QmiPbmEventRegistrationFlag">QmiPbmEventRegistrationFlag</a>
+        <a class="link" href="libqmi-glib-PBM-enumerations-and-flags.html#QmiPbmPhonebookType">QmiPbmPhonebookType</a>
         <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsDataValid">QmiPdsDataValid</a>
+        <a class="link" href="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSecurityAttribute">QmiUimSecurityAttribute</a>
         <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsAuthentication">QmiWdsAuthentication</a>
         <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsGetCurrentSettingsRequestedSettings">QmiWdsGetCurrentSettingsRequestedSettings</a>
+        <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsPacketStatisticsMaskFlag">QmiWdsPacketStatisticsMaskFlag</a>
         <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat3gpp2">QmiWdsRat3gpp2</a>
         <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat3gpp">QmiWdsRat3gpp</a>
         <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoCdma1x">QmiWdsSoCdma1x</a>
@@ -140,6 +155,7 @@
         <a class="link" href="libqmi-glib-NAS-Serving-System.html#QmiIndicationNasServingSystemOutput">QmiIndicationNasServingSystemOutput</a>
         <a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput">QmiIndicationNasSignalInfoOutput</a>
         <a class="link" href="libqmi-glib-NAS-System-Info.html#QmiIndicationNasSystemInfoOutput">QmiIndicationNasSystemInfoOutput</a>
+        <a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput">QmiIndicationOmaEventReportOutput</a>
         <a class="link" href="libqmi-glib-PDS-Event-Report.html#QmiIndicationPdsEventReportOutput">QmiIndicationPdsEventReportOutput</a>
         <a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput">QmiIndicationWmsEventReportOutput</a>
         <a class="link" href="libqmi-glib-DMS-Activate-Automatic.html#QmiMessageDmsActivateAutomaticInput">QmiMessageDmsActivateAutomaticInput</a>
@@ -224,6 +240,8 @@
         <a class="link" href="libqmi-glib-NAS-Get-System-Info.html#QmiMessageNasGetSystemInfoOutput">QmiMessageNasGetSystemInfoOutput</a>
         <a class="link" href="libqmi-glib-NAS-Get-System-Selection-Preference.html#QmiMessageNasGetSystemSelectionPreferenceOutput">QmiMessageNasGetSystemSelectionPreferenceOutput</a>
         <a class="link" href="libqmi-glib-NAS-Get-Technology-Preference.html#QmiMessageNasGetTechnologyPreferenceOutput">QmiMessageNasGetTechnologyPreferenceOutput</a>
+        <a class="link" href="libqmi-glib-NAS-Get-Tx-Rx-Info.html#QmiMessageNasGetTxRxInfoInput">QmiMessageNasGetTxRxInfoInput</a>
+        <a class="link" href="libqmi-glib-NAS-Get-Tx-Rx-Info.html#QmiMessageNasGetTxRxInfoOutput">QmiMessageNasGetTxRxInfoOutput</a>
         <a class="link" href="libqmi-glib-NAS-Initiate-Network-Register.html#QmiMessageNasInitiateNetworkRegisterInput">QmiMessageNasInitiateNetworkRegisterInput</a>
         <a class="link" href="libqmi-glib-NAS-Initiate-Network-Register.html#QmiMessageNasInitiateNetworkRegisterOutput">QmiMessageNasInitiateNetworkRegisterOutput</a>
         <a class="link" href="libqmi-glib-NAS-Network-Scan.html#QmiMessageNasNetworkScanInput">QmiMessageNasNetworkScanInput</a>
@@ -237,6 +255,23 @@
         <a class="link" href="libqmi-glib-NAS-Set-System-Selection-Preference.html#QmiMessageNasSetSystemSelectionPreferenceOutput">QmiMessageNasSetSystemSelectionPreferenceOutput</a>
         <a class="link" href="libqmi-glib-NAS-Set-Technology-Preference.html#QmiMessageNasSetTechnologyPreferenceInput">QmiMessageNasSetTechnologyPreferenceInput</a>
         <a class="link" href="libqmi-glib-NAS-Set-Technology-Preference.html#QmiMessageNasSetTechnologyPreferenceOutput">QmiMessageNasSetTechnologyPreferenceOutput</a>
+        <a class="link" href="libqmi-glib-OMA-Cancel-Session.html#QmiMessageOmaCancelSessionOutput">QmiMessageOmaCancelSessionOutput</a>
+        <a class="link" href="libqmi-glib-OMA-Get-Feature-Setting.html#QmiMessageOmaGetFeatureSettingOutput">QmiMessageOmaGetFeatureSettingOutput</a>
+        <a class="link" href="libqmi-glib-OMA-Get-Session-Info.html#QmiMessageOmaGetSessionInfoOutput">QmiMessageOmaGetSessionInfoOutput</a>
+        <a class="link" href="libqmi-glib-OMA-Reset.html#QmiMessageOmaResetOutput">QmiMessageOmaResetOutput</a>
+        <a class="link" href="libqmi-glib-OMA-Send-Selection.html#QmiMessageOmaSendSelectionInput">QmiMessageOmaSendSelectionInput</a>
+        <a class="link" href="libqmi-glib-OMA-Send-Selection.html#QmiMessageOmaSendSelectionOutput">QmiMessageOmaSendSelectionOutput</a>
+        <a class="link" href="libqmi-glib-OMA-Set-Event-Report.html#QmiMessageOmaSetEventReportInput">QmiMessageOmaSetEventReportInput</a>
+        <a class="link" href="libqmi-glib-OMA-Set-Event-Report.html#QmiMessageOmaSetEventReportOutput">QmiMessageOmaSetEventReportOutput</a>
+        <a class="link" href="libqmi-glib-OMA-Set-Feature-Setting.html#QmiMessageOmaSetFeatureSettingInput">QmiMessageOmaSetFeatureSettingInput</a>
+        <a class="link" href="libqmi-glib-OMA-Set-Feature-Setting.html#QmiMessageOmaSetFeatureSettingOutput">QmiMessageOmaSetFeatureSettingOutput</a>
+        <a class="link" href="libqmi-glib-OMA-Start-Session.html#QmiMessageOmaStartSessionInput">QmiMessageOmaStartSessionInput</a>
+        <a class="link" href="libqmi-glib-OMA-Start-Session.html#QmiMessageOmaStartSessionOutput">QmiMessageOmaStartSessionOutput</a>
+        <a class="link" href="libqmi-glib-PBM-Get-All-Capabilities.html#QmiMessagePbmGetAllCapabilitiesOutput">QmiMessagePbmGetAllCapabilitiesOutput</a>
+        <a class="link" href="libqmi-glib-PBM-Get-Capabilities.html#QmiMessagePbmGetCapabilitiesInput">QmiMessagePbmGetCapabilitiesInput</a>
+        <a class="link" href="libqmi-glib-PBM-Get-Capabilities.html#QmiMessagePbmGetCapabilitiesOutput">QmiMessagePbmGetCapabilitiesOutput</a>
+        <a class="link" href="libqmi-glib-PBM-Indication-Register.html#QmiMessagePbmIndicationRegisterInput">QmiMessagePbmIndicationRegisterInput</a>
+        <a class="link" href="libqmi-glib-PBM-Indication-Register.html#QmiMessagePbmIndicationRegisterOutput">QmiMessagePbmIndicationRegisterOutput</a>
         <a class="link" href="libqmi-glib-PDS-Get-Auto-Tracking-State.html#QmiMessagePdsGetAutoTrackingStateOutput">QmiMessagePdsGetAutoTrackingStateOutput</a>
         <a class="link" href="libqmi-glib-PDS-Get-GPS-Service-State.html#QmiMessagePdsGetGpsServiceStateOutput">QmiMessagePdsGetGpsServiceStateOutput</a>
         <a class="link" href="libqmi-glib-PDS-Reset.html#QmiMessagePdsResetOutput">QmiMessagePdsResetOutput</a>
@@ -246,11 +281,20 @@
         <a class="link" href="libqmi-glib-PDS-Set-Event-Report.html#QmiMessagePdsSetEventReportOutput">QmiMessagePdsSetEventReportOutput</a>
         <a class="link" href="libqmi-glib-PDS-Set-GPS-Service-State.html#QmiMessagePdsSetGpsServiceStateInput">QmiMessagePdsSetGpsServiceStateInput</a>
         <a class="link" href="libqmi-glib-PDS-Set-GPS-Service-State.html#QmiMessagePdsSetGpsServiceStateOutput">QmiMessagePdsSetGpsServiceStateOutput</a>
+        <a class="link" href="libqmi-glib-UIM-Get-File-Attributes.html#QmiMessageUimGetFileAttributesInput">QmiMessageUimGetFileAttributesInput</a>
+        <a class="link" href="libqmi-glib-UIM-Get-File-Attributes.html#QmiMessageUimGetFileAttributesOutput">QmiMessageUimGetFileAttributesOutput</a>
+        <a class="link" href="libqmi-glib-UIM-Read-Record.html#QmiMessageUimReadRecordInput">QmiMessageUimReadRecordInput</a>
+        <a class="link" href="libqmi-glib-UIM-Read-Record.html#QmiMessageUimReadRecordOutput">QmiMessageUimReadRecordOutput</a>
+        <a class="link" href="libqmi-glib-UIM-Read-Transparent.html#QmiMessageUimReadTransparentInput">QmiMessageUimReadTransparentInput</a>
+        <a class="link" href="libqmi-glib-UIM-Read-Transparent.html#QmiMessageUimReadTransparentOutput">QmiMessageUimReadTransparentOutput</a>
+        <a class="link" href="libqmi-glib-UIM-Reset.html#QmiMessageUimResetOutput">QmiMessageUimResetOutput</a>
         <a class="link" href="libqmi-glib-WDS-Get-Current-Data-Bearer-Technology.html#QmiMessageWdsGetCurrentDataBearerTechnologyOutput">QmiMessageWdsGetCurrentDataBearerTechnologyOutput</a>
         <a class="link" href="libqmi-glib-WDS-Get-Current-Settings.html#QmiMessageWdsGetCurrentSettingsInput">QmiMessageWdsGetCurrentSettingsInput</a>
         <a class="link" href="libqmi-glib-WDS-Get-Current-Settings.html#QmiMessageWdsGetCurrentSettingsOutput">QmiMessageWdsGetCurrentSettingsOutput</a>
         <a class="link" href="libqmi-glib-WDS-Get-Data-Bearer-Technology.html#QmiMessageWdsGetDataBearerTechnologyOutput">QmiMessageWdsGetDataBearerTechnologyOutput</a>
         <a class="link" href="libqmi-glib-WDS-Get-Packet-Service-Status.html#QmiMessageWdsGetPacketServiceStatusOutput">QmiMessageWdsGetPacketServiceStatusOutput</a>
+        <a class="link" href="libqmi-glib-WDS-Get-Packet-Statistics.html#QmiMessageWdsGetPacketStatisticsInput">QmiMessageWdsGetPacketStatisticsInput</a>
+        <a class="link" href="libqmi-glib-WDS-Get-Packet-Statistics.html#QmiMessageWdsGetPacketStatisticsOutput">QmiMessageWdsGetPacketStatisticsOutput</a>
         <a class="link" href="libqmi-glib-WDS-Reset.html#QmiMessageWdsResetOutput">QmiMessageWdsResetOutput</a>
         <a class="link" href="libqmi-glib-WDS-Set-IP-Family.html#QmiMessageWdsSetIpFamilyInput">QmiMessageWdsSetIpFamilyInput</a>
         <a class="link" href="libqmi-glib-WDS-Set-IP-Family.html#QmiMessageWdsSetIpFamilyOutput">QmiMessageWdsSetIpFamilyOutput</a>

@@ -205,9 +205,35 @@ Common errors that may be reported by libqmi-glib.
   QMI_PROTOCOL_ERROR_SEGMENT_TOO_LONG                 = 75, /*&lt; nick=SegmentTooLong &gt;*/
   QMI_PROTOCOL_ERROR_SEGMENT_ORDER                    = 76, /*&lt; nick=SegmentOrder &gt;*/
   QMI_PROTOCOL_ERROR_BUNDLING_NOT_SUPPORTED           = 77, /*&lt; nick=BundlingNotSupported &gt;*/
+  /* 0x004E, 78: unused */
+  QMI_PROTOCOL_ERROR_POLICY_MISMATCH                  = 79, /*&lt; nick=PolicyMismatch &gt;*/
   QMI_PROTOCOL_ERROR_SIM_FILE_NOT_FOUND               = 80, /*&lt; nick=SimFileNotFound &gt;*/
+  QMI_PROTOCOL_ERROR_EXTENDED_INTERNAL                = 81, /*&lt; nick=ExtendedInternal &gt;*/
   QMI_PROTOCOL_ERROR_ACCESS_DENIED                    = 82, /*&lt; nick=AccessDenied &gt;*/
   QMI_PROTOCOL_ERROR_HARDWARE_RESTRICTED              = 83, /*&lt; nick=HardwareRestricted &gt;*/
+  QMI_PROTOCOL_ERROR_ACK_NOT_SENT                     = 84, /*&lt; nick=AckNotSent &gt;*/
+  QMI_PROTOCOL_ERROR_INJECT_TIMEOUT                   = 85, /*&lt; nick=InjectTimeout &gt;*/
+  QMI_PROTOCOL_ERROR_INCOMPATIBLE_STATE               = 90, /*&lt; nick=IncompatibleState &gt;*/
+  QMI_PROTOCOL_ERROR_FDN_RESTRICT                     = 91, /*&lt; nick=FdnRestrict &gt;*/
+  QMI_PROTOCOL_ERROR_SUPS_FAILURE_CASE                = 92, /*&lt; nick=SupsFailureCase &gt;*/
+  QMI_PROTOCOL_ERROR_NO_RADIO                         = 93, /*&lt; nick=NoRadio &gt;*/
+  QMI_PROTOCOL_ERROR_NOT_SUPPORTED                    = 94, /*&lt; nick=NotSupported &gt;*/
+  QMI_PROTOCOL_ERROR_NO_SUBSCRIPTION                  = 95, /*&lt; nick=NoSubscription &gt;*/
+  QMI_PROTOCOL_ERROR_CARD_CALL_CONTROL_FAILED         = 96, /*&lt; nick=CardCallControlFailed &gt;*/
+  QMI_PROTOCOL_ERROR_NETWORK_ABORTED                  = 97, /*&lt; nick=NetworkAborted &gt;*/
+  QMI_PROTOCOL_ERROR_MSG_BLOCKED                      = 98, /*&lt; nick=MsgBlocked &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_SESSION_TYPE             = 100, /*&lt; nick=InvalidSessionType &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_PB_TYPE                  = 101, /*&lt; nick=InvalidPbType &gt;*/
+  QMI_PROTOCOL_ERROR_NO_SIM                           = 102, /*&lt; nick=NoSim &gt;*/
+  QMI_PROTOCOL_ERROR_PB_NOT_READY                     = 103, /*&lt; nick=PbNotReady &gt;*/
+  QMI_PROTOCOL_ERROR_PIN_RESTRICTION                  = 104, /*&lt; nick=PinRestriction &gt;*/
+  QMI_PROTOCOL_ERROR_PIN2_RESTRICTION                 = 105, /*&lt; nick=Pin1Restriction &gt;*/
+  QMI_PROTOCOL_ERROR_PUK_RESTRICTION                  = 106, /*&lt; nick=PukRestriction &gt;*/
+  QMI_PROTOCOL_ERROR_PUK2_RESTRICTION                 = 107, /*&lt; nick=Puk2Restriction &gt;*/
+  QMI_PROTOCOL_ERROR_PB_ACCESS_RESTRICTED             = 108, /*&lt; nick=PbAccessRestricted &gt;*/
+  QMI_PROTOCOL_ERROR_PB_TEXT_TOO_LONG                 = 109, /*&lt; nick=PbTextTooLong &gt;*/
+  QMI_PROTOCOL_ERROR_PB_NUMBER_TOO_LONG               = 110, /*&lt; nick=PbNumberTooLong &gt;*/
+  QMI_PROTOCOL_ERROR_PB_HIDDEN_KEY_RESTRICTION        = 111, /*&lt; nick=PbHiddenKeyRestriction &gt;*/
   QMI_PROTOCOL_ERROR_CAT_EVENT_REGISTRATION_FAILED    = 61441, /*&lt; nick=Cat.EventRegistrationFailed &gt;*/
   QMI_PROTOCOL_ERROR_CAT_INVALID_TERMINAL_RESPONSE    = 61442, /*&lt; nick=Cat.InvalidTerminalResponse &gt;*/
   QMI_PROTOCOL_ERROR_CAT_INVALID_ENVELOPE_COMMAND     = 61443, /*&lt; nick=Cat.InvalidEnvelopeCommand &gt;*/
@@ -570,8 +596,18 @@ QMI protocol errors.
 </td>
 </tr>
 <tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-POLICY-MISMATCH:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_POLICY_MISMATCH</code></span></p></td>
+<td>Policy mismatch.
+</td>
+</tr>
+<tr>
 <td><p><a name="QMI-PROTOCOL-ERROR-SIM-FILE-NOT-FOUND:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_SIM_FILE_NOT_FOUND</code></span></p></td>
 <td>SIM file not found.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-EXTENDED-INTERNAL:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_EXTENDED_INTERNAL</code></span></p></td>
+<td>Extended internal error.
 </td>
 </tr>
 <tr>
@@ -582,6 +618,121 @@ QMI protocol errors.
 <tr>
 <td><p><a name="QMI-PROTOCOL-ERROR-HARDWARE-RESTRICTED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_HARDWARE_RESTRICTED</code></span></p></td>
 <td>Hardware restricted.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-ACK-NOT-SENT:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_ACK_NOT_SENT</code></span></p></td>
+<td>ACK not sent.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INJECT-TIMEOUT:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INJECT_TIMEOUT</code></span></p></td>
+<td>Inject timeout.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INCOMPATIBLE-STATE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INCOMPATIBLE_STATE</code></span></p></td>
+<td>Incompatible state.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-FDN-RESTRICT:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_FDN_RESTRICT</code></span></p></td>
+<td>FDN restrict.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-SUPS-FAILURE-CASE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_SUPS_FAILURE_CASE</code></span></p></td>
+<td>SUPS failure case.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NO-RADIO:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NO_RADIO</code></span></p></td>
+<td>No radio.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NOT_SUPPORTED</code></span></p></td>
+<td>Not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NO-SUBSCRIPTION:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NO_SUBSCRIPTION</code></span></p></td>
+<td>No subscription.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-CARD-CALL-CONTROL-FAILED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_CARD_CALL_CONTROL_FAILED</code></span></p></td>
+<td>Card call control failed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NETWORK-ABORTED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NETWORK_ABORTED</code></span></p></td>
+<td>Network aborted.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-MSG-BLOCKED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_MSG_BLOCKED</code></span></p></td>
+<td>Message blocked.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-SESSION-TYPE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_SESSION_TYPE</code></span></p></td>
+<td>Invalid session type.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-PB-TYPE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_PB_TYPE</code></span></p></td>
+<td>Invalid PB type.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NO-SIM:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NO_SIM</code></span></p></td>
+<td>No SIM.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-PB-NOT-READY:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_PB_NOT_READY</code></span></p></td>
+<td>PB not ready.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-PIN-RESTRICTION:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_PIN_RESTRICTION</code></span></p></td>
+<td>PIN restriction.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-PIN2-RESTRICTION:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_PIN2_RESTRICTION</code></span></p></td>
+<td>PIN2 restriction.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-PUK-RESTRICTION:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_PUK_RESTRICTION</code></span></p></td>
+<td>PUK restriction.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-PUK2-RESTRICTION:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_PUK2_RESTRICTION</code></span></p></td>
+<td>PUK2 restriction.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-PB-ACCESS-RESTRICTED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_PB_ACCESS_RESTRICTED</code></span></p></td>
+<td>PB access restricted.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-PB-TEXT-TOO-LONG:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_PB_TEXT_TOO_LONG</code></span></p></td>
+<td>PB text too long.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-PB-NUMBER-TOO-LONG:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_PB_NUMBER_TOO_LONG</code></span></p></td>
+<td>PB number too long.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-PB-HIDDEN-KEY-RESTRICTION:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_PB_HIDDEN_KEY_RESTRICTION</code></span></p></td>
+<td>PB hidden key restriction.
 </td>
 </tr>
 <tr>

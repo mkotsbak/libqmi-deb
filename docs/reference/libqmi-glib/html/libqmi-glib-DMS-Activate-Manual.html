@@ -48,6 +48,18 @@
                                                         (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a> *self</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-unref" title="qmi_message_dms_activate_manual_input_unref ()">qmi_message_dms_activate_manual_input_unref</a>
                                                         (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a> *self</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-get-prl" title="qmi_message_dms_activate_manual_input_get_prl ()">qmi_message_dms_activate_manual_input_get_prl</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> *prl_prl_total_length</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *prl_prl_segment_sequence</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Arrays.html#GArray"><span class="type">GArray</span></a> **prl_prl_segment</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-set-prl" title="qmi_message_dms_activate_manual_input_set_prl ()">qmi_message_dms_activate_manual_input_set_prl</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> prl_prl_total_length</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> prl_prl_segment_sequence</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Arrays.html#GArray"><span class="type">GArray</span></a> *prl_prl_segment</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-get-mn-aaa-key" title="qmi_message_dms_activate_manual_input_get_mn_aaa_key ()">qmi_message_dms_activate_manual_input_get_mn_aaa_key</a>
                                                         (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a> *self</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **mn_aaa_key</code></em>,
@@ -67,14 +79,14 @@
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-get-info" title="qmi_message_dms_activate_manual_input_get_info ()">qmi_message_dms_activate_manual_input_get_info</a>
                                                         (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a> *self</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **info_service_programming_code</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **info_system_identification_number</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> *info_system_identification_number</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **info_mobile_directory_number</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **info_mobile_identification_number</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-set-info" title="qmi_message_dms_activate_manual_input_set_info ()">qmi_message_dms_activate_manual_input_set_info</a>
                                                         (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a> *self</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *info_service_programming_code</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *info_system_identification_number</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> info_system_identification_number</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *info_mobile_directory_number</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *info_mobile_identification_number</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
@@ -196,6 +208,98 @@ If the reference count drops to 0, <em class="parameter"><code>self</code></em> 
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
 <td>a <a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a>.</td>
 </tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-message-dms-activate-manual-input-get-prl"></a><h3>qmi_message_dms_activate_manual_input_get_prl ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_message_dms_activate_manual_input_get_prl
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> *prl_prl_total_length</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *prl_prl_segment_sequence</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Arrays.html#GArray"><span class="type">GArray</span></a> **prl_prl_segment</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'PRL' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>prl_prl_total_length</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>prl_prl_segment_sequence</code></em> :</span></p></td>
+<td>a placeholder for the output sequence number, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>prl_prl_segment</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Arrays.html#GArray"><span class="type">GArray</span></a> of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> elements, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required. Do not free it, it is owned by <em class="parameter"><code>self</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-message-dms-activate-manual-input-set-prl"></a><h3>qmi_message_dms_activate_manual_input_set_prl ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_message_dms_activate_manual_input_set_prl
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> prl_prl_total_length</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> prl_prl_segment_sequence</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Arrays.html#GArray"><span class="type">GArray</span></a> *prl_prl_segment</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Set the 'PRL' field in the message.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>prl_prl_total_length</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>prl_prl_segment_sequence</code></em> :</span></p></td>
+<td>the sequence number.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>prl_prl_segment</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Arrays.html#GArray"><span class="type">GArray</span></a> of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> elements. A new reference to <em class="parameter"><code>prl_prl_segment</code></em> will be taken.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>value</code></em> was successfully set, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
 </table></div>
 </div>
 <hr>
@@ -348,7 +452,7 @@ Set the 'MN HA key' field in the message.
 <pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_message_dms_activate_manual_input_get_info
                                                         (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a> *self</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **info_service_programming_code</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **info_system_identification_number</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> *info_system_identification_number</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **info_mobile_directory_number</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **info_mobile_identification_number</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
@@ -371,7 +475,7 @@ Get the 'Info' field from <em class="parameter"><code>self</code></em>.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>info_system_identification_number</code></em> :</span></p></td>
-<td>a placeholder for the output constant string, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>info_mobile_directory_number</code></em> :</span></p></td>
@@ -399,7 +503,7 @@ Get the 'Info' field from <em class="parameter"><code>self</code></em>.
 <pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_message_dms_activate_manual_input_set_info
                                                         (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Activate-Manual.html#QmiMessageDmsActivateManualInput"><span class="type">QmiMessageDmsActivateManualInput</span></a> *self</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *info_service_programming_code</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *info_system_identification_number</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> info_system_identification_number</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *info_mobile_directory_number</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *info_mobile_identification_number</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
@@ -422,7 +526,7 @@ Set the 'Info' field in the message.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>info_system_identification_number</code></em> :</span></p></td>
-<td>a constant string of exactly 2 characters.</td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>info_mobile_directory_number</code></em> :</span></p></td>

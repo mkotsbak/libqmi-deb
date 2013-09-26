@@ -3,6 +3,7 @@
 <book xmlns="http://www.devhelp.net/book" title="libqmi-glib Reference Manual" link="index.html" author="" name="libqmi-glib" version="2" language="c">
   <chapters>
     <sub name="Core" link="ch01.html">
+      <sub name="Version checks" link="libqmi-glib-Version-checks.html"/>
       <sub name="QmiMessage" link="libqmi-glib-QmiMessage.html"/>
       <sub name="QmiDevice" link="QmiDevice.html"/>
       <sub name="QmiClient" link="QmiClient.html"/>
@@ -13,7 +14,7 @@
     <sub name="Device Management Service (DMS)" link="ch02.html">
       <sub name="QmiClientDms" link="QmiClientDms.html"/>
       <sub name="DMS enumerations and flags" link="libqmi-glib-DMS-enumerations-and-flags.html"/>
-      <sub name="DMS Indications" link="ch02.html#idm258755077168">
+      <sub name="DMS Indications" link="ch02.html#idm225620104336">
         <sub name="DMS Event Report" link="libqmi-glib-DMS-Event-Report.html"/>
       </sub>
       <sub name="DMS Requests" link="ch02s02.html">
@@ -70,7 +71,7 @@
     <sub name="Network Access Service (NAS)" link="ch03.html">
       <sub name="QmiClientNas" link="QmiClientNas.html"/>
       <sub name="NAS enumerations and flags" link="libqmi-glib-NAS-enumerations-and-flags.html"/>
-      <sub name="NAS Indications" link="ch03.html#idm258757748752">
+      <sub name="NAS Indications" link="ch03.html#idm225620190784">
         <sub name="NAS Event Report" link="libqmi-glib-NAS-Event-Report.html"/>
         <sub name="NAS Network Time" link="libqmi-glib-NAS-Network-Time.html"/>
         <sub name="NAS Serving System" link="libqmi-glib-NAS-Serving-System.html"/>
@@ -95,16 +96,18 @@
         <sub name="NAS Get Signal Info" link="libqmi-glib-NAS-Get-Signal-Info.html"/>
         <sub name="NAS Config Signal Info" link="libqmi-glib-NAS-Config-Signal-Info.html"/>
         <sub name="NAS Get CDMA Position Info" link="libqmi-glib-NAS-Get-CDMA-Position-Info.html"/>
+        <sub name="NAS Get Tx Rx Info" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html"/>
       </sub>
     </sub>
     <sub name="Wireless Data Service (WDS)" link="ch04.html">
       <sub name="QmiClientWds" link="QmiClientWds.html"/>
       <sub name="WDS enumerations and flags" link="libqmi-glib-WDS-enumerations-and-flags.html"/>
-      <sub name="WDS Requests" link="ch04.html#idm258757726704">
+      <sub name="WDS Requests" link="ch04.html#idm225620168064">
         <sub name="WDS Reset" link="libqmi-glib-WDS-Reset.html"/>
         <sub name="WDS Start Network" link="libqmi-glib-WDS-Start-Network.html"/>
         <sub name="WDS Stop Network" link="libqmi-glib-WDS-Stop-Network.html"/>
         <sub name="WDS Get Packet Service Status" link="libqmi-glib-WDS-Get-Packet-Service-Status.html"/>
+        <sub name="WDS Get Packet Statistics" link="libqmi-glib-WDS-Get-Packet-Statistics.html"/>
         <sub name="WDS Get Current Settings" link="libqmi-glib-WDS-Get-Current-Settings.html"/>
         <sub name="WDS Get Data Bearer Technology" link="libqmi-glib-WDS-Get-Data-Bearer-Technology.html"/>
         <sub name="WDS Get Current Data Bearer Technology" link="libqmi-glib-WDS-Get-Current-Data-Bearer-Technology.html"/>
@@ -114,7 +117,7 @@
     <sub name="Wireless Messaging Service (WMS)" link="ch05.html">
       <sub name="QmiClientWms" link="QmiClientWms.html"/>
       <sub name="WMS enumerations and flags" link="libqmi-glib-WMS-enumerations-and-flags.html"/>
-      <sub name="WMS Indications" link="ch05.html#idm258757719872">
+      <sub name="WMS Indications" link="ch05.html#idm225620160736">
         <sub name="WMS Event Report" link="libqmi-glib-WMS-Event-Report.html"/>
       </sub>
       <sub name="WMS Requests" link="ch05s02.html">
@@ -135,7 +138,7 @@
     <sub name="Position Determination Service (PDS)" link="ch06.html">
       <sub name="QmiClientPds" link="QmiClientPds.html"/>
       <sub name="PDS enumerations and flags" link="libqmi-glib-PDS-enumerations-and-flags.html"/>
-      <sub name="PDS Indications" link="ch06.html#idm258757709472">
+      <sub name="PDS Indications" link="ch06.html#idm225614828976">
         <sub name="PDS Event Report" link="libqmi-glib-PDS-Event-Report.html"/>
       </sub>
       <sub name="PDS Requests" link="ch06s02.html">
@@ -147,12 +150,52 @@
         <sub name="PDS Set Auto Tracking State" link="libqmi-glib-PDS-Set-Auto-Tracking-State.html"/>
       </sub>
     </sub>
+    <sub name="Phonebook Management Service (PBM)" link="ch07.html">
+      <sub name="QmiClientPbm" link="QmiClientPbm.html"/>
+      <sub name="PBM enumerations and flags" link="libqmi-glib-PBM-enumerations-and-flags.html"/>
+      <sub name="PBM Requests" link="ch07.html#idm225614822208">
+        <sub name="PBM Indication Register" link="libqmi-glib-PBM-Indication-Register.html"/>
+        <sub name="PBM Get Capabilities" link="libqmi-glib-PBM-Get-Capabilities.html"/>
+        <sub name="PBM Get All Capabilities" link="libqmi-glib-PBM-Get-All-Capabilities.html"/>
+      </sub>
+    </sub>
+    <sub name="User Identity Module (UIM) service" link="ch08.html">
+      <sub name="QmiClientUim" link="QmiClientUim.html"/>
+      <sub name="UIM enumerations and flags" link="libqmi-glib-UIM-enumerations-and-flags.html"/>
+      <sub name="UIM Requests" link="ch08.html#idm225614818192">
+        <sub name="UIM Reset" link="libqmi-glib-UIM-Reset.html"/>
+        <sub name="UIM Read Transparent" link="libqmi-glib-UIM-Read-Transparent.html"/>
+        <sub name="UIM Read Record" link="libqmi-glib-UIM-Read-Record.html"/>
+        <sub name="UIM Get File Attributes" link="libqmi-glib-UIM-Get-File-Attributes.html"/>
+      </sub>
+    </sub>
+    <sub name="Open Mobile Alliance Service (OMA)" link="ch09.html">
+      <sub name="QmiClientOma" link="QmiClientOma.html"/>
+      <sub name="OMA enumerations and flags" link="libqmi-glib-OMA-enumerations-and-flags.html"/>
+      <sub name="OMA Indications" link="ch09.html#idm225614813680">
+        <sub name="OMA Event Report" link="libqmi-glib-OMA-Event-Report.html"/>
+      </sub>
+      <sub name="OMA Requests" link="ch09s02.html">
+        <sub name="OMA Reset" link="libqmi-glib-OMA-Reset.html"/>
+        <sub name="OMA Set Event Report" link="libqmi-glib-OMA-Set-Event-Report.html"/>
+        <sub name="OMA Start Session" link="libqmi-glib-OMA-Start-Session.html"/>
+        <sub name="OMA Cancel Session" link="libqmi-glib-OMA-Cancel-Session.html"/>
+        <sub name="OMA Get Session Info" link="libqmi-glib-OMA-Get-Session-Info.html"/>
+        <sub name="OMA Send Selection" link="libqmi-glib-OMA-Send-Selection.html"/>
+        <sub name="OMA Get Feature Setting" link="libqmi-glib-OMA-Get-Feature-Setting.html"/>
+        <sub name="OMA Set Feature Setting" link="libqmi-glib-OMA-Set-Feature-Setting.html"/>
+      </sub>
+    </sub>
     <sub name="Object Hierarchy" link="object-tree.html"/>
     <sub name="API Index" link="api-index-full.html"/>
     <sub name="Index of deprecated API" link="deprecated-api-index.html"/>
     <sub name="Annotation Glossary" link="annotation-glossary.html"/>
   </chapters>
   <functions>
+    <keyword type="macro" name="QMI_MAJOR_VERSION" link="libqmi-glib-Version-checks.html#QMI-MAJOR-VERSION:CAPS"/>
+    <keyword type="macro" name="QMI_MINOR_VERSION" link="libqmi-glib-Version-checks.html#QMI-MINOR-VERSION:CAPS"/>
+    <keyword type="macro" name="QMI_MICRO_VERSION" link="libqmi-glib-Version-checks.html#QMI-MICRO-VERSION:CAPS"/>
+    <keyword type="macro" name="QMI_CHECK_VERSION()" link="libqmi-glib-Version-checks.html#QMI-CHECK-VERSION:CAPS"/>
     <keyword type="macro" name="QMI_MESSAGE_QMUX_MARKER" link="libqmi-glib-QmiMessage.html#QMI-MESSAGE-QMUX-MARKER:CAPS"/>
     <keyword type="typedef" name="QmiMessage" link="libqmi-glib-QmiMessage.html#QmiMessage"/>
     <keyword type="function" name="qmi_message_new ()" link="libqmi-glib-QmiMessage.html#qmi-message-new"/>
@@ -196,6 +239,9 @@
     <keyword type="function" name="qmi_device_set_instance_id_finish ()" link="QmiDevice.html#qmi-device-set-instance-id-finish"/>
     <keyword type="function" name="qmi_device_command ()" link="QmiDevice.html#qmi-device-command"/>
     <keyword type="function" name="qmi_device_command_finish ()" link="QmiDevice.html#qmi-device-command-finish"/>
+    <keyword type="struct" name="QmiDeviceServiceVersionInfo" link="QmiDevice.html#QmiDeviceServiceVersionInfo"/>
+    <keyword type="function" name="qmi_device_get_service_version_info ()" link="QmiDevice.html#qmi-device-get-service-version-info"/>
+    <keyword type="function" name="qmi_device_get_service_version_info_finish ()" link="QmiDevice.html#qmi-device-get-service-version-info-finish"/>
     <keyword type="property" name="The &quot;device-file&quot; property" link="QmiDevice.html#QmiDevice--device-file"/>
     <keyword type="macro" name="QMI_CID_NONE" link="QmiClient.html#QMI-CID-NONE:CAPS"/>
     <keyword type="macro" name="QMI_CID_BROADCAST" link="QmiClient.html#QMI-CID-BROADCAST:CAPS"/>
@@ -508,6 +554,8 @@
     <keyword type="function" name="qmi_message_dms_activate_manual_input_new ()" link="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-new"/>
     <keyword type="function" name="qmi_message_dms_activate_manual_input_ref ()" link="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-ref"/>
     <keyword type="function" name="qmi_message_dms_activate_manual_input_unref ()" link="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-unref"/>
+    <keyword type="function" name="qmi_message_dms_activate_manual_input_get_prl ()" link="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-get-prl"/>
+    <keyword type="function" name="qmi_message_dms_activate_manual_input_set_prl ()" link="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-set-prl"/>
     <keyword type="function" name="qmi_message_dms_activate_manual_input_get_mn_aaa_key ()" link="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-get-mn-aaa-key"/>
     <keyword type="function" name="qmi_message_dms_activate_manual_input_set_mn_aaa_key ()" link="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-set-mn-aaa-key"/>
     <keyword type="function" name="qmi_message_dms_activate_manual_input_get_mn_ha_key ()" link="libqmi-glib-DMS-Activate-Manual.html#qmi-message-dms-activate-manual-input-get-mn-ha-key"/>
@@ -1305,6 +1353,21 @@
     <keyword type="function" name="qmi_message_nas_get_cdma_position_info_output_get_cdma_position_info ()" link="libqmi-glib-NAS-Get-CDMA-Position-Info.html#qmi-message-nas-get-cdma-position-info-output-get-cdma-position-info"/>
     <keyword type="function" name="qmi_client_nas_get_cdma_position_info ()" link="libqmi-glib-NAS-Get-CDMA-Position-Info.html#qmi-client-nas-get-cdma-position-info"/>
     <keyword type="function" name="qmi_client_nas_get_cdma_position_info_finish ()" link="libqmi-glib-NAS-Get-CDMA-Position-Info.html#qmi-client-nas-get-cdma-position-info-finish"/>
+    <keyword type="struct" name="QmiMessageNasGetTxRxInfoInput" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#QmiMessageNasGetTxRxInfoInput-struct"/>
+    <keyword type="struct" name="QmiMessageNasGetTxRxInfoOutput" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#QmiMessageNasGetTxRxInfoOutput-struct"/>
+    <keyword type="function" name="qmi_message_nas_get_tx_rx_info_input_new ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-message-nas-get-tx-rx-info-input-new"/>
+    <keyword type="function" name="qmi_message_nas_get_tx_rx_info_input_ref ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-message-nas-get-tx-rx-info-input-ref"/>
+    <keyword type="function" name="qmi_message_nas_get_tx_rx_info_input_unref ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-message-nas-get-tx-rx-info-input-unref"/>
+    <keyword type="function" name="qmi_message_nas_get_tx_rx_info_input_get_radio_interface ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-message-nas-get-tx-rx-info-input-get-radio-interface"/>
+    <keyword type="function" name="qmi_message_nas_get_tx_rx_info_input_set_radio_interface ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-message-nas-get-tx-rx-info-input-set-radio-interface"/>
+    <keyword type="function" name="qmi_message_nas_get_tx_rx_info_output_ref ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-message-nas-get-tx-rx-info-output-ref"/>
+    <keyword type="function" name="qmi_message_nas_get_tx_rx_info_output_unref ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-message-nas-get-tx-rx-info-output-unref"/>
+    <keyword type="function" name="qmi_message_nas_get_tx_rx_info_output_get_result ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-message-nas-get-tx-rx-info-output-get-result"/>
+    <keyword type="function" name="qmi_message_nas_get_tx_rx_info_output_get_rx_chain_0_info ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-message-nas-get-tx-rx-info-output-get-rx-chain-0-info"/>
+    <keyword type="function" name="qmi_message_nas_get_tx_rx_info_output_get_rx_chain_1_info ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-message-nas-get-tx-rx-info-output-get-rx-chain-1-info"/>
+    <keyword type="function" name="qmi_message_nas_get_tx_rx_info_output_get_tx_info ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-message-nas-get-tx-rx-info-output-get-tx-info"/>
+    <keyword type="function" name="qmi_client_nas_get_tx_rx_info ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-client-nas-get-tx-rx-info"/>
+    <keyword type="function" name="qmi_client_nas_get_tx_rx_info_finish ()" link="libqmi-glib-NAS-Get-Tx-Rx-Info.html#qmi-client-nas-get-tx-rx-info-finish"/>
     <keyword type="struct" name="struct QmiClientWds" link="QmiClientWds.html#QmiClientWds-struct"/>
     <keyword type="enum" name="enum QmiWdsIpFamily" link="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsIpFamily-enum"/>
     <keyword type="enum" name="enum QmiWdsTechnologyPreference" link="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTechnologyPreference-enum"/>
@@ -1331,6 +1394,7 @@
     <keyword type="enum" name="enum QmiWdsTrafficClass" link="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTrafficClass-enum"/>
     <keyword type="enum" name="enum QmiWdsAuthentication" link="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsAuthentication-enum"/>
     <keyword type="enum" name="enum QmiWdsProfileType" link="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsProfileType-enum"/>
+    <keyword type="enum" name="enum QmiWdsPacketStatisticsMaskFlag" link="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsPacketStatisticsMaskFlag-enum"/>
     <keyword type="function" name="qmi_wds_ip_family_get_string ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-ip-family-get-string"/>
     <keyword type="function" name="qmi_wds_technology_preference_build_string_from_mask ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-technology-preference-build-string-from-mask"/>
     <keyword type="function" name="qmi_wds_extended_technology_preference_get_string ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-extended-technology-preference-get-string"/>
@@ -1357,6 +1421,7 @@
     <keyword type="function" name="qmi_wds_traffic_class_get_string ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-traffic-class-get-string"/>
     <keyword type="function" name="qmi_wds_authentication_build_string_from_mask ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-authentication-build-string-from-mask"/>
     <keyword type="function" name="qmi_wds_profile_type_get_string ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-profile-type-get-string"/>
+    <keyword type="function" name="qmi_wds_packet_statistics_mask_flag_build_string_from_mask ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-packet-statistics-mask-flag-build-string-from-mask"/>
     <keyword type="struct" name="QmiMessageWdsResetOutput" link="libqmi-glib-WDS-Reset.html#QmiMessageWdsResetOutput-struct"/>
     <keyword type="function" name="qmi_message_wds_reset_output_ref ()" link="libqmi-glib-WDS-Reset.html#qmi-message-wds-reset-output-ref"/>
     <keyword type="function" name="qmi_message_wds_reset_output_unref ()" link="libqmi-glib-WDS-Reset.html#qmi-message-wds-reset-output-unref"/>
@@ -1429,6 +1494,30 @@
     <keyword type="function" name="qmi_message_wds_get_packet_service_status_output_get_connection_status ()" link="libqmi-glib-WDS-Get-Packet-Service-Status.html#qmi-message-wds-get-packet-service-status-output-get-connection-status"/>
     <keyword type="function" name="qmi_client_wds_get_packet_service_status ()" link="libqmi-glib-WDS-Get-Packet-Service-Status.html#qmi-client-wds-get-packet-service-status"/>
     <keyword type="function" name="qmi_client_wds_get_packet_service_status_finish ()" link="libqmi-glib-WDS-Get-Packet-Service-Status.html#qmi-client-wds-get-packet-service-status-finish"/>
+    <keyword type="struct" name="QmiMessageWdsGetPacketStatisticsInput" link="libqmi-glib-WDS-Get-Packet-Statistics.html#QmiMessageWdsGetPacketStatisticsInput-struct"/>
+    <keyword type="struct" name="QmiMessageWdsGetPacketStatisticsOutput" link="libqmi-glib-WDS-Get-Packet-Statistics.html#QmiMessageWdsGetPacketStatisticsOutput-struct"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_input_new ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-input-new"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_input_ref ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-input-ref"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_input_unref ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-input-unref"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_input_get_mask ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-input-get-mask"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_input_set_mask ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-input-set-mask"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_ref ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-ref"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_unref ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-unref"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_result ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-result"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_tx_packets_ok ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-tx-packets-ok"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_rx_packets_ok ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-rx-packets-ok"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_tx_packets_error ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-tx-packets-error"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_rx_packets_error ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-rx-packets-error"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_tx_overflows ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-tx-overflows"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_rx_overflows ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-rx-overflows"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_tx_bytes_ok ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-tx-bytes-ok"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_rx_bytes_ok ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-rx-bytes-ok"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_last_call_tx_bytes_ok ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-last-call-tx-bytes-ok"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_last_call_rx_bytes_ok ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-last-call-rx-bytes-ok"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_tx_packets_dropped ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-tx-packets-dropped"/>
+    <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_rx_packets_dropped ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-rx-packets-dropped"/>
+    <keyword type="function" name="qmi_client_wds_get_packet_statistics ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-client-wds-get-packet-statistics"/>
+    <keyword type="function" name="qmi_client_wds_get_packet_statistics_finish ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-client-wds-get-packet-statistics-finish"/>
     <keyword type="struct" name="QmiMessageWdsGetCurrentSettingsInput" link="libqmi-glib-WDS-Get-Current-Settings.html#QmiMessageWdsGetCurrentSettingsInput-struct"/>
     <keyword type="struct" name="QmiMessageWdsGetCurrentSettingsOutput" link="libqmi-glib-WDS-Get-Current-Settings.html#QmiMessageWdsGetCurrentSettingsOutput-struct"/>
     <keyword type="function" name="qmi_message_wds_get_current_settings_input_new ()" link="libqmi-glib-WDS-Get-Current-Settings.html#qmi-message-wds-get-current-settings-input-new"/>
@@ -1822,6 +1911,253 @@
     <keyword type="function" name="qmi_message_pds_set_auto_tracking_state_output_get_result ()" link="libqmi-glib-PDS-Set-Auto-Tracking-State.html#qmi-message-pds-set-auto-tracking-state-output-get-result"/>
     <keyword type="function" name="qmi_client_pds_set_auto_tracking_state ()" link="libqmi-glib-PDS-Set-Auto-Tracking-State.html#qmi-client-pds-set-auto-tracking-state"/>
     <keyword type="function" name="qmi_client_pds_set_auto_tracking_state_finish ()" link="libqmi-glib-PDS-Set-Auto-Tracking-State.html#qmi-client-pds-set-auto-tracking-state-finish"/>
+    <keyword type="struct" name="struct QmiClientPbm" link="QmiClientPbm.html#QmiClientPbm-struct"/>
+    <keyword type="enum" name="enum QmiPbmEventRegistrationFlag" link="libqmi-glib-PBM-enumerations-and-flags.html#QmiPbmEventRegistrationFlag-enum"/>
+    <keyword type="enum" name="enum QmiPbmPhonebookType" link="libqmi-glib-PBM-enumerations-and-flags.html#QmiPbmPhonebookType-enum"/>
+    <keyword type="enum" name="enum QmiPbmSessionType" link="libqmi-glib-PBM-enumerations-and-flags.html#QmiPbmSessionType-enum"/>
+    <keyword type="function" name="qmi_pbm_event_registration_flag_build_string_from_mask ()" link="libqmi-glib-PBM-enumerations-and-flags.html#qmi-pbm-event-registration-flag-build-string-from-mask"/>
+    <keyword type="function" name="qmi_pbm_phonebook_type_build_string_from_mask ()" link="libqmi-glib-PBM-enumerations-and-flags.html#qmi-pbm-phonebook-type-build-string-from-mask"/>
+    <keyword type="function" name="qmi_pbm_session_type_get_string ()" link="libqmi-glib-PBM-enumerations-and-flags.html#qmi-pbm-session-type-get-string"/>
+    <keyword type="struct" name="QmiMessagePbmIndicationRegisterInput" link="libqmi-glib-PBM-Indication-Register.html#QmiMessagePbmIndicationRegisterInput-struct"/>
+    <keyword type="struct" name="QmiMessagePbmIndicationRegisterOutput" link="libqmi-glib-PBM-Indication-Register.html#QmiMessagePbmIndicationRegisterOutput-struct"/>
+    <keyword type="function" name="qmi_message_pbm_indication_register_input_new ()" link="libqmi-glib-PBM-Indication-Register.html#qmi-message-pbm-indication-register-input-new"/>
+    <keyword type="function" name="qmi_message_pbm_indication_register_input_ref ()" link="libqmi-glib-PBM-Indication-Register.html#qmi-message-pbm-indication-register-input-ref"/>
+    <keyword type="function" name="qmi_message_pbm_indication_register_input_unref ()" link="libqmi-glib-PBM-Indication-Register.html#qmi-message-pbm-indication-register-input-unref"/>
+    <keyword type="function" name="qmi_message_pbm_indication_register_input_get_event_registration_mask ()" link="libqmi-glib-PBM-Indication-Register.html#qmi-message-pbm-indication-register-input-get-event-registration-mask"/>
+    <keyword type="function" name="qmi_message_pbm_indication_register_input_set_event_registration_mask ()" link="libqmi-glib-PBM-Indication-Register.html#qmi-message-pbm-indication-register-input-set-event-registration-mask"/>
+    <keyword type="function" name="qmi_message_pbm_indication_register_output_ref ()" link="libqmi-glib-PBM-Indication-Register.html#qmi-message-pbm-indication-register-output-ref"/>
+    <keyword type="function" name="qmi_message_pbm_indication_register_output_unref ()" link="libqmi-glib-PBM-Indication-Register.html#qmi-message-pbm-indication-register-output-unref"/>
+    <keyword type="function" name="qmi_message_pbm_indication_register_output_get_result ()" link="libqmi-glib-PBM-Indication-Register.html#qmi-message-pbm-indication-register-output-get-result"/>
+    <keyword type="function" name="qmi_message_pbm_indication_register_output_get_event_registration_mask ()" link="libqmi-glib-PBM-Indication-Register.html#qmi-message-pbm-indication-register-output-get-event-registration-mask"/>
+    <keyword type="function" name="qmi_client_pbm_indication_register ()" link="libqmi-glib-PBM-Indication-Register.html#qmi-client-pbm-indication-register"/>
+    <keyword type="function" name="qmi_client_pbm_indication_register_finish ()" link="libqmi-glib-PBM-Indication-Register.html#qmi-client-pbm-indication-register-finish"/>
+    <keyword type="struct" name="QmiMessagePbmGetCapabilitiesInput" link="libqmi-glib-PBM-Get-Capabilities.html#QmiMessagePbmGetCapabilitiesInput-struct"/>
+    <keyword type="struct" name="QmiMessagePbmGetCapabilitiesOutput" link="libqmi-glib-PBM-Get-Capabilities.html#QmiMessagePbmGetCapabilitiesOutput-struct"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_input_new ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-input-new"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_input_ref ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-input-ref"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_input_unref ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-input-unref"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_input_get_phonebook_information ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-input-get-phonebook-information"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_input_set_phonebook_information ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-input-set-phonebook-information"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_output_ref ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-output-ref"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_output_unref ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-output-unref"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_output_get_result ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-output-get-result"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_output_get_capability_basic_information ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-output-get-capability-basic-information"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_output_get_group_capability ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-output-get-group-capability"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_output_get_additional_number_capability ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-output-get-additional-number-capability"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_output_get_email_capability ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-output-get-email-capability"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_output_get_second_name_capability ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-output-get-second-name-capability"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_output_get_hidden_records_capability ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-output-get-hidden-records-capability"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_output_get_grouping_information_alpha_string_capability ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-output-get-grouping-information-alpha-string-capability"/>
+    <keyword type="function" name="qmi_message_pbm_get_capabilities_output_get_additional_number_alpha_string_capability ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-message-pbm-get-capabilities-output-get-additional-number-alpha-string-capability"/>
+    <keyword type="function" name="qmi_client_pbm_get_capabilities ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-client-pbm-get-capabilities"/>
+    <keyword type="function" name="qmi_client_pbm_get_capabilities_finish ()" link="libqmi-glib-PBM-Get-Capabilities.html#qmi-client-pbm-get-capabilities-finish"/>
+    <keyword type="struct" name="QmiMessagePbmGetAllCapabilitiesOutput" link="libqmi-glib-PBM-Get-All-Capabilities.html#QmiMessagePbmGetAllCapabilitiesOutput-struct"/>
+    <keyword type="struct" name="QmiMessagePbmGetAllCapabilitiesOutputCapabilityBasicInformationElementPhonebooksElement" link="libqmi-glib-PBM-Get-All-Capabilities.html#QmiMessagePbmGetAllCapabilitiesOutputCapabilityBasicInformationElementPhonebooksElement"/>
+    <keyword type="struct" name="QmiMessagePbmGetAllCapabilitiesOutputCapabilityBasicInformationElement" link="libqmi-glib-PBM-Get-All-Capabilities.html#QmiMessagePbmGetAllCapabilitiesOutputCapabilityBasicInformationElement"/>
+    <keyword type="struct" name="QmiMessagePbmGetAllCapabilitiesOutputGroupCapabilityElement" link="libqmi-glib-PBM-Get-All-Capabilities.html#QmiMessagePbmGetAllCapabilitiesOutputGroupCapabilityElement"/>
+    <keyword type="struct" name="QmiMessagePbmGetAllCapabilitiesOutputAdditionalNumberCapabilityElement" link="libqmi-glib-PBM-Get-All-Capabilities.html#QmiMessagePbmGetAllCapabilitiesOutputAdditionalNumberCapabilityElement"/>
+    <keyword type="struct" name="QmiMessagePbmGetAllCapabilitiesOutputEmailCapabilityElement" link="libqmi-glib-PBM-Get-All-Capabilities.html#QmiMessagePbmGetAllCapabilitiesOutputEmailCapabilityElement"/>
+    <keyword type="struct" name="QmiMessagePbmGetAllCapabilitiesOutputSecondNameCapabilityElement" link="libqmi-glib-PBM-Get-All-Capabilities.html#QmiMessagePbmGetAllCapabilitiesOutputSecondNameCapabilityElement"/>
+    <keyword type="struct" name="QmiMessagePbmGetAllCapabilitiesOutputHiddenRecordsCapabilityElement" link="libqmi-glib-PBM-Get-All-Capabilities.html#QmiMessagePbmGetAllCapabilitiesOutputHiddenRecordsCapabilityElement"/>
+    <keyword type="struct" name="QmiMessagePbmGetAllCapabilitiesOutputGroupingInformationAlphaStringCapabilityElement" link="libqmi-glib-PBM-Get-All-Capabilities.html#QmiMessagePbmGetAllCapabilitiesOutputGroupingInformationAlphaStringCapabilityElement"/>
+    <keyword type="struct" name="QmiMessagePbmGetAllCapabilitiesOutputAdditionalNumberAlphaStringCapabilityElement" link="libqmi-glib-PBM-Get-All-Capabilities.html#QmiMessagePbmGetAllCapabilitiesOutputAdditionalNumberAlphaStringCapabilityElement"/>
+    <keyword type="function" name="qmi_message_pbm_get_all_capabilities_output_ref ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-message-pbm-get-all-capabilities-output-ref"/>
+    <keyword type="function" name="qmi_message_pbm_get_all_capabilities_output_unref ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-message-pbm-get-all-capabilities-output-unref"/>
+    <keyword type="function" name="qmi_message_pbm_get_all_capabilities_output_get_result ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-message-pbm-get-all-capabilities-output-get-result"/>
+    <keyword type="function" name="qmi_message_pbm_get_all_capabilities_output_get_capability_basic_information ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-message-pbm-get-all-capabilities-output-get-capability-basic-information"/>
+    <keyword type="function" name="qmi_message_pbm_get_all_capabilities_output_get_group_capability ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-message-pbm-get-all-capabilities-output-get-group-capability"/>
+    <keyword type="function" name="qmi_message_pbm_get_all_capabilities_output_get_additional_number_capability ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-message-pbm-get-all-capabilities-output-get-additional-number-capability"/>
+    <keyword type="function" name="qmi_message_pbm_get_all_capabilities_output_get_email_capability ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-message-pbm-get-all-capabilities-output-get-email-capability"/>
+    <keyword type="function" name="qmi_message_pbm_get_all_capabilities_output_get_second_name_capability ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-message-pbm-get-all-capabilities-output-get-second-name-capability"/>
+    <keyword type="function" name="qmi_message_pbm_get_all_capabilities_output_get_hidden_records_capability ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-message-pbm-get-all-capabilities-output-get-hidden-records-capability"/>
+    <keyword type="function" name="qmi_message_pbm_get_all_capabilities_output_get_grouping_information_alpha_string_capability ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-message-pbm-get-all-capabilities-output-get-grouping-information-alpha-string-capability"/>
+    <keyword type="function" name="qmi_message_pbm_get_all_capabilities_output_get_additional_number_alpha_string_capability ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-message-pbm-get-all-capabilities-output-get-additional-number-alpha-string-capability"/>
+    <keyword type="function" name="qmi_client_pbm_get_all_capabilities ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-client-pbm-get-all-capabilities"/>
+    <keyword type="function" name="qmi_client_pbm_get_all_capabilities_finish ()" link="libqmi-glib-PBM-Get-All-Capabilities.html#qmi-client-pbm-get-all-capabilities-finish"/>
+    <keyword type="struct" name="struct QmiClientUim" link="QmiClientUim.html#QmiClientUim-struct"/>
+    <keyword type="enum" name="enum QmiUimSessionType" link="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSessionType-enum"/>
+    <keyword type="enum" name="enum QmiUimFileType" link="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimFileType-enum"/>
+    <keyword type="enum" name="enum QmiUimSecurityAttributeLogic" link="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSecurityAttributeLogic-enum"/>
+    <keyword type="enum" name="enum QmiUimSecurityAttribute" link="libqmi-glib-UIM-enumerations-and-flags.html#QmiUimSecurityAttribute-enum"/>
+    <keyword type="function" name="qmi_uim_session_type_get_string ()" link="libqmi-glib-UIM-enumerations-and-flags.html#qmi-uim-session-type-get-string"/>
+    <keyword type="function" name="qmi_uim_file_type_get_string ()" link="libqmi-glib-UIM-enumerations-and-flags.html#qmi-uim-file-type-get-string"/>
+    <keyword type="function" name="qmi_uim_security_attribute_logic_get_string ()" link="libqmi-glib-UIM-enumerations-and-flags.html#qmi-uim-security-attribute-logic-get-string"/>
+    <keyword type="function" name="qmi_uim_security_attribute_build_string_from_mask ()" link="libqmi-glib-UIM-enumerations-and-flags.html#qmi-uim-security-attribute-build-string-from-mask"/>
+    <keyword type="struct" name="QmiMessageUimResetOutput" link="libqmi-glib-UIM-Reset.html#QmiMessageUimResetOutput-struct"/>
+    <keyword type="function" name="qmi_message_uim_reset_output_ref ()" link="libqmi-glib-UIM-Reset.html#qmi-message-uim-reset-output-ref"/>
+    <keyword type="function" name="qmi_message_uim_reset_output_unref ()" link="libqmi-glib-UIM-Reset.html#qmi-message-uim-reset-output-unref"/>
+    <keyword type="function" name="qmi_message_uim_reset_output_get_result ()" link="libqmi-glib-UIM-Reset.html#qmi-message-uim-reset-output-get-result"/>
+    <keyword type="function" name="qmi_client_uim_reset ()" link="libqmi-glib-UIM-Reset.html#qmi-client-uim-reset"/>
+    <keyword type="function" name="qmi_client_uim_reset_finish ()" link="libqmi-glib-UIM-Reset.html#qmi-client-uim-reset-finish"/>
+    <keyword type="struct" name="QmiMessageUimReadTransparentInput" link="libqmi-glib-UIM-Read-Transparent.html#QmiMessageUimReadTransparentInput-struct"/>
+    <keyword type="struct" name="QmiMessageUimReadTransparentOutput" link="libqmi-glib-UIM-Read-Transparent.html#QmiMessageUimReadTransparentOutput-struct"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_new ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-new"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_ref ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-ref"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_unref ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-unref"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_get_encrypt_data ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-get-encrypt-data"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_set_encrypt_data ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-set-encrypt-data"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_get_response_in_indication_token ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-get-response-in-indication-token"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_set_response_in_indication_token ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-set-response-in-indication-token"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_get_read_information ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-get-read-information"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_set_read_information ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-set-read-information"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_get_file ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-get-file"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_set_file ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-set-file"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_get_session_information ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-get-session-information"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_input_set_session_information ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-input-set-session-information"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_output_ref ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-output-ref"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_output_unref ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-output-unref"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_output_get_result ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-output-get-result"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_output_get_card_result ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-output-get-card-result"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_output_get_read_result ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-output-get-read-result"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_output_get_response_in_indication_token ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-output-get-response-in-indication-token"/>
+    <keyword type="function" name="qmi_message_uim_read_transparent_output_get_encrypted_data ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-message-uim-read-transparent-output-get-encrypted-data"/>
+    <keyword type="function" name="qmi_client_uim_read_transparent ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-client-uim-read-transparent"/>
+    <keyword type="function" name="qmi_client_uim_read_transparent_finish ()" link="libqmi-glib-UIM-Read-Transparent.html#qmi-client-uim-read-transparent-finish"/>
+    <keyword type="struct" name="QmiMessageUimReadRecordInput" link="libqmi-glib-UIM-Read-Record.html#QmiMessageUimReadRecordInput-struct"/>
+    <keyword type="struct" name="QmiMessageUimReadRecordOutput" link="libqmi-glib-UIM-Read-Record.html#QmiMessageUimReadRecordOutput-struct"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_new ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-new"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_ref ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-ref"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_unref ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-unref"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_get_response_in_indication_token ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-get-response-in-indication-token"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_set_response_in_indication_token ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-set-response-in-indication-token"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_get_last_record ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-get-last-record"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_set_last_record ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-set-last-record"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_get_record ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-get-record"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_set_record ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-set-record"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_get_file ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-get-file"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_set_file ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-set-file"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_get_session_information ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-get-session-information"/>
+    <keyword type="function" name="qmi_message_uim_read_record_input_set_session_information ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-input-set-session-information"/>
+    <keyword type="function" name="qmi_message_uim_read_record_output_ref ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-output-ref"/>
+    <keyword type="function" name="qmi_message_uim_read_record_output_unref ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-output-unref"/>
+    <keyword type="function" name="qmi_message_uim_read_record_output_get_result ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-output-get-result"/>
+    <keyword type="function" name="qmi_message_uim_read_record_output_get_card_result ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-output-get-card-result"/>
+    <keyword type="function" name="qmi_message_uim_read_record_output_get_read_result ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-output-get-read-result"/>
+    <keyword type="function" name="qmi_message_uim_read_record_output_get_additional_read_result ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-output-get-additional-read-result"/>
+    <keyword type="function" name="qmi_message_uim_read_record_output_get_response_in_indication_token ()" link="libqmi-glib-UIM-Read-Record.html#qmi-message-uim-read-record-output-get-response-in-indication-token"/>
+    <keyword type="function" name="qmi_client_uim_read_record ()" link="libqmi-glib-UIM-Read-Record.html#qmi-client-uim-read-record"/>
+    <keyword type="function" name="qmi_client_uim_read_record_finish ()" link="libqmi-glib-UIM-Read-Record.html#qmi-client-uim-read-record-finish"/>
+    <keyword type="struct" name="QmiMessageUimGetFileAttributesInput" link="libqmi-glib-UIM-Get-File-Attributes.html#QmiMessageUimGetFileAttributesInput-struct"/>
+    <keyword type="struct" name="QmiMessageUimGetFileAttributesOutput" link="libqmi-glib-UIM-Get-File-Attributes.html#QmiMessageUimGetFileAttributesOutput-struct"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_input_new ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-input-new"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_input_ref ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-input-ref"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_input_unref ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-input-unref"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_input_get_response_in_indication_token ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-input-get-response-in-indication-token"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_input_set_response_in_indication_token ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-input-set-response-in-indication-token"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_input_get_file ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-input-get-file"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_input_set_file ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-input-set-file"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_input_get_session_information ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-input-get-session-information"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_input_set_session_information ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-input-set-session-information"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_output_ref ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-output-ref"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_output_unref ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-output-unref"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_output_get_result ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-output-get-result"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_output_get_card_result ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-output-get-card-result"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_output_get_file_attributes ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-output-get-file-attributes"/>
+    <keyword type="function" name="qmi_message_uim_get_file_attributes_output_get_response_in_indication_token ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-message-uim-get-file-attributes-output-get-response-in-indication-token"/>
+    <keyword type="function" name="qmi_client_uim_get_file_attributes ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-client-uim-get-file-attributes"/>
+    <keyword type="function" name="qmi_client_uim_get_file_attributes_finish ()" link="libqmi-glib-UIM-Get-File-Attributes.html#qmi-client-uim-get-file-attributes-finish"/>
+    <keyword type="struct" name="struct QmiClientOma" link="QmiClientOma.html#QmiClientOma-struct"/>
+    <keyword type="signal" name="The &quot;event-report&quot; signal" link="QmiClientOma.html#QmiClientOma-event-report"/>
+    <keyword type="enum" name="enum QmiOmaSessionType" link="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionType-enum"/>
+    <keyword type="enum" name="enum QmiOmaSessionState" link="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionState-enum"/>
+    <keyword type="enum" name="enum QmiOmaSessionFailedReason" link="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionFailedReason-enum"/>
+    <keyword type="enum" name="enum QmiOmaHfaFeatureDoneState" link="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaHfaFeatureDoneState-enum"/>
+    <keyword type="function" name="qmi_oma_session_type_get_string ()" link="libqmi-glib-OMA-enumerations-and-flags.html#qmi-oma-session-type-get-string"/>
+    <keyword type="function" name="qmi_oma_session_state_get_string ()" link="libqmi-glib-OMA-enumerations-and-flags.html#qmi-oma-session-state-get-string"/>
+    <keyword type="function" name="qmi_oma_session_failed_reason_get_string ()" link="libqmi-glib-OMA-enumerations-and-flags.html#qmi-oma-session-failed-reason-get-string"/>
+    <keyword type="function" name="qmi_oma_hfa_feature_done_state_get_string ()" link="libqmi-glib-OMA-enumerations-and-flags.html#qmi-oma-hfa-feature-done-state-get-string"/>
+    <keyword type="struct" name="QmiIndicationOmaEventReportOutput" link="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput-struct"/>
+    <keyword type="function" name="qmi_indication_oma_event_report_output_ref ()" link="libqmi-glib-OMA-Event-Report.html#qmi-indication-oma-event-report-output-ref"/>
+    <keyword type="function" name="qmi_indication_oma_event_report_output_unref ()" link="libqmi-glib-OMA-Event-Report.html#qmi-indication-oma-event-report-output-unref"/>
+    <keyword type="function" name="qmi_indication_oma_event_report_output_get_session_fail_reason ()" link="libqmi-glib-OMA-Event-Report.html#qmi-indication-oma-event-report-output-get-session-fail-reason"/>
+    <keyword type="function" name="qmi_indication_oma_event_report_output_get_session_state ()" link="libqmi-glib-OMA-Event-Report.html#qmi-indication-oma-event-report-output-get-session-state"/>
+    <keyword type="function" name="qmi_indication_oma_event_report_output_get_network_initiated_alert ()" link="libqmi-glib-OMA-Event-Report.html#qmi-indication-oma-event-report-output-get-network-initiated-alert"/>
+    <keyword type="struct" name="QmiMessageOmaResetOutput" link="libqmi-glib-OMA-Reset.html#QmiMessageOmaResetOutput-struct"/>
+    <keyword type="function" name="qmi_message_oma_reset_output_ref ()" link="libqmi-glib-OMA-Reset.html#qmi-message-oma-reset-output-ref"/>
+    <keyword type="function" name="qmi_message_oma_reset_output_unref ()" link="libqmi-glib-OMA-Reset.html#qmi-message-oma-reset-output-unref"/>
+    <keyword type="function" name="qmi_message_oma_reset_output_get_result ()" link="libqmi-glib-OMA-Reset.html#qmi-message-oma-reset-output-get-result"/>
+    <keyword type="function" name="qmi_client_oma_reset ()" link="libqmi-glib-OMA-Reset.html#qmi-client-oma-reset"/>
+    <keyword type="function" name="qmi_client_oma_reset_finish ()" link="libqmi-glib-OMA-Reset.html#qmi-client-oma-reset-finish"/>
+    <keyword type="struct" name="QmiMessageOmaSetEventReportInput" link="libqmi-glib-OMA-Set-Event-Report.html#QmiMessageOmaSetEventReportInput-struct"/>
+    <keyword type="struct" name="QmiMessageOmaSetEventReportOutput" link="libqmi-glib-OMA-Set-Event-Report.html#QmiMessageOmaSetEventReportOutput-struct"/>
+    <keyword type="function" name="qmi_message_oma_set_event_report_input_new ()" link="libqmi-glib-OMA-Set-Event-Report.html#qmi-message-oma-set-event-report-input-new"/>
+    <keyword type="function" name="qmi_message_oma_set_event_report_input_ref ()" link="libqmi-glib-OMA-Set-Event-Report.html#qmi-message-oma-set-event-report-input-ref"/>
+    <keyword type="function" name="qmi_message_oma_set_event_report_input_unref ()" link="libqmi-glib-OMA-Set-Event-Report.html#qmi-message-oma-set-event-report-input-unref"/>
+    <keyword type="function" name="qmi_message_oma_set_event_report_input_get_session_state_reporting ()" link="libqmi-glib-OMA-Set-Event-Report.html#qmi-message-oma-set-event-report-input-get-session-state-reporting"/>
+    <keyword type="function" name="qmi_message_oma_set_event_report_input_set_session_state_reporting ()" link="libqmi-glib-OMA-Set-Event-Report.html#qmi-message-oma-set-event-report-input-set-session-state-reporting"/>
+    <keyword type="function" name="qmi_message_oma_set_event_report_input_get_network_initiated_alert_reporting ()" link="libqmi-glib-OMA-Set-Event-Report.html#qmi-message-oma-set-event-report-input-get-network-initiated-alert-reporting"/>
+    <keyword type="function" name="qmi_message_oma_set_event_report_input_set_network_initiated_alert_reporting ()" link="libqmi-glib-OMA-Set-Event-Report.html#qmi-message-oma-set-event-report-input-set-network-initiated-alert-reporting"/>
+    <keyword type="function" name="qmi_message_oma_set_event_report_output_ref ()" link="libqmi-glib-OMA-Set-Event-Report.html#qmi-message-oma-set-event-report-output-ref"/>
+    <keyword type="function" name="qmi_message_oma_set_event_report_output_unref ()" link="libqmi-glib-OMA-Set-Event-Report.html#qmi-message-oma-set-event-report-output-unref"/>
+    <keyword type="function" name="qmi_message_oma_set_event_report_output_get_result ()" link="libqmi-glib-OMA-Set-Event-Report.html#qmi-message-oma-set-event-report-output-get-result"/>
+    <keyword type="function" name="qmi_client_oma_set_event_report ()" link="libqmi-glib-OMA-Set-Event-Report.html#qmi-client-oma-set-event-report"/>
+    <keyword type="function" name="qmi_client_oma_set_event_report_finish ()" link="libqmi-glib-OMA-Set-Event-Report.html#qmi-client-oma-set-event-report-finish"/>
+    <keyword type="struct" name="QmiMessageOmaStartSessionInput" link="libqmi-glib-OMA-Start-Session.html#QmiMessageOmaStartSessionInput-struct"/>
+    <keyword type="struct" name="QmiMessageOmaStartSessionOutput" link="libqmi-glib-OMA-Start-Session.html#QmiMessageOmaStartSessionOutput-struct"/>
+    <keyword type="function" name="qmi_message_oma_start_session_input_new ()" link="libqmi-glib-OMA-Start-Session.html#qmi-message-oma-start-session-input-new"/>
+    <keyword type="function" name="qmi_message_oma_start_session_input_ref ()" link="libqmi-glib-OMA-Start-Session.html#qmi-message-oma-start-session-input-ref"/>
+    <keyword type="function" name="qmi_message_oma_start_session_input_unref ()" link="libqmi-glib-OMA-Start-Session.html#qmi-message-oma-start-session-input-unref"/>
+    <keyword type="function" name="qmi_message_oma_start_session_input_get_session_type ()" link="libqmi-glib-OMA-Start-Session.html#qmi-message-oma-start-session-input-get-session-type"/>
+    <keyword type="function" name="qmi_message_oma_start_session_input_set_session_type ()" link="libqmi-glib-OMA-Start-Session.html#qmi-message-oma-start-session-input-set-session-type"/>
+    <keyword type="function" name="qmi_message_oma_start_session_output_ref ()" link="libqmi-glib-OMA-Start-Session.html#qmi-message-oma-start-session-output-ref"/>
+    <keyword type="function" name="qmi_message_oma_start_session_output_unref ()" link="libqmi-glib-OMA-Start-Session.html#qmi-message-oma-start-session-output-unref"/>
+    <keyword type="function" name="qmi_message_oma_start_session_output_get_result ()" link="libqmi-glib-OMA-Start-Session.html#qmi-message-oma-start-session-output-get-result"/>
+    <keyword type="function" name="qmi_client_oma_start_session ()" link="libqmi-glib-OMA-Start-Session.html#qmi-client-oma-start-session"/>
+    <keyword type="function" name="qmi_client_oma_start_session_finish ()" link="libqmi-glib-OMA-Start-Session.html#qmi-client-oma-start-session-finish"/>
+    <keyword type="struct" name="QmiMessageOmaCancelSessionOutput" link="libqmi-glib-OMA-Cancel-Session.html#QmiMessageOmaCancelSessionOutput-struct"/>
+    <keyword type="function" name="qmi_message_oma_cancel_session_output_ref ()" link="libqmi-glib-OMA-Cancel-Session.html#qmi-message-oma-cancel-session-output-ref"/>
+    <keyword type="function" name="qmi_message_oma_cancel_session_output_unref ()" link="libqmi-glib-OMA-Cancel-Session.html#qmi-message-oma-cancel-session-output-unref"/>
+    <keyword type="function" name="qmi_message_oma_cancel_session_output_get_result ()" link="libqmi-glib-OMA-Cancel-Session.html#qmi-message-oma-cancel-session-output-get-result"/>
+    <keyword type="function" name="qmi_client_oma_cancel_session ()" link="libqmi-glib-OMA-Cancel-Session.html#qmi-client-oma-cancel-session"/>
+    <keyword type="function" name="qmi_client_oma_cancel_session_finish ()" link="libqmi-glib-OMA-Cancel-Session.html#qmi-client-oma-cancel-session-finish"/>
+    <keyword type="struct" name="QmiMessageOmaGetSessionInfoOutput" link="libqmi-glib-OMA-Get-Session-Info.html#QmiMessageOmaGetSessionInfoOutput-struct"/>
+    <keyword type="function" name="qmi_message_oma_get_session_info_output_ref ()" link="libqmi-glib-OMA-Get-Session-Info.html#qmi-message-oma-get-session-info-output-ref"/>
+    <keyword type="function" name="qmi_message_oma_get_session_info_output_unref ()" link="libqmi-glib-OMA-Get-Session-Info.html#qmi-message-oma-get-session-info-output-unref"/>
+    <keyword type="function" name="qmi_message_oma_get_session_info_output_get_result ()" link="libqmi-glib-OMA-Get-Session-Info.html#qmi-message-oma-get-session-info-output-get-result"/>
+    <keyword type="function" name="qmi_message_oma_get_session_info_output_get_session_info ()" link="libqmi-glib-OMA-Get-Session-Info.html#qmi-message-oma-get-session-info-output-get-session-info"/>
+    <keyword type="function" name="qmi_message_oma_get_session_info_output_get_session_failed_reason ()" link="libqmi-glib-OMA-Get-Session-Info.html#qmi-message-oma-get-session-info-output-get-session-failed-reason"/>
+    <keyword type="function" name="qmi_message_oma_get_session_info_output_get_retry_info ()" link="libqmi-glib-OMA-Get-Session-Info.html#qmi-message-oma-get-session-info-output-get-retry-info"/>
+    <keyword type="function" name="qmi_message_oma_get_session_info_output_get_network_initiated_alert ()" link="libqmi-glib-OMA-Get-Session-Info.html#qmi-message-oma-get-session-info-output-get-network-initiated-alert"/>
+    <keyword type="function" name="qmi_client_oma_get_session_info ()" link="libqmi-glib-OMA-Get-Session-Info.html#qmi-client-oma-get-session-info"/>
+    <keyword type="function" name="qmi_client_oma_get_session_info_finish ()" link="libqmi-glib-OMA-Get-Session-Info.html#qmi-client-oma-get-session-info-finish"/>
+    <keyword type="struct" name="QmiMessageOmaSendSelectionInput" link="libqmi-glib-OMA-Send-Selection.html#QmiMessageOmaSendSelectionInput-struct"/>
+    <keyword type="struct" name="QmiMessageOmaSendSelectionOutput" link="libqmi-glib-OMA-Send-Selection.html#QmiMessageOmaSendSelectionOutput-struct"/>
+    <keyword type="function" name="qmi_message_oma_send_selection_input_new ()" link="libqmi-glib-OMA-Send-Selection.html#qmi-message-oma-send-selection-input-new"/>
+    <keyword type="function" name="qmi_message_oma_send_selection_input_ref ()" link="libqmi-glib-OMA-Send-Selection.html#qmi-message-oma-send-selection-input-ref"/>
+    <keyword type="function" name="qmi_message_oma_send_selection_input_unref ()" link="libqmi-glib-OMA-Send-Selection.html#qmi-message-oma-send-selection-input-unref"/>
+    <keyword type="function" name="qmi_message_oma_send_selection_input_get_network_initiated_alert_selection ()" link="libqmi-glib-OMA-Send-Selection.html#qmi-message-oma-send-selection-input-get-network-initiated-alert-selection"/>
+    <keyword type="function" name="qmi_message_oma_send_selection_input_set_network_initiated_alert_selection ()" link="libqmi-glib-OMA-Send-Selection.html#qmi-message-oma-send-selection-input-set-network-initiated-alert-selection"/>
+    <keyword type="function" name="qmi_message_oma_send_selection_output_ref ()" link="libqmi-glib-OMA-Send-Selection.html#qmi-message-oma-send-selection-output-ref"/>
+    <keyword type="function" name="qmi_message_oma_send_selection_output_unref ()" link="libqmi-glib-OMA-Send-Selection.html#qmi-message-oma-send-selection-output-unref"/>
+    <keyword type="function" name="qmi_message_oma_send_selection_output_get_result ()" link="libqmi-glib-OMA-Send-Selection.html#qmi-message-oma-send-selection-output-get-result"/>
+    <keyword type="function" name="qmi_client_oma_send_selection ()" link="libqmi-glib-OMA-Send-Selection.html#qmi-client-oma-send-selection"/>
+    <keyword type="function" name="qmi_client_oma_send_selection_finish ()" link="libqmi-glib-OMA-Send-Selection.html#qmi-client-oma-send-selection-finish"/>
+    <keyword type="struct" name="QmiMessageOmaGetFeatureSettingOutput" link="libqmi-glib-OMA-Get-Feature-Setting.html#QmiMessageOmaGetFeatureSettingOutput-struct"/>
+    <keyword type="function" name="qmi_message_oma_get_feature_setting_output_ref ()" link="libqmi-glib-OMA-Get-Feature-Setting.html#qmi-message-oma-get-feature-setting-output-ref"/>
+    <keyword type="function" name="qmi_message_oma_get_feature_setting_output_unref ()" link="libqmi-glib-OMA-Get-Feature-Setting.html#qmi-message-oma-get-feature-setting-output-unref"/>
+    <keyword type="function" name="qmi_message_oma_get_feature_setting_output_get_result ()" link="libqmi-glib-OMA-Get-Feature-Setting.html#qmi-message-oma-get-feature-setting-output-get-result"/>
+    <keyword type="function" name="qmi_message_oma_get_feature_setting_output_get_device_provisioning_service_update_config ()" link="libqmi-glib-OMA-Get-Feature-Setting.html#qmi-message-oma-get-feature-setting-output-get-device-provisioning-service-update-config"/>
+    <keyword type="function" name="qmi_message_oma_get_feature_setting_output_get_prl_update_service_config ()" link="libqmi-glib-OMA-Get-Feature-Setting.html#qmi-message-oma-get-feature-setting-output-get-prl-update-service-config"/>
+    <keyword type="function" name="qmi_message_oma_get_feature_setting_output_get_hfa_feature_config ()" link="libqmi-glib-OMA-Get-Feature-Setting.html#qmi-message-oma-get-feature-setting-output-get-hfa-feature-config"/>
+    <keyword type="function" name="qmi_message_oma_get_feature_setting_output_get_hfa_feature_done_state ()" link="libqmi-glib-OMA-Get-Feature-Setting.html#qmi-message-oma-get-feature-setting-output-get-hfa-feature-done-state"/>
+    <keyword type="function" name="qmi_client_oma_get_feature_setting ()" link="libqmi-glib-OMA-Get-Feature-Setting.html#qmi-client-oma-get-feature-setting"/>
+    <keyword type="function" name="qmi_client_oma_get_feature_setting_finish ()" link="libqmi-glib-OMA-Get-Feature-Setting.html#qmi-client-oma-get-feature-setting-finish"/>
+    <keyword type="struct" name="QmiMessageOmaSetFeatureSettingInput" link="libqmi-glib-OMA-Set-Feature-Setting.html#QmiMessageOmaSetFeatureSettingInput-struct"/>
+    <keyword type="struct" name="QmiMessageOmaSetFeatureSettingOutput" link="libqmi-glib-OMA-Set-Feature-Setting.html#QmiMessageOmaSetFeatureSettingOutput-struct"/>
+    <keyword type="function" name="qmi_message_oma_set_feature_setting_input_new ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-message-oma-set-feature-setting-input-new"/>
+    <keyword type="function" name="qmi_message_oma_set_feature_setting_input_ref ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-message-oma-set-feature-setting-input-ref"/>
+    <keyword type="function" name="qmi_message_oma_set_feature_setting_input_unref ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-message-oma-set-feature-setting-input-unref"/>
+    <keyword type="function" name="qmi_message_oma_set_feature_setting_input_get_hfa_feature_config ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-message-oma-set-feature-setting-input-get-hfa-feature-config"/>
+    <keyword type="function" name="qmi_message_oma_set_feature_setting_input_set_hfa_feature_config ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-message-oma-set-feature-setting-input-set-hfa-feature-config"/>
+    <keyword type="function" name="qmi_message_oma_set_feature_setting_input_get_prl_update_service_config ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-message-oma-set-feature-setting-input-get-prl-update-service-config"/>
+    <keyword type="function" name="qmi_message_oma_set_feature_setting_input_set_prl_update_service_config ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-message-oma-set-feature-setting-input-set-prl-update-service-config"/>
+    <keyword type="function" name="qmi_message_oma_set_feature_setting_input_get_device_provisioning_service_update_config ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-message-oma-set-feature-setting-input-get-device-provisioning-service-update-config"/>
+    <keyword type="function" name="qmi_message_oma_set_feature_setting_input_set_device_provisioning_service_update_config ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-message-oma-set-feature-setting-input-set-device-provisioning-service-update-config"/>
+    <keyword type="function" name="qmi_message_oma_set_feature_setting_output_ref ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-message-oma-set-feature-setting-output-ref"/>
+    <keyword type="function" name="qmi_message_oma_set_feature_setting_output_unref ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-message-oma-set-feature-setting-output-unref"/>
+    <keyword type="function" name="qmi_message_oma_set_feature_setting_output_get_result ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-message-oma-set-feature-setting-output-get-result"/>
+    <keyword type="function" name="qmi_client_oma_set_feature_setting ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-client-oma-set-feature-setting"/>
+    <keyword type="function" name="qmi_client_oma_set_feature_setting_finish ()" link="libqmi-glib-OMA-Set-Feature-Setting.html#qmi-client-oma-set-feature-setting-finish"/>
     <keyword type="constant" name="QMI_DEVICE_OPEN_FLAGS_NONE" link="QmiDevice.html#QMI-DEVICE-OPEN-FLAGS-NONE:CAPS"/>
     <keyword type="constant" name="QMI_DEVICE_OPEN_FLAGS_VERSION_INFO" link="QmiDevice.html#QMI-DEVICE-OPEN-FLAGS-VERSION-INFO:CAPS"/>
     <keyword type="constant" name="QMI_DEVICE_OPEN_FLAGS_SYNC" link="QmiDevice.html#QMI-DEVICE-OPEN-FLAGS-SYNC:CAPS"/>
@@ -1928,9 +2264,34 @@
     <keyword type="constant" name="QMI_PROTOCOL_ERROR_SEGMENT_TOO_LONG" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-SEGMENT-TOO-LONG:CAPS"/>
     <keyword type="constant" name="QMI_PROTOCOL_ERROR_SEGMENT_ORDER" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-SEGMENT-ORDER:CAPS"/>
     <keyword type="constant" name="QMI_PROTOCOL_ERROR_BUNDLING_NOT_SUPPORTED" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-BUNDLING-NOT-SUPPORTED:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_POLICY_MISMATCH" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-POLICY-MISMATCH:CAPS"/>
     <keyword type="constant" name="QMI_PROTOCOL_ERROR_SIM_FILE_NOT_FOUND" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-SIM-FILE-NOT-FOUND:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_EXTENDED_INTERNAL" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-EXTENDED-INTERNAL:CAPS"/>
     <keyword type="constant" name="QMI_PROTOCOL_ERROR_ACCESS_DENIED" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-ACCESS-DENIED:CAPS"/>
     <keyword type="constant" name="QMI_PROTOCOL_ERROR_HARDWARE_RESTRICTED" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-HARDWARE-RESTRICTED:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_ACK_NOT_SENT" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-ACK-NOT-SENT:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_INJECT_TIMEOUT" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-INJECT-TIMEOUT:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_INCOMPATIBLE_STATE" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-INCOMPATIBLE-STATE:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_FDN_RESTRICT" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-FDN-RESTRICT:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_SUPS_FAILURE_CASE" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-SUPS-FAILURE-CASE:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_NO_RADIO" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-NO-RADIO:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_NOT_SUPPORTED" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-NOT-SUPPORTED:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_NO_SUBSCRIPTION" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-NO-SUBSCRIPTION:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_CARD_CALL_CONTROL_FAILED" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-CARD-CALL-CONTROL-FAILED:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_NETWORK_ABORTED" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-NETWORK-ABORTED:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_MSG_BLOCKED" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-MSG-BLOCKED:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_INVALID_SESSION_TYPE" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-INVALID-SESSION-TYPE:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_INVALID_PB_TYPE" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-INVALID-PB-TYPE:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_NO_SIM" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-NO-SIM:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_PB_NOT_READY" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-PB-NOT-READY:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_PIN_RESTRICTION" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-PIN-RESTRICTION:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_PIN2_RESTRICTION" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-PIN2-RESTRICTION:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_PUK_RESTRICTION" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-PUK-RESTRICTION:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_PUK2_RESTRICTION" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-PUK2-RESTRICTION:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_PB_ACCESS_RESTRICTED" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-PB-ACCESS-RESTRICTED:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_PB_TEXT_TOO_LONG" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-PB-TEXT-TOO-LONG:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_PB_NUMBER_TOO_LONG" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-PB-NUMBER-TOO-LONG:CAPS"/>
+    <keyword type="constant" name="QMI_PROTOCOL_ERROR_PB_HIDDEN_KEY_RESTRICTION" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-PB-HIDDEN-KEY-RESTRICTION:CAPS"/>
     <keyword type="constant" name="QMI_PROTOCOL_ERROR_CAT_EVENT_REGISTRATION_FAILED" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-CAT-EVENT-REGISTRATION-FAILED:CAPS"/>
     <keyword type="constant" name="QMI_PROTOCOL_ERROR_CAT_INVALID_TERMINAL_RESPONSE" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-CAT-INVALID-TERMINAL-RESPONSE:CAPS"/>
     <keyword type="constant" name="QMI_PROTOCOL_ERROR_CAT_INVALID_ENVELOPE_COMMAND" link="libqmi-glib-Errors.html#QMI-PROTOCOL-ERROR-CAT-INVALID-ENVELOPE-COMMAND:CAPS"/>
@@ -2735,6 +3096,16 @@
     <keyword type="constant" name="QMI_WDS_AUTHENTICATION_CHAP" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-AUTHENTICATION-CHAP:CAPS"/>
     <keyword type="constant" name="QMI_WDS_PROFILE_TYPE_3GPP" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PROFILE-TYPE-3GPP:CAPS"/>
     <keyword type="constant" name="QMI_WDS_PROFILE_TYPE_3GPP2" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PROFILE-TYPE-3GPP2:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_TX_PACKETS_OK" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-TX-PACKETS-OK:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_RX_PACKETS_OK" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-RX-PACKETS-OK:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_TX_PACKETS_ERROR" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-TX-PACKETS-ERROR:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_RX_PACKETS_ERROR" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-RX-PACKETS-ERROR:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_TX_OVERFLOWS" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-TX-OVERFLOWS:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_RX_OVERFLOWS" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-RX-OVERFLOWS:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_TX_BYTES_OK" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-TX-BYTES-OK:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_RX_BYTES_OK" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-RX-BYTES-OK:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_TX_PACKETS_DROPPED" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-TX-PACKETS-DROPPED:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_RX_PACKETS_DROPPED" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-RX-PACKETS-DROPPED:CAPS"/>
     <keyword type="constant" name="QMI_WMS_STORAGE_TYPE_UIM" link="libqmi-glib-WMS-enumerations-and-flags.html#QMI-WMS-STORAGE-TYPE-UIM:CAPS"/>
     <keyword type="constant" name="QMI_WMS_STORAGE_TYPE_NV" link="libqmi-glib-WMS-enumerations-and-flags.html#QMI-WMS-STORAGE-TYPE-NV:CAPS"/>
     <keyword type="constant" name="QMI_WMS_STORAGE_TYPE_NONE" link="libqmi-glib-WMS-enumerations-and-flags.html#QMI-WMS-STORAGE-TYPE-NONE:CAPS"/>
@@ -2892,5 +3263,78 @@
     <keyword type="constant" name="QMI_PDS_TRACKING_SESSION_STATE_UNKNOWN" link="libqmi-glib-PDS-enumerations-and-flags.html#QMI-PDS-TRACKING-SESSION-STATE-UNKNOWN:CAPS"/>
     <keyword type="constant" name="QMI_PDS_TRACKING_SESSION_STATE_INACTIVE" link="libqmi-glib-PDS-enumerations-and-flags.html#QMI-PDS-TRACKING-SESSION-STATE-INACTIVE:CAPS"/>
     <keyword type="constant" name="QMI_PDS_TRACKING_SESSION_STATE_ACTIVE" link="libqmi-glib-PDS-enumerations-and-flags.html#QMI-PDS-TRACKING-SESSION-STATE-ACTIVE:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_EVENT_REGISTRATION_FLAG_RECORD_UPDATE" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-EVENT-REGISTRATION-FLAG-RECORD-UPDATE:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_EVENT_REGISTRATION_FLAG_PHONEBOOK_READY" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-EVENT-REGISTRATION-FLAG-PHONEBOOK-READY:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_EVENT_REGISTRATION_FLAG_EMERGENCY_NUMBER_LIST" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-EVENT-REGISTRATION-FLAG-EMERGENCY-NUMBER-LIST:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_EVENT_REGISTRATION_FLAG_HIDDEN_RECORD_STATUS" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-EVENT-REGISTRATION-FLAG-HIDDEN-RECORD-STATUS:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_EVENT_REGISTRATION_FLAG_AAS_UPDATE" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-EVENT-REGISTRATION-FLAG-AAS-UPDATE:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_EVENT_REGISTRATION_FLAG_GAS_UPDATE" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-EVENT-REGISTRATION-FLAG-GAS-UPDATE:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_PHONEBOOK_TYPE_ADN" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-PHONEBOOK-TYPE-ADN:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_PHONEBOOK_TYPE_FDN" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-PHONEBOOK-TYPE-FDN:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_PHONEBOOK_TYPE_MSISDN" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-PHONEBOOK-TYPE-MSISDN:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_PHONEBOOK_TYPE_MBDN" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-PHONEBOOK-TYPE-MBDN:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_PHONEBOOK_TYPE_SDN" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-PHONEBOOK-TYPE-SDN:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_PHONEBOOK_TYPE_BDN" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-PHONEBOOK-TYPE-BDN:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_PHONEBOOK_TYPE_LND" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-PHONEBOOK-TYPE-LND:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_PHONEBOOK_TYPE_MBN" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-PHONEBOOK-TYPE-MBN:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_SESSION_TYPE_GW_PRIMARY" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-SESSION-TYPE-GW-PRIMARY:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_SESSION_TYPE_1X_PRIMARY" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-SESSION-TYPE-1X-PRIMARY:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_SESSION_TYPE_GW_SECONDARY" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-SESSION-TYPE-GW-SECONDARY:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_SESSION_TYPE_1X_SECONDARY" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-SESSION-TYPE-1X-SECONDARY:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_SESSION_TYPE_NONPROVISIONING_SLOT_1" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-SESSION-TYPE-NONPROVISIONING-SLOT-1:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_SESSION_TYPE_NONPROVISIONING_SLOT_2" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-SESSION-TYPE-NONPROVISIONING-SLOT-2:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_SESSION_TYPE_GLOBAL_PHONEBOOK_SLOT_1" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-SESSION-TYPE-GLOBAL-PHONEBOOK-SLOT-1:CAPS"/>
+    <keyword type="constant" name="QMI_PBM_SESSION_TYPE_GLOBAL_PHONEBOOK_SLOT_2" link="libqmi-glib-PBM-enumerations-and-flags.html#QMI-PBM-SESSION-TYPE-GLOBAL-PHONEBOOK-SLOT-2:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SESSION_TYPE_PRIMARY_GW_PROVISIONING" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SESSION-TYPE-PRIMARY-GW-PROVISIONING:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SESSION_TYPE_PRIMARY_1X_PROVISIONING" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SESSION-TYPE-PRIMARY-1X-PROVISIONING:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SESSION_TYPE_SECONDARY_GW_PROVISIONING" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SESSION-TYPE-SECONDARY-GW-PROVISIONING:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SESSION_TYPE_SECONDARY_1X_PROVISIONING" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SESSION-TYPE-SECONDARY-1X-PROVISIONING:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SESSION_TYPE_NONPROVISIONING_SLOT_1" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SESSION-TYPE-NONPROVISIONING-SLOT-1:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SESSION_TYPE_NONPROVISIONING_SLOT_2" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SESSION-TYPE-NONPROVISIONING-SLOT-2:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SESSION_TYPE_CARD_SLOT_1" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SESSION-TYPE-CARD-SLOT-1:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SESSION_TYPE_CARD_SLOT_2" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SESSION-TYPE-CARD-SLOT-2:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SESSION_TYPE_LOGICAL_CHANNEL_SLOT_1" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SESSION-TYPE-LOGICAL-CHANNEL-SLOT-1:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SESSION_TYPE_LOGICAL_CHANNEL_SLOT_2" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SESSION-TYPE-LOGICAL-CHANNEL-SLOT-2:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_FILE_TYPE_TRANSPARENT" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-FILE-TYPE-TRANSPARENT:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_FILE_TYPE_CYCLIC" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-FILE-TYPE-CYCLIC:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_FILE_TYPE_LINEAR_FIXED" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-FILE-TYPE-LINEAR-FIXED:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_FILE_TYPE_DEDICATED_FILE" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-FILE-TYPE-DEDICATED-FILE:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_FILE_TYPE_MASTER_FILE" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-FILE-TYPE-MASTER-FILE:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_ALWAYS" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SECURITY-ATTRIBUTE-LOGIC-ALWAYS:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_NEVER" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SECURITY-ATTRIBUTE-LOGIC-NEVER:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_AND" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SECURITY-ATTRIBUTE-LOGIC-AND:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_OR" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SECURITY-ATTRIBUTE-LOGIC-OR:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SECURITY_ATTRIBUTE_LOGIC_SINGLE" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SECURITY-ATTRIBUTE-LOGIC-SINGLE:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SECURITY_ATTRIBUTE_PIN1" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SECURITY-ATTRIBUTE-PIN1:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SECURITY_ATTRIBUTE_PIN2" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SECURITY-ATTRIBUTE-PIN2:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SECURITY_ATTRIBUTE_UPIN" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SECURITY-ATTRIBUTE-UPIN:CAPS"/>
+    <keyword type="constant" name="QMI_UIM_SECURITY_ATTRIBUTE_ADM" link="libqmi-glib-UIM-enumerations-and-flags.html#QMI-UIM-SECURITY-ATTRIBUTE-ADM:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_TYPE_CLIENT_INITIATED_DEVICE_CONFIGURE" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-TYPE-CLIENT-INITIATED-DEVICE-CONFIGURE:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_TYPE_CLIENT_INITIATED_PRL_UPDATE" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-TYPE-CLIENT-INITIATED-PRL-UPDATE:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_TYPE_CLIENT_INITIATED_HANDS_FREE_ACTIVATION" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-TYPE-CLIENT-INITIATED-HANDS-FREE-ACTIVATION:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_TYPE_DEVICE_INITIATED_HANDS_FREE_ACTIVATION" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-TYPE-DEVICE-INITIATED-HANDS-FREE-ACTIVATION:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_TYPE_NETWORK_INITIATED_PRL_UPDATE" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-TYPE-NETWORK-INITIATED-PRL-UPDATE:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_TYPE_NETWORK_INITIATED_DEVICE_CONFIGURE" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-TYPE-NETWORK-INITIATED-DEVICE-CONFIGURE:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_TYPE_DEVICE_INITIATED_PRL_UPDATE" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-TYPE-DEVICE-INITIATED-PRL-UPDATE:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_STATE_COMPLETE_INFORMATION_UPDATED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-STATE-COMPLETE-INFORMATION-UPDATED:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_STATE_COMPLETE_UPDATED_INFORMATION_UNAVAILABLE" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-STATE-COMPLETE-UPDATED-INFORMATION-UNAVAILABLE:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_STATE_FAILED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-STATE-FAILED:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_STATE_RETRYING" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-STATE-RETRYING:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_STATE_CONNECTING" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-STATE-CONNECTING:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_STATE_CONNECTED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-STATE-CONNECTED:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_STATE_AUTHENTICATED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-STATE-AUTHENTICATED:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_STATE_MDN_DOWNLOADED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-STATE-MDN-DOWNLOADED:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_STATE_MSID_DOWNLOADED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-STATE-MSID-DOWNLOADED:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_STATE_PRL_DOWNLOADED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-STATE-PRL-DOWNLOADED:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_STATE_MIP_PROFILE_DOWNLOADED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-STATE-MIP-PROFILE-DOWNLOADED:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_FAILED_REASON_UNKNOWN" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-FAILED-REASON-UNKNOWN:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_FAILED_REASON_NETWORK_UNAVAILABLE" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-FAILED-REASON-NETWORK-UNAVAILABLE:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_FAILED_REASON_SERVER_UNAVAILABLE" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-FAILED-REASON-SERVER-UNAVAILABLE:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_FAILED_REASON_AUTHENTICATION_FAILED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-FAILED-REASON-AUTHENTICATION-FAILED:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_FAILED_REASON_MAX_RETRY_EXCEEDED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-FAILED-REASON-MAX-RETRY-EXCEEDED:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_SESSION_FAILED_REASON_SESSION_CANCELLED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-SESSION-FAILED-REASON-SESSION-CANCELLED:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_HFA_FEATURE_DONE_STATE_NONE" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-HFA-FEATURE-DONE-STATE-NONE:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_HFA_FEATURE_DONE_STATE_SUCCEEDED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-HFA-FEATURE-DONE-STATE-SUCCEEDED:CAPS"/>
+    <keyword type="constant" name="QMI_OMA_HFA_FEATURE_DONE_STATE_FAILED" link="libqmi-glib-OMA-enumerations-and-flags.html#QMI-OMA-HFA-FEATURE-DONE-STATE-FAILED:CAPS"/>
   </functions>
 </book>

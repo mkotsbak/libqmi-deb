@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>OMA Event Report</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libqmi-glib Reference Manual">
+<link rel="up" href="ch09.html#idm225614813680" title="OMA Indications">
+<link rel="prev" href="libqmi-glib-OMA-enumerations-and-flags.html" title="OMA enumerations and flags">
+<link rel="next" href="ch09s02.html" title="OMA Requests">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libqmi-glib-OMA-enumerations-and-flags.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch09.html#idm225614813680"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libqmi-glib Reference Manual</th>
+<td><a accesskey="n" href="ch09s02.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libqmi-glib-OMA-Event-Report.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libqmi-glib-OMA-Event-Report.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libqmi-glib-OMA-Event-Report.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libqmi-glib-OMA-Event-Report"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libqmi-glib-OMA-Event-Report.top_of_page"></a>OMA Event Report</span></h2>
+<p>OMA Event Report</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libqmi-glib-OMA-Event-Report.synopsis"></a><h2>Synopsis</h2>
+<a name="QmiIndicationOmaEventReportOutput"></a><pre class="synopsis">                    <a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput-struct" title="QmiIndicationOmaEventReportOutput">QmiIndicationOmaEventReportOutput</a>;
+
+<a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="returnvalue">QmiIndicationOmaEventReportOutput</span></a> * <a class="link" href="libqmi-glib-OMA-Event-Report.html#qmi-indication-oma-event-report-output-ref" title="qmi_indication_oma_event_report_output_ref ()">qmi_indication_oma_event_report_output_ref</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a> *self</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="libqmi-glib-OMA-Event-Report.html#qmi-indication-oma-event-report-output-unref" title="qmi_indication_oma_event_report_output_unref ()">qmi_indication_oma_event_report_output_unref</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a> *self</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-OMA-Event-Report.html#qmi-indication-oma-event-report-output-get-session-fail-reason" title="qmi_indication_oma_event_report_output_get_session_fail_reason ()">qmi_indication_oma_event_report_output_get_session_fail_reason</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionFailedReason"><span class="type">QmiOmaSessionFailedReason</span></a> *session_fail_reason</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-OMA-Event-Report.html#qmi-indication-oma-event-report-output-get-session-state" title="qmi_indication_oma_event_report_output_get_session_state ()">qmi_indication_oma_event_report_output_get_session_state</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionState"><span class="type">QmiOmaSessionState</span></a> *session_state</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-OMA-Event-Report.html#qmi-indication-oma-event-report-output-get-network-initiated-alert" title="qmi_indication_oma_event_report_output_get_network_initiated_alert ()">qmi_indication_oma_event_report_output_get_network_initiated_alert</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionType"><span class="type">QmiOmaSessionType</span></a> *network_initiated_alert_session_type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> *network_initiated_alert_session_id</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-OMA-Event-Report.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GBoxed
+   +----QmiIndicationOmaEventReportOutput
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-OMA-Event-Report.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-OMA-Event-Report.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="QmiIndicationOmaEventReportOutput-struct"></a><h3>QmiIndicationOmaEventReportOutput</h3>
+<pre class="programlisting">typedef struct _QmiIndicationOmaEventReportOutput QmiIndicationOmaEventReportOutput;</pre>
+<p>
+The <a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a> structure contains private data and should only be accessed
+using the provided API.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-oma-event-report-output-ref"></a><h3>qmi_indication_oma_event_report_output_ref ()</h3>
+<pre class="programlisting"><a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="returnvalue">QmiIndicationOmaEventReportOutput</span></a> * qmi_indication_oma_event_report_output_ref
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a> *self</code></em>);</pre>
+<p>
+Atomically increments the reference count of <em class="parameter"><code>self</code></em> by one.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the new reference to <em class="parameter"><code>self</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-oma-event-report-output-unref"></a><h3>qmi_indication_oma_event_report_output_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                qmi_indication_oma_event_report_output_unref
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a> *self</code></em>);</pre>
+<p>
+Atomically decrements the reference count of <em class="parameter"><code>self</code></em> by one.
+If the reference count drops to 0, <em class="parameter"><code>self</code></em> is completely disposed.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a>.</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-oma-event-report-output-get-session-fail-reason"></a><h3>qmi_indication_oma_event_report_output_get_session_fail_reason ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_oma_event_report_output_get_session_fail_reason
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionFailedReason"><span class="type">QmiOmaSessionFailedReason</span></a> *session_fail_reason</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'Session Fail Reason' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>session_fail_reason</code></em> :</span></p></td>
+<td>a placeholder for the output <a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionFailedReason"><span class="type">QmiOmaSessionFailedReason</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-oma-event-report-output-get-session-state"></a><h3>qmi_indication_oma_event_report_output_get_session_state ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_oma_event_report_output_get_session_state
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionState"><span class="type">QmiOmaSessionState</span></a> *session_state</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'Session State' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>session_state</code></em> :</span></p></td>
+<td>a placeholder for the output <a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionState"><span class="type">QmiOmaSessionState</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-oma-event-report-output-get-network-initiated-alert"></a><h3>qmi_indication_oma_event_report_output_get_network_initiated_alert ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_oma_event_report_output_get_network_initiated_alert
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionType"><span class="type">QmiOmaSessionType</span></a> *network_initiated_alert_session_type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> *network_initiated_alert_session_id</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'Network Initiated Alert' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-OMA-Event-Report.html#QmiIndicationOmaEventReportOutput"><span class="type">QmiIndicationOmaEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>network_initiated_alert_session_type</code></em> :</span></p></td>
+<td>a placeholder for the output <a class="link" href="libqmi-glib-OMA-enumerations-and-flags.html#QmiOmaSessionType"><span class="type">QmiOmaSessionType</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>network_initiated_alert_session_id</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

@@ -1,4 +1,13 @@
 <SECTION>
+<FILE>qmi-version</FILE>
+<TITLE>Version checks</TITLE>
+QMI_MAJOR_VERSION
+QMI_MINOR_VERSION
+QMI_MICRO_VERSION
+QMI_CHECK_VERSION
+</SECTION>
+
+<SECTION>
 <FILE>qmi-client</FILE>
 <TITLE>QmiClient</TITLE>
 QMI_CID_NONE
@@ -54,6 +63,9 @@ qmi_device_set_instance_id
 qmi_device_set_instance_id_finish
 qmi_device_command
 qmi_device_command_finish
+QmiDeviceServiceVersionInfo
+qmi_device_get_service_version_info
+qmi_device_get_service_version_info_finish
 <SUBSECTION Standard>
 QmiDeviceClass
 QMI_DEVICE
@@ -382,6 +394,7 @@ QmiWdsPdpType
 QmiWdsTrafficClass
 QmiWdsAuthentication
 QmiWdsProfileType
+QmiWdsPacketStatisticsMaskFlag
 <SUBSECTION Methods>
 qmi_wds_ip_family_get_string
 qmi_wds_technology_preference_build_string_from_mask
@@ -409,6 +422,7 @@ qmi_wds_pdp_type_get_string
 qmi_wds_traffic_class_get_string
 qmi_wds_authentication_build_string_from_mask
 qmi_wds_profile_type_get_string
+qmi_wds_packet_statistics_mask_flag_build_string_from_mask
 <SUBSECTION Private>
 qmi_wds_ip_family_build_string_from_mask
 qmi_wds_technology_preference_get_string
@@ -435,6 +449,7 @@ qmi_wds_pdp_type_build_string_from_mask
 qmi_wds_traffic_class_build_string_from_mask
 qmi_wds_authentication_get_string
 qmi_wds_profile_type_build_string_from_mask
+qmi_wds_packet_statistics_mask_flag_get_string
 <SUBSECTION Standard>
 QMI_TYPE_WDS_AUTHENTICATION
 QMI_TYPE_WDS_CALL_END_REASON
@@ -461,6 +476,7 @@ QMI_TYPE_WDS_VERBOSE_CALL_END_REASON_IPV6
 QMI_TYPE_WDS_VERBOSE_CALL_END_REASON_MIP
 QMI_TYPE_WDS_VERBOSE_CALL_END_REASON_PPP
 QMI_TYPE_WDS_VERBOSE_CALL_END_REASON_TYPE
+QMI_TYPE_WDS_PACKET_STATISTICS_MASK_FLAG
 qmi_wds_authentication_get_type
 qmi_wds_call_end_reason_get_type
 qmi_wds_call_type_get_type
@@ -486,6 +502,7 @@ qmi_wds_verbose_call_end_reason_ipv6_get_type
 qmi_wds_verbose_call_end_reason_mip_get_type
 qmi_wds_verbose_call_end_reason_ppp_get_type
 qmi_wds_verbose_call_end_reason_type_get_type
+qmi_wds_packet_statistics_mask_flag_get_type
 </SECTION>
 
 <SECTION>
@@ -605,6 +622,82 @@ qmi_pds_data_valid_get_type
 qmi_pds_operation_mode_get_type
 qmi_pds_position_session_status_get_type
 qmi_pds_tracking_session_state_get_type
+</SECTION>
+
+<SECTION>
+<FILE>qmi-enums-pbm</FILE>
+QmiPbmEventRegistrationFlag
+QmiPbmPhonebookType
+QmiPbmSessionType
+<SUBSECTION Methods>
+qmi_pbm_event_registration_flag_build_string_from_mask
+qmi_pbm_phonebook_type_build_string_from_mask
+qmi_pbm_session_type_get_string
+<SUBSECTION Private>
+qmi_pbm_event_registration_flag_get_string
+qmi_pbm_phonebook_type_get_string
+qmi_pbm_session_type_build_string_from_mask
+<SUBSECTION Standard>
+QMI_TYPE_PBM_EVENT_REGISTRATION_FLAG
+QMI_TYPE_PBM_PHONEBOOK_TYPE
+QMI_TYPE_PBM_SESSION_TYPE
+qmi_pbm_event_registration_flag_get_type
+qmi_pbm_phonebook_type_get_type
+qmi_pbm_session_type_get_type
+</SECTION>
+
+<SECTION>
+<FILE>qmi-enums-uim</FILE>
+QmiUimSessionType
+QmiUimFileType
+QmiUimSecurityAttributeLogic
+QmiUimSecurityAttribute
+<SUBSECTION Methods>
+qmi_uim_session_type_get_string
+qmi_uim_file_type_get_string
+qmi_uim_security_attribute_logic_get_string
+qmi_uim_security_attribute_build_string_from_mask
+<SUBSECTION Private>
+qmi_uim_session_type_build_string_from_mask
+qmi_uim_file_type_build_string_from_mask
+qmi_uim_security_attribute_logic_build_string_from_mask
+qmi_uim_security_attribute_get_string
+<SUBSECTION Standard>
+QMI_TYPE_UIM_SESSION_TYPE
+QMI_TYPE_UIM_FILE_TYPE
+QMI_TYPE_UIM_SECURITY_ATTRIBUTE_LOGIC
+QMI_TYPE_UIM_SECURITY_ATTRIBUTE
+qmi_uim_session_type_get_type
+qmi_uim_file_type_get_type
+qmi_uim_security_attribute_logic_get_type
+qmi_uim_security_attribute_get_type
+</SECTION>
+
+<SECTION>
+<FILE>qmi-enums-oma</FILE>
+QmiOmaSessionType
+QmiOmaSessionState
+QmiOmaSessionFailedReason
+QmiOmaHfaFeatureDoneState
+<SUBSECTION Methods>
+qmi_oma_session_type_get_string
+qmi_oma_session_state_get_string
+qmi_oma_session_failed_reason_get_string
+qmi_oma_hfa_feature_done_state_get_string
+<SUBSECTION Private>
+qmi_oma_session_type_build_string_from_mask
+qmi_oma_session_state_build_string_from_mask
+qmi_oma_session_failed_reason_build_string_from_mask
+qmi_oma_hfa_feature_done_state_build_string_from_mask
+<SUBSECTION Standard>
+QMI_TYPE_OMA_SESSION_TYPE
+QMI_TYPE_OMA_SESSION_STATE
+QMI_TYPE_OMA_SESSION_FAILED_REASON
+QMI_TYPE_OMA_HFA_FEATURE_DONE_STATE
+qmi_oma_session_type_get_type
+qmi_oma_session_state_get_type
+qmi_oma_session_failed_reason_get_type
+qmi_oma_hfa_feature_done_state_get_type
 </SECTION>
 
 <SECTION>
