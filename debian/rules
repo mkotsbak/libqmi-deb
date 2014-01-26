@@ -12,8 +12,3 @@ override_dh_auto_configure:
 
 override_dh_strip:
 	dh_strip --dbg-package=libqmi-glib0-dbg
-
-generate_manpages: binary-arch binary
-	help2man --no-info --name "Control QMI devices" debian/tmp/usr/bin/qmicli --help-option "--help-all" > debian/qmicli.1
-
-.PHONY: generate_manpages
