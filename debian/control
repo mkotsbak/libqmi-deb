@@ -12,7 +12,7 @@ Package: libqmi-glib-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: libqmi-glib0 (= ${binary:Version}), ${misc:Depends}
+Depends: libqmi-glib1 (= ${binary:Version}), ${misc:Depends}
 Suggests: libqmi-glib-doc
 Description: Header files for adding QMI support to applications that use glib
  This package contains the header and pkg-config files for development
@@ -27,7 +27,7 @@ Description: API documentation for libqmi-glib
  This package provides the API documentation for libqmi-glib for adding
  QMI support to applications that use glib.
 
-Package: libqmi-glib0
+Package: libqmi-glib1
 Section: libs
 Architecture: any
 Multi-Arch: same
@@ -36,11 +36,11 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Support library to use the Qualcomm MSM Interface (QMI) protocol
  Libraries for adding QMI support to applications that use glib.
 
-Package: libqmi-glib0-dbg
+Package: libqmi-glib1-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: libqmi-glib0 (= ${binary:Version}), ${misc:Depends}
+Depends: libqmi-glib1 (= ${binary:Version}), ${misc:Depends}
 Description: Support library to use the Qualcomm MSM Interface (QMI) protocol
  This package contains detached debugging symbols.
 

@@ -11,4 +11,4 @@ override_dh_auto_configure:
 		--enable-gtk-doc-html
 
 override_dh_strip:
-	dh_strip --dbg-package=libqmi-glib0-dbg
+	dh_strip --dbg-package=libqmi-glib1-dbg
