@@ -1,6 +1,6 @@
 libqmi (1.6.0-1) UNRELEASED; urgency=low
 
-  * New upstream stable release 1.6.0
+  * New upstream stable release 1.6.0 (Closes: #731002)
   * Replaced "help2man" in Debian package with the same from upstream
 
  -- Marius Kotsbak <marius@kotsbak.com>  Thu, 05 Sep 2013 10:09:30 +0200
