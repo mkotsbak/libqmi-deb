@@ -6,15 +6,15 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="libqmi-glib Reference Manual">
 <link rel="up" href="ch01.html" title="Core">
-<link rel="prev" href="QmiClient.html" title="QmiClient">
+<link rel="prev" href="QmiProxy.html" title="QmiProxy">
 <link rel="next" href="libqmi-glib-Errors.html" title="Errors">
-<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
 <tr valign="middle">
-<td><a accesskey="p" href="QmiClient.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="p" href="QmiProxy.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
 <td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
 <th width="100%" align="center">libqmi-glib Reference Manual</th>
@@ -62,46 +62,54 @@ This section defines common enumerations and flags used in the interface.
 <div class="refsect2">
 <a name="QmiService-enum"></a><h3>enum QmiService</h3>
 <pre class="programlisting">typedef enum {
-    /* Unknown service */
     QMI_SERVICE_UNKNOWN = -1,
-    /* Control service */
-    QMI_SERVICE_CTL = 0x00,
-    /* Wireless Data Service */
-    QMI_SERVICE_WDS = 0x01,
-    /* Device Management Service */
-    QMI_SERVICE_DMS = 0x02,
-    /* Network Access Service */
-    QMI_SERVICE_NAS = 0x03,
-    /* Quality Of Service service */
-    QMI_SERVICE_QOS = 0x04,
-    /* Wireless Messaging Service */
-    QMI_SERVICE_WMS = 0x05,
-    /* Position Determination Service */
-    QMI_SERVICE_PDS = 0x06,
-    /* Authentication service */
-    QMI_SERVICE_AUTH = 0x07,
-    /* AT service */
-    QMI_SERVICE_AT = 0x08,
-    /* Voice service */
-    QMI_SERVICE_VOICE = 0x09,
-    /* Card Application Toolkit service (major version 2) */
-    QMI_SERVICE_CAT2 = 0x0A,
-    /* User Identity Module service */
-    QMI_SERVICE_UIM = 0x0B,
-    /* Phonebook Management service */
-    QMI_SERVICE_PBM = 0x0C,
-    /* Location service (~ PDS major version 2) */
-    QMI_SERVICE_LOC = 0x10,
-    /* No idea what this one means.. Search And Rescue? */
-    QMI_SERVICE_SAR = 0x11,
-    /* Remote Filesystem service */
-    QMI_SERVICE_RMTFS = 0x14,
-    /* Card Application Toolkit service */
-    QMI_SERVICE_CAT = 0xE0,
-    /* Remote Management Service */
-    QMI_SERVICE_RMS = 0xE1,
-    /* Open Mobile Alliance device management service */
-    QMI_SERVICE_OMA = 0xE2
+    QMI_SERVICE_CTL = 0,
+    QMI_SERVICE_WDS = 1,
+    QMI_SERVICE_DMS = 2,
+    QMI_SERVICE_NAS = 3,
+    QMI_SERVICE_QOS = 4,
+    QMI_SERVICE_WMS = 5,
+    QMI_SERVICE_PDS = 6,
+    QMI_SERVICE_AUTH = 7,
+    QMI_SERVICE_AT = 8,
+    QMI_SERVICE_VOICE = 9,
+    QMI_SERVICE_CAT2 = 10,
+    QMI_SERVICE_UIM = 11,
+    QMI_SERVICE_PBM = 12,
+    QMI_SERVICE_QCHAT = 13,
+    QMI_SERVICE_RMTFS = 14,
+    QMI_SERVICE_TEST = 15,
+    QMI_SERVICE_LOC = 16,
+    QMI_SERVICE_SAR = 17,
+    QMI_SERVICE_IMS = 18,
+    QMI_SERVICE_ADC = 19,
+    QMI_SERVICE_CSD = 20,
+    QMI_SERVICE_MFS = 21,
+    QMI_SERVICE_TIME = 22,
+    QMI_SERVICE_TS = 23,
+    QMI_SERVICE_TMD = 24,
+    QMI_SERVICE_SAP = 25,
+    QMI_SERVICE_WDA = 26,
+    QMI_SERVICE_TSYNC = 27,
+    QMI_SERVICE_RFSA = 28,
+    QMI_SERVICE_CSVT = 29,
+    QMI_SERVICE_QCMAP = 30,
+    QMI_SERVICE_IMSP = 31,
+    QMI_SERVICE_IMSVT = 32,
+    QMI_SERVICE_IMSA = 33,
+    QMI_SERVICE_COEX = 34,
+    /* 35, reserved */
+    QMI_SERVICE_PDC = 36,
+    /* 37, reserved */
+    QMI_SERVICE_STX = 38,
+    QMI_SERVICE_BIT = 39,
+    QMI_SERVICE_IMSRTP = 40,
+    QMI_SERVICE_RFRPE = 41,
+    QMI_SERVICE_DSD = 42,
+    QMI_SERVICE_SSCTL = 43,
+    QMI_SERVICE_CAT = 224,
+    QMI_SERVICE_RMS = 225,
+    QMI_SERVICE_OMA = 226
 } QmiService;
 </pre>
 <p>
@@ -184,18 +192,148 @@ QMI services.
 </td>
 </tr>
 <tr>
+<td><p><a name="QMI-SERVICE-QCHAT:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_QCHAT</code></span></p></td>
+<td>QCHAT service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-RMTFS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_RMTFS</code></span></p></td>
+<td>Remote file system service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-TEST:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_TEST</code></span></p></td>
+<td>Test service.
+</td>
+</tr>
+<tr>
 <td><p><a name="QMI-SERVICE-LOC:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_LOC</code></span></p></td>
 <td>Location service (~ PDS v2).
 </td>
 </tr>
 <tr>
 <td><p><a name="QMI-SERVICE-SAR:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_SAR</code></span></p></td>
-<td>SAR.
+<td>Service access proxy service.
 </td>
 </tr>
 <tr>
-<td><p><a name="QMI-SERVICE-RMTFS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_RMTFS</code></span></p></td>
-<td>Remote Filesystem service.
+<td><p><a name="QMI-SERVICE-IMS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_IMS</code></span></p></td>
+<td>IMS settings service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-ADC:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_ADC</code></span></p></td>
+<td>Analog to digital converter driver service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-CSD:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_CSD</code></span></p></td>
+<td>Core sound driver service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-MFS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_MFS</code></span></p></td>
+<td>Modem embedded file system service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-TIME:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_TIME</code></span></p></td>
+<td>Time service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-TS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_TS</code></span></p></td>
+<td>Thermal sensors service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-TMD:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_TMD</code></span></p></td>
+<td>Thermal mitigation device service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-SAP:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_SAP</code></span></p></td>
+<td>Service access proxy service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-WDA:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_WDA</code></span></p></td>
+<td>Wireless data administrative service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-TSYNC:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_TSYNC</code></span></p></td>
+<td>TSYNC control service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-RFSA:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_RFSA</code></span></p></td>
+<td>Remote file system access service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-CSVT:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_CSVT</code></span></p></td>
+<td>Circuit switched videotelephony service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-QCMAP:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_QCMAP</code></span></p></td>
+<td>Qualcomm mobile access point service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-IMSP:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_IMSP</code></span></p></td>
+<td>IMS presence service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-IMSVT:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_IMSVT</code></span></p></td>
+<td>IMS videotelephony service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-IMSA:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_IMSA</code></span></p></td>
+<td>IMS application service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-COEX:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_COEX</code></span></p></td>
+<td>Coexistence service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-PDC:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_PDC</code></span></p></td>
+<td>Persistent device configuration service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-STX:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_STX</code></span></p></td>
+<td>Simultaneous transmit service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-BIT:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_BIT</code></span></p></td>
+<td>Bearer independent transport service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-IMSRTP:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_IMSRTP</code></span></p></td>
+<td>IMS RTP service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-RFRPE:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_RFRPE</code></span></p></td>
+<td>RF radiated performance enhancement service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-DSD:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_DSD</code></span></p></td>
+<td>Data system determination service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-SSCTL:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_SSCTL</code></span></p></td>
+<td>Subsystem control service.
 </td>
 </tr>
 <tr>
@@ -245,6 +383,6 @@ Gets the nickname string for the <a class="link" href="libqmi-glib-Common-enumer
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18.1</div>
+          Generated by GTK-Doc V1.19</div>
 </body>
 </html>

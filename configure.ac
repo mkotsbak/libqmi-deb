@@ -3,7 +3,7 @@ AC_PREREQ([2.68])
 
 dnl The QMI version number
 m4_define([qmi_major_version], [1])
-m4_define([qmi_minor_version], [6])
+m4_define([qmi_minor_version], [8])
 m4_define([qmi_micro_version], [0])
 m4_define([qmi_version],
           [qmi_major_version.qmi_minor_version.qmi_micro_version])
@@ -16,9 +16,9 @@ dnl        If the interface has grown (that is, the new library is compatible
 dnl            with old code), increment a.
 dnl        If the interface has changed in an incompatible way (that is,
 dnl            functions have changed or been removed), then zero a.
-m4_define([qmi_glib_lt_current],  [1])
+m4_define([qmi_glib_lt_current],  [2])
 m4_define([qmi_glib_lt_revision], [0])
-m4_define([qmi_glib_lt_age],      [0])
+m4_define([qmi_glib_lt_age],      [1])
 
 
 AC_INIT([libqmi], [qmi_version], [libqmi-devel@lists.freedesktop.org])
@@ -64,21 +64,14 @@ AC_SUBST(QMI_GLIB_LT_CURRENT)
 AC_SUBST(QMI_GLIB_LT_REVISION)
 AC_SUBST(QMI_GLIB_LT_AGE)
 
-dnl General dependencies for libqmi-glib
-PKG_CHECK_MODULES(LIBQMI_GLIB,
+dnl Dependencies
+PKG_CHECK_MODULES(GLIB,
                   glib-2.0 >= 2.32
                   gobject-2.0
-                  gio-2.0)
-AC_SUBST(LIBQMI_GLIB_CFLAGS)
-AC_SUBST(LIBQMI_GLIB_LIBS)
-
-dnl General dependencies for qmicli
-PKG_CHECK_MODULES(QMICLI,
-                  glib-2.0 >= 2.28
-                  gobject-2.0
-                  gio-2.0)
-AC_SUBST(QMICLI_CFLAGS)
-AC_SUBST(QMICLI_LIBS)
+                  gio-2.0
+                  gio-unix-2.0)
+AC_SUBST(GLIB_CFLAGS)
+AC_SUBST(GLIB_LIBS)
 
 GLIB_MKENUMS=`$PKG_CONFIG --variable=glib_mkenums glib-2.0`
 AC_SUBST(GLIB_MKENUMS)
@@ -97,12 +90,14 @@ AC_CONFIG_FILES([Makefile
                  build-aux/Makefile
                  build-aux/templates/Makefile
                  build-aux/qmi-codegen/Makefile
-                 libqmi-glib/Makefile
-                 libqmi-glib/qmi-version.h
-                 libqmi-glib/generated/Makefile
-                 libqmi-glib/test/Makefile
-                 cli/Makefile
-                 cli/test/Makefile
+                 src/Makefile
+                 src/libqmi-glib/Makefile
+                 src/libqmi-glib/qmi-version.h
+                 src/libqmi-glib/generated/Makefile
+                 src/libqmi-glib/test/Makefile
+                 src/qmicli/Makefile
+                 src/qmicli/test/Makefile
+                 src/qmi-proxy/Makefile
                  utils/Makefile
                  docs/Makefile
                  docs/reference/Makefile

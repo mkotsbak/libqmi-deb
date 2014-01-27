@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Core">
 <link rel="prev" href="libqmi-glib-Version-checks.html" title="Version checks">
 <link rel="next" href="QmiDevice.html" title="QmiDevice">
-<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -45,8 +45,11 @@ typedef             <a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> message_id</code></em>);
 <a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="returnvalue">QmiMessage</span></a> *        <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-new-from-raw" title="qmi_message_new_from_raw ()">qmi_message_new_from_raw</a>            (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a> *raw</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="returnvalue">QmiMessage</span></a> *        <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-response-new" title="qmi_message_response_new ()">qmi_message_response_new</a>            (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *request</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-Errors.html#QmiProtocolError"><span class="type">QmiProtocolError</span></a> error</code></em>);
 <a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="returnvalue">QmiMessage</span></a> *        <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-ref" title="qmi_message_ref ()">qmi_message_ref</a>                     (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-unref" title="qmi_message_unref ()">qmi_message_unref</a>                   (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-is-request" title="qmi_message_is_request ()">qmi_message_is_request</a>              (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-is-response" title="qmi_message_is_response ()">qmi_message_is_response</a>             (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-is-indication" title="qmi_message_is_indication ()">qmi_message_is_indication</a>           (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>);
 <a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QmiService"><span class="returnvalue">QmiService</span></a>          <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-get-service" title="qmi_message_get_service ()">qmi_message_get_service</a>             (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>);
@@ -75,6 +78,8 @@ const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.htm
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *raw</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> length</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-set-transaction-id" title="qmi_message_set_transaction_id ()">qmi_message_set_transaction_id</a>      (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> transaction_id</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-get-printable" title="qmi_message_get_printable ()">qmi_message_get_printable</a>           (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *line_prefix</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-get-tlv-printable" title="qmi_message_get_tlv_printable ()">qmi_message_get_tlv_printable</a>       (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>,
@@ -194,6 +199,36 @@ Whenever a complete QMI message is read, its raw data gets removed from the <em 
 </div>
 <hr>
 <div class="refsect2">
+<a name="qmi-message-response-new"></a><h3>qmi_message_response_new ()</h3>
+<pre class="programlisting"><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="returnvalue">QmiMessage</span></a> *        qmi_message_response_new            (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *request</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-Errors.html#QmiProtocolError"><span class="type">QmiProtocolError</span></a> error</code></em>);</pre>
+<p>
+Create a new response <a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> for the specified <em class="parameter"><code>request</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>request</code></em> :</span></p></td>
+<td>a request <a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-Errors.html#QmiProtocolError"><span class="type">QmiProtocolError</span></a> to set in the result TLV.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly created <a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a>. The returned value should be freed with <a class="link" href="libqmi-glib-QmiMessage.html#qmi-message-unref" title="qmi_message_unref ()"><code class="function">qmi_message_unref()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
 <a name="qmi-message-ref"></a><h3>qmi_message_ref ()</h3>
 <pre class="programlisting"><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="returnvalue">QmiMessage</span></a> *        qmi_message_ref                     (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>);</pre>
 <p>
@@ -233,6 +268,31 @@ If the reference count drops to 0, <em class="parameter"><code>self</code></em> 
 <td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
 <td>a <a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a>.</td>
 </tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-message-is-request"></a><h3>qmi_message_is_request ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_message_is_request              (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>);</pre>
+<p>
+Checks whether the given <a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> is a request.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>self</code></em> is a request message, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
 </table></div>
 </div>
 <hr>
@@ -599,6 +659,31 @@ Creates a new <em class="parameter"><code>type</code></em> TLV with the value gi
 </div>
 <hr>
 <div class="refsect2">
+<a name="qmi-message-set-transaction-id"></a><h3>qmi_message_set_transaction_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                qmi_message_set_transaction_id      (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> transaction_id</code></em>);</pre>
+<p>
+Overwrites the transaction ID of the message.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>transaction_id</code></em> :</span></p></td>
+<td>transaction id.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
 <a name="qmi-message-get-printable"></a><h3>qmi_message_get_printable ()</h3>
 <pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_message_get_printable           (<em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *self</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *line_prefix</code></em>);</pre>
@@ -683,6 +768,6 @@ This method is the most generic one and doesn't try to translate the TLV content
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18.1</div>
+          Generated by GTK-Doc V1.19</div>
 </body>
 </html>

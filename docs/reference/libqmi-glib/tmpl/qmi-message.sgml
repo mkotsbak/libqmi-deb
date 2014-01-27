@@ -57,6 +57,16 @@ qmi-message
 @Returns: 
 
 
+<!-- ##### FUNCTION qmi_message_response_new ##### -->
+<para>
+
+</para>
+
+@request: 
+@error: 
+@Returns: 
+
+
 <!-- ##### FUNCTION qmi_message_ref ##### -->
 <para>
 
@@ -72,6 +82,15 @@ qmi-message
 </para>
 
 @self: 
+
+
+<!-- ##### FUNCTION qmi_message_is_request ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
 
 
 <!-- ##### FUNCTION qmi_message_is_response ##### -->
@@ -202,6 +221,15 @@ qmi-message
 @length: 
 @error: 
 @Returns: 
+
+
+<!-- ##### FUNCTION qmi_message_set_transaction_id ##### -->
+<para>
+
+</para>
+
+@self: 
+@transaction_id: 
 
 
 <!-- ##### FUNCTION qmi_message_get_printable ##### -->
