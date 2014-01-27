@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Core">
 <link rel="prev" href="libqmi-glib-QmiMessage.html" title="QmiMessage">
 <link rel="next" href="QmiClient.html" title="QmiClient">
-<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -30,6 +30,8 @@
                   <a href="#QmiDevice.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
                    | 
                   <a href="#QmiDevice.properties" class="shortcut">Properties</a>
+                   | 
+                  <a href="#QmiDevice.signals" class="shortcut">Signals</a>
 </td></tr>
 </table>
 <div class="refentry">
@@ -44,6 +46,7 @@
 <div class="refsynopsisdiv">
 <a name="QmiDevice.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">#define             <a class="link" href="QmiDevice.html#QMI-DEVICE-FILE:CAPS" title="QMI_DEVICE_FILE">QMI_DEVICE_FILE</a>
+#define             <a class="link" href="QmiDevice.html#QMI-DEVICE-SIGNAL-INDICATION:CAPS" title="QMI_DEVICE_SIGNAL_INDICATION">QMI_DEVICE_SIGNAL_INDICATION</a>
 struct              <a class="link" href="QmiDevice.html#QmiDevice-struct" title="struct QmiDevice">QmiDevice</a>;
 <span class="returnvalue">void</span>                <a class="link" href="QmiDevice.html#qmi-device-new" title="qmi_device_new ()">qmi_device_new</a>                      (<em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
@@ -140,6 +143,12 @@ QmiDevice implements
 </pre>
 </div>
 <div class="refsect1">
+<a name="QmiDevice.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="QmiDevice.html#QmiDevice-indication" title='The "indication" signal'>indication</a>"                                     : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
+</pre>
+</div>
+<div class="refsect1">
 <a name="QmiDevice.description"></a><h2>Description</h2>
 <p>
 <a class="link" href="QmiDevice.html" title="QmiDevice"><span class="type">QmiDevice</span></a> is a generic type in charge of controlling the access of multiple
@@ -154,6 +163,14 @@ A <a class="link" href="QmiDevice.html" title="QmiDevice"><span class="type">Qmi
 <div class="refsect2">
 <a name="QMI-DEVICE-FILE:CAPS"></a><h3>QMI_DEVICE_FILE</h3>
 <pre class="programlisting">#define QMI_DEVICE_FILE "device-file"
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QMI-DEVICE-SIGNAL-INDICATION:CAPS"></a><h3>QMI_DEVICE_SIGNAL_INDICATION</h3>
+<pre class="programlisting">#define QMI_DEVICE_SIGNAL_INDICATION "indication"
 </pre>
 <p>
 </p>
@@ -365,7 +382,8 @@ Checks whether the <a class="link" href="QmiDevice.html" title="QmiDevice"><span
     QMI_DEVICE_OPEN_FLAGS_NET_802_3         = 1 &lt;&lt; 2,
     QMI_DEVICE_OPEN_FLAGS_NET_RAW_IP        = 1 &lt;&lt; 3,
     QMI_DEVICE_OPEN_FLAGS_NET_QOS_HEADER    = 1 &lt;&lt; 4,
-    QMI_DEVICE_OPEN_FLAGS_NET_NO_QOS_HEADER = 1 &lt;&lt; 5
+    QMI_DEVICE_OPEN_FLAGS_NET_NO_QOS_HEADER = 1 &lt;&lt; 5,
+    QMI_DEVICE_OPEN_FLAGS_PROXY             = 1 &lt;&lt; 6
 } QmiDeviceOpenFlags;
 </pre>
 <p>
@@ -410,6 +428,11 @@ Flags to specify which actions to be performed when the device is open.
 <tr>
 <td><p><a name="QMI-DEVICE-OPEN-FLAGS-NET-NO-QOS-HEADER:CAPS"></a><span class="term"><code class="literal">QMI_DEVICE_OPEN_FLAGS_NET_NO_QOS_HEADER</code></span></p></td>
 <td>set network port to not transmit/receive QoS headers; mutually exclusive with <em class="parameter"><code>QMI_DEVICE_OPEN_FLAGS_NET_QOS_HEADER</code></em>
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DEVICE-OPEN-FLAGS-PROXY:CAPS"></a><span class="term"><code class="literal">QMI_DEVICE_OPEN_FLAGS_PROXY</code></span></p></td>
+<td>Try to open the port through the 'qmi-proxy'.
 </td>
 </tr>
 </tbody>
@@ -1051,9 +1074,36 @@ Finishes an operation started with <a class="link" href="QmiDevice.html#qmi-devi
 <p>File to the underlying QMI device.</p>
 </div>
 </div>
+<div class="refsect1">
+<a name="QmiDevice.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="QmiDevice-indication"></a><h3>The <code class="literal">"indication"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="QmiDevice.html" title="QmiDevice"><span class="type">QmiDevice</span></a>  *qmidevice,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a> *arg1,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+<p>
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>qmidevice</code></em> :</span></p></td>
+<td>the object which received the signal.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18.1</div>
+          Generated by GTK-Doc V1.19</div>
 </body>
 </html>

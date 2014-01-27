@@ -42,6 +42,7 @@ qmi_client_get_type
 <FILE>qmi-device</FILE>
 <TITLE>QmiDevice</TITLE>
 QMI_DEVICE_FILE
+QMI_DEVICE_SIGNAL_INDICATION
 QmiDevice
 qmi_device_new
 qmi_device_new_finish
@@ -76,6 +77,26 @@ QMI_IS_DEVICE_CLASS
 QMI_TYPE_DEVICE
 QmiDevicePrivate
 qmi_device_get_type
+</SECTION>
+
+<SECTION>
+<FILE>qmi-proxy</FILE>
+<TITLE>QmiProxy</TITLE>
+QMI_PROXY_SOCKET_PATH
+QMI_PROXY_N_CLIENTS
+QmiProxy
+qmi_proxy_new
+qmi_proxy_get_n_clients
+<SUBSECTION Standard>
+QmiProxyClass
+QMI_PROXY
+QMI_PROXY_CLASS
+QMI_PROXY_GET_CLASS
+QMI_IS_PROXY
+QMI_IS_PROXY_CLASS
+QMI_TYPE_PROXY
+QmiProxyPrivate
+qmi_proxy_get_type
 </SECTION>
 
 <SECTION>
@@ -395,6 +416,7 @@ QmiWdsTrafficClass
 QmiWdsAuthentication
 QmiWdsProfileType
 QmiWdsPacketStatisticsMaskFlag
+QmiWdsDsProfileError
 <SUBSECTION Methods>
 qmi_wds_ip_family_get_string
 qmi_wds_technology_preference_build_string_from_mask
@@ -423,6 +445,7 @@ qmi_wds_traffic_class_get_string
 qmi_wds_authentication_build_string_from_mask
 qmi_wds_profile_type_get_string
 qmi_wds_packet_statistics_mask_flag_build_string_from_mask
+qmi_wds_ds_profile_error_get_string
 <SUBSECTION Private>
 qmi_wds_ip_family_build_string_from_mask
 qmi_wds_technology_preference_get_string
@@ -450,6 +473,7 @@ qmi_wds_traffic_class_build_string_from_mask
 qmi_wds_authentication_get_string
 qmi_wds_profile_type_build_string_from_mask
 qmi_wds_packet_statistics_mask_flag_get_string
+qmi_wds_ds_profile_error_build_string_from_mask
 <SUBSECTION Standard>
 QMI_TYPE_WDS_AUTHENTICATION
 QMI_TYPE_WDS_CALL_END_REASON
@@ -477,6 +501,7 @@ QMI_TYPE_WDS_VERBOSE_CALL_END_REASON_MIP
 QMI_TYPE_WDS_VERBOSE_CALL_END_REASON_PPP
 QMI_TYPE_WDS_VERBOSE_CALL_END_REASON_TYPE
 QMI_TYPE_WDS_PACKET_STATISTICS_MASK_FLAG
+QMI_TYPE_WDS_DS_PROFILE_ERROR
 qmi_wds_authentication_get_type
 qmi_wds_call_end_reason_get_type
 qmi_wds_call_type_get_type
@@ -503,6 +528,7 @@ qmi_wds_verbose_call_end_reason_mip_get_type
 qmi_wds_verbose_call_end_reason_ppp_get_type
 qmi_wds_verbose_call_end_reason_type_get_type
 qmi_wds_packet_statistics_mask_flag_get_type
+qmi_wds_ds_profile_error_get_type
 </SECTION>
 
 <SECTION>
@@ -728,8 +754,10 @@ QMI_MESSAGE_QMUX_MARKER
 QmiMessage
 qmi_message_new
 qmi_message_new_from_raw
+qmi_message_response_new
 qmi_message_ref
 qmi_message_unref
+qmi_message_is_request
 qmi_message_is_response
 qmi_message_is_indication
 qmi_message_get_service
@@ -743,6 +771,7 @@ QmiMessageForeachRawTlvFn
 qmi_message_foreach_raw_tlv
 qmi_message_get_raw_tlv
 qmi_message_add_raw_tlv
+qmi_message_set_transaction_id
 qmi_message_get_printable
 qmi_message_get_tlv_printable
 </SECTION>

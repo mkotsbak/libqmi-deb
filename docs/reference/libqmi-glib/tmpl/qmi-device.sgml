@@ -29,11 +29,26 @@ QmiDevice
 
 
 
+<!-- ##### MACRO QMI_DEVICE_SIGNAL_INDICATION ##### -->
+<para>
+
+</para>
+
+
+
 <!-- ##### STRUCT QmiDevice ##### -->
 <para>
 
 </para>
 
+
+<!-- ##### SIGNAL QmiDevice::indication ##### -->
+<para>
+
+</para>
+
+@qmidevice: the object which received the signal.
+@arg1: 
 
 <!-- ##### ARG QmiDevice:device-file ##### -->
 <para>
@@ -118,6 +133,7 @@ QmiDevice
 @QMI_DEVICE_OPEN_FLAGS_NET_RAW_IP: 
 @QMI_DEVICE_OPEN_FLAGS_NET_QOS_HEADER: 
 @QMI_DEVICE_OPEN_FLAGS_NET_NO_QOS_HEADER: 
+@QMI_DEVICE_OPEN_FLAGS_PROXY: 
 
 <!-- ##### FUNCTION qmi_device_open ##### -->
 <para>

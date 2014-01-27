@@ -7,6 +7,7 @@
       <sub name="QmiMessage" link="libqmi-glib-QmiMessage.html"/>
       <sub name="QmiDevice" link="QmiDevice.html"/>
       <sub name="QmiClient" link="QmiClient.html"/>
+      <sub name="QmiProxy" link="QmiProxy.html"/>
       <sub name="Common enumerations and flags" link="libqmi-glib-Common-enumerations-and-flags.html"/>
       <sub name="Errors" link="libqmi-glib-Errors.html"/>
       <sub name="Common utilities" link="libqmi-glib-Common-utilities.html"/>
@@ -14,7 +15,7 @@
     <sub name="Device Management Service (DMS)" link="ch02.html">
       <sub name="QmiClientDms" link="QmiClientDms.html"/>
       <sub name="DMS enumerations and flags" link="libqmi-glib-DMS-enumerations-and-flags.html"/>
-      <sub name="DMS Indications" link="ch02.html#idm225620104336">
+      <sub name="DMS Indications" link="ch02.html#id-1.3.4">
         <sub name="DMS Event Report" link="libqmi-glib-DMS-Event-Report.html"/>
       </sub>
       <sub name="DMS Requests" link="ch02s02.html">
@@ -71,7 +72,7 @@
     <sub name="Network Access Service (NAS)" link="ch03.html">
       <sub name="QmiClientNas" link="QmiClientNas.html"/>
       <sub name="NAS enumerations and flags" link="libqmi-glib-NAS-enumerations-and-flags.html"/>
-      <sub name="NAS Indications" link="ch03.html#idm225620190784">
+      <sub name="NAS Indications" link="ch03.html#id-1.4.4">
         <sub name="NAS Event Report" link="libqmi-glib-NAS-Event-Report.html"/>
         <sub name="NAS Network Time" link="libqmi-glib-NAS-Network-Time.html"/>
         <sub name="NAS Serving System" link="libqmi-glib-NAS-Serving-System.html"/>
@@ -102,12 +103,15 @@
     <sub name="Wireless Data Service (WDS)" link="ch04.html">
       <sub name="QmiClientWds" link="QmiClientWds.html"/>
       <sub name="WDS enumerations and flags" link="libqmi-glib-WDS-enumerations-and-flags.html"/>
-      <sub name="WDS Requests" link="ch04.html#idm225620168064">
+      <sub name="WDS Requests" link="ch04.html#id-1.5.4">
         <sub name="WDS Reset" link="libqmi-glib-WDS-Reset.html"/>
         <sub name="WDS Start Network" link="libqmi-glib-WDS-Start-Network.html"/>
         <sub name="WDS Stop Network" link="libqmi-glib-WDS-Stop-Network.html"/>
         <sub name="WDS Get Packet Service Status" link="libqmi-glib-WDS-Get-Packet-Service-Status.html"/>
         <sub name="WDS Get Packet Statistics" link="libqmi-glib-WDS-Get-Packet-Statistics.html"/>
+        <sub name="WDS Get Profile List" link="libqmi-glib-WDS-Get-Profile-List.html"/>
+        <sub name="WDS Get Profile Settings" link="libqmi-glib-WDS-Get-Profile-Settings.html"/>
+        <sub name="WDS Get Default Settings" link="libqmi-glib-WDS-Get-Default-Settings.html"/>
         <sub name="WDS Get Current Settings" link="libqmi-glib-WDS-Get-Current-Settings.html"/>
         <sub name="WDS Get Data Bearer Technology" link="libqmi-glib-WDS-Get-Data-Bearer-Technology.html"/>
         <sub name="WDS Get Current Data Bearer Technology" link="libqmi-glib-WDS-Get-Current-Data-Bearer-Technology.html"/>
@@ -117,7 +121,7 @@
     <sub name="Wireless Messaging Service (WMS)" link="ch05.html">
       <sub name="QmiClientWms" link="QmiClientWms.html"/>
       <sub name="WMS enumerations and flags" link="libqmi-glib-WMS-enumerations-and-flags.html"/>
-      <sub name="WMS Indications" link="ch05.html#idm225620160736">
+      <sub name="WMS Indications" link="ch05.html#id-1.6.4">
         <sub name="WMS Event Report" link="libqmi-glib-WMS-Event-Report.html"/>
       </sub>
       <sub name="WMS Requests" link="ch05s02.html">
@@ -138,7 +142,7 @@
     <sub name="Position Determination Service (PDS)" link="ch06.html">
       <sub name="QmiClientPds" link="QmiClientPds.html"/>
       <sub name="PDS enumerations and flags" link="libqmi-glib-PDS-enumerations-and-flags.html"/>
-      <sub name="PDS Indications" link="ch06.html#idm225614828976">
+      <sub name="PDS Indications" link="ch06.html#id-1.7.4">
         <sub name="PDS Event Report" link="libqmi-glib-PDS-Event-Report.html"/>
       </sub>
       <sub name="PDS Requests" link="ch06s02.html">
@@ -153,7 +157,7 @@
     <sub name="Phonebook Management Service (PBM)" link="ch07.html">
       <sub name="QmiClientPbm" link="QmiClientPbm.html"/>
       <sub name="PBM enumerations and flags" link="libqmi-glib-PBM-enumerations-and-flags.html"/>
-      <sub name="PBM Requests" link="ch07.html#idm225614822208">
+      <sub name="PBM Requests" link="ch07.html#id-1.8.4">
         <sub name="PBM Indication Register" link="libqmi-glib-PBM-Indication-Register.html"/>
         <sub name="PBM Get Capabilities" link="libqmi-glib-PBM-Get-Capabilities.html"/>
         <sub name="PBM Get All Capabilities" link="libqmi-glib-PBM-Get-All-Capabilities.html"/>
@@ -162,7 +166,7 @@
     <sub name="User Identity Module (UIM) service" link="ch08.html">
       <sub name="QmiClientUim" link="QmiClientUim.html"/>
       <sub name="UIM enumerations and flags" link="libqmi-glib-UIM-enumerations-and-flags.html"/>
-      <sub name="UIM Requests" link="ch08.html#idm225614818192">
+      <sub name="UIM Requests" link="ch08.html#id-1.9.4">
         <sub name="UIM Reset" link="libqmi-glib-UIM-Reset.html"/>
         <sub name="UIM Read Transparent" link="libqmi-glib-UIM-Read-Transparent.html"/>
         <sub name="UIM Read Record" link="libqmi-glib-UIM-Read-Record.html"/>
@@ -172,7 +176,7 @@
     <sub name="Open Mobile Alliance Service (OMA)" link="ch09.html">
       <sub name="QmiClientOma" link="QmiClientOma.html"/>
       <sub name="OMA enumerations and flags" link="libqmi-glib-OMA-enumerations-and-flags.html"/>
-      <sub name="OMA Indications" link="ch09.html#idm225614813680">
+      <sub name="OMA Indications" link="ch09.html#id-1.10.4">
         <sub name="OMA Event Report" link="libqmi-glib-OMA-Event-Report.html"/>
       </sub>
       <sub name="OMA Requests" link="ch09s02.html">
@@ -200,8 +204,10 @@
     <keyword type="typedef" name="QmiMessage" link="libqmi-glib-QmiMessage.html#QmiMessage"/>
     <keyword type="function" name="qmi_message_new ()" link="libqmi-glib-QmiMessage.html#qmi-message-new"/>
     <keyword type="function" name="qmi_message_new_from_raw ()" link="libqmi-glib-QmiMessage.html#qmi-message-new-from-raw"/>
+    <keyword type="function" name="qmi_message_response_new ()" link="libqmi-glib-QmiMessage.html#qmi-message-response-new"/>
     <keyword type="function" name="qmi_message_ref ()" link="libqmi-glib-QmiMessage.html#qmi-message-ref"/>
     <keyword type="function" name="qmi_message_unref ()" link="libqmi-glib-QmiMessage.html#qmi-message-unref"/>
+    <keyword type="function" name="qmi_message_is_request ()" link="libqmi-glib-QmiMessage.html#qmi-message-is-request"/>
     <keyword type="function" name="qmi_message_is_response ()" link="libqmi-glib-QmiMessage.html#qmi-message-is-response"/>
     <keyword type="function" name="qmi_message_is_indication ()" link="libqmi-glib-QmiMessage.html#qmi-message-is-indication"/>
     <keyword type="function" name="qmi_message_get_service ()" link="libqmi-glib-QmiMessage.html#qmi-message-get-service"/>
@@ -215,9 +221,11 @@
     <keyword type="function" name="qmi_message_foreach_raw_tlv ()" link="libqmi-glib-QmiMessage.html#qmi-message-foreach-raw-tlv"/>
     <keyword type="function" name="qmi_message_get_raw_tlv ()" link="libqmi-glib-QmiMessage.html#qmi-message-get-raw-tlv"/>
     <keyword type="function" name="qmi_message_add_raw_tlv ()" link="libqmi-glib-QmiMessage.html#qmi-message-add-raw-tlv"/>
+    <keyword type="function" name="qmi_message_set_transaction_id ()" link="libqmi-glib-QmiMessage.html#qmi-message-set-transaction-id"/>
     <keyword type="function" name="qmi_message_get_printable ()" link="libqmi-glib-QmiMessage.html#qmi-message-get-printable"/>
     <keyword type="function" name="qmi_message_get_tlv_printable ()" link="libqmi-glib-QmiMessage.html#qmi-message-get-tlv-printable"/>
     <keyword type="macro" name="QMI_DEVICE_FILE" link="QmiDevice.html#QMI-DEVICE-FILE:CAPS"/>
+    <keyword type="macro" name="QMI_DEVICE_SIGNAL_INDICATION" link="QmiDevice.html#QMI-DEVICE-SIGNAL-INDICATION:CAPS"/>
     <keyword type="struct" name="struct QmiDevice" link="QmiDevice.html#QmiDevice-struct"/>
     <keyword type="function" name="qmi_device_new ()" link="QmiDevice.html#qmi-device-new"/>
     <keyword type="function" name="qmi_device_new_finish ()" link="QmiDevice.html#qmi-device-new-finish"/>
@@ -243,6 +251,7 @@
     <keyword type="function" name="qmi_device_get_service_version_info ()" link="QmiDevice.html#qmi-device-get-service-version-info"/>
     <keyword type="function" name="qmi_device_get_service_version_info_finish ()" link="QmiDevice.html#qmi-device-get-service-version-info-finish"/>
     <keyword type="property" name="The &quot;device-file&quot; property" link="QmiDevice.html#QmiDevice--device-file"/>
+    <keyword type="signal" name="The &quot;indication&quot; signal" link="QmiDevice.html#QmiDevice-indication"/>
     <keyword type="macro" name="QMI_CID_NONE" link="QmiClient.html#QMI-CID-NONE:CAPS"/>
     <keyword type="macro" name="QMI_CID_BROADCAST" link="QmiClient.html#QMI-CID-BROADCAST:CAPS"/>
     <keyword type="macro" name="QMI_CLIENT_DEVICE" link="QmiClient.html#QMI-CLIENT-DEVICE:CAPS"/>
@@ -264,6 +273,12 @@
     <keyword type="property" name="The &quot;client-service&quot; property" link="QmiClient.html#QmiClient--client-service"/>
     <keyword type="property" name="The &quot;client-version-major&quot; property" link="QmiClient.html#QmiClient--client-version-major"/>
     <keyword type="property" name="The &quot;client-version-minor&quot; property" link="QmiClient.html#QmiClient--client-version-minor"/>
+    <keyword type="macro" name="QMI_PROXY_SOCKET_PATH" link="QmiProxy.html#QMI-PROXY-SOCKET-PATH:CAPS"/>
+    <keyword type="macro" name="QMI_PROXY_N_CLIENTS" link="QmiProxy.html#QMI-PROXY-N-CLIENTS:CAPS"/>
+    <keyword type="struct" name="struct QmiProxy" link="QmiProxy.html#QmiProxy-struct"/>
+    <keyword type="function" name="qmi_proxy_new ()" link="QmiProxy.html#qmi-proxy-new"/>
+    <keyword type="function" name="qmi_proxy_get_n_clients ()" link="QmiProxy.html#qmi-proxy-get-n-clients"/>
+    <keyword type="property" name="The &quot;qmi-proxy-n-clients&quot; property" link="QmiProxy.html#QmiProxy--qmi-proxy-n-clients"/>
     <keyword type="enum" name="enum QmiService" link="libqmi-glib-Common-enumerations-and-flags.html#QmiService-enum"/>
     <keyword type="function" name="qmi_service_get_string ()" link="libqmi-glib-Common-enumerations-and-flags.html#qmi-service-get-string"/>
     <keyword type="enum" name="enum QmiCoreError" link="libqmi-glib-Errors.html#QmiCoreError-enum"/>
@@ -1395,6 +1410,7 @@
     <keyword type="enum" name="enum QmiWdsAuthentication" link="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsAuthentication-enum"/>
     <keyword type="enum" name="enum QmiWdsProfileType" link="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsProfileType-enum"/>
     <keyword type="enum" name="enum QmiWdsPacketStatisticsMaskFlag" link="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsPacketStatisticsMaskFlag-enum"/>
+    <keyword type="enum" name="enum QmiWdsDsProfileError" link="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsDsProfileError-enum"/>
     <keyword type="function" name="qmi_wds_ip_family_get_string ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-ip-family-get-string"/>
     <keyword type="function" name="qmi_wds_technology_preference_build_string_from_mask ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-technology-preference-build-string-from-mask"/>
     <keyword type="function" name="qmi_wds_extended_technology_preference_get_string ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-extended-technology-preference-get-string"/>
@@ -1422,6 +1438,7 @@
     <keyword type="function" name="qmi_wds_authentication_build_string_from_mask ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-authentication-build-string-from-mask"/>
     <keyword type="function" name="qmi_wds_profile_type_get_string ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-profile-type-get-string"/>
     <keyword type="function" name="qmi_wds_packet_statistics_mask_flag_build_string_from_mask ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-packet-statistics-mask-flag-build-string-from-mask"/>
+    <keyword type="function" name="qmi_wds_ds_profile_error_get_string ()" link="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-ds-profile-error-get-string"/>
     <keyword type="struct" name="QmiMessageWdsResetOutput" link="libqmi-glib-WDS-Reset.html#QmiMessageWdsResetOutput-struct"/>
     <keyword type="function" name="qmi_message_wds_reset_output_ref ()" link="libqmi-glib-WDS-Reset.html#qmi-message-wds-reset-output-ref"/>
     <keyword type="function" name="qmi_message_wds_reset_output_unref ()" link="libqmi-glib-WDS-Reset.html#qmi-message-wds-reset-output-unref"/>
@@ -1518,6 +1535,81 @@
     <keyword type="function" name="qmi_message_wds_get_packet_statistics_output_get_rx_packets_dropped ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-message-wds-get-packet-statistics-output-get-rx-packets-dropped"/>
     <keyword type="function" name="qmi_client_wds_get_packet_statistics ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-client-wds-get-packet-statistics"/>
     <keyword type="function" name="qmi_client_wds_get_packet_statistics_finish ()" link="libqmi-glib-WDS-Get-Packet-Statistics.html#qmi-client-wds-get-packet-statistics-finish"/>
+    <keyword type="struct" name="QmiMessageWdsGetProfileListInput" link="libqmi-glib-WDS-Get-Profile-List.html#QmiMessageWdsGetProfileListInput-struct"/>
+    <keyword type="struct" name="QmiMessageWdsGetProfileListOutput" link="libqmi-glib-WDS-Get-Profile-List.html#QmiMessageWdsGetProfileListOutput-struct"/>
+    <keyword type="struct" name="QmiMessageWdsGetProfileListOutputProfileListProfile" link="libqmi-glib-WDS-Get-Profile-List.html#QmiMessageWdsGetProfileListOutputProfileListProfile"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_list_input_new ()" link="libqmi-glib-WDS-Get-Profile-List.html#qmi-message-wds-get-profile-list-input-new"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_list_input_ref ()" link="libqmi-glib-WDS-Get-Profile-List.html#qmi-message-wds-get-profile-list-input-ref"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_list_input_unref ()" link="libqmi-glib-WDS-Get-Profile-List.html#qmi-message-wds-get-profile-list-input-unref"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_list_input_get_profile_type ()" link="libqmi-glib-WDS-Get-Profile-List.html#qmi-message-wds-get-profile-list-input-get-profile-type"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_list_input_set_profile_type ()" link="libqmi-glib-WDS-Get-Profile-List.html#qmi-message-wds-get-profile-list-input-set-profile-type"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_list_output_ref ()" link="libqmi-glib-WDS-Get-Profile-List.html#qmi-message-wds-get-profile-list-output-ref"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_list_output_unref ()" link="libqmi-glib-WDS-Get-Profile-List.html#qmi-message-wds-get-profile-list-output-unref"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_list_output_get_result ()" link="libqmi-glib-WDS-Get-Profile-List.html#qmi-message-wds-get-profile-list-output-get-result"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_list_output_get_profile_list ()" link="libqmi-glib-WDS-Get-Profile-List.html#qmi-message-wds-get-profile-list-output-get-profile-list"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_list_output_get_extended_error_code ()" link="libqmi-glib-WDS-Get-Profile-List.html#qmi-message-wds-get-profile-list-output-get-extended-error-code"/>
+    <keyword type="function" name="qmi_client_wds_get_profile_list ()" link="libqmi-glib-WDS-Get-Profile-List.html#qmi-client-wds-get-profile-list"/>
+    <keyword type="function" name="qmi_client_wds_get_profile_list_finish ()" link="libqmi-glib-WDS-Get-Profile-List.html#qmi-client-wds-get-profile-list-finish"/>
+    <keyword type="struct" name="QmiMessageWdsGetProfileSettingsInput" link="libqmi-glib-WDS-Get-Profile-Settings.html#QmiMessageWdsGetProfileSettingsInput-struct"/>
+    <keyword type="struct" name="QmiMessageWdsGetProfileSettingsOutput" link="libqmi-glib-WDS-Get-Profile-Settings.html#QmiMessageWdsGetProfileSettingsOutput-struct"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_input_new ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-input-new"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_input_ref ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-input-ref"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_input_unref ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-input-unref"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_input_get_profile_id ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-input-get-profile-id"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_input_set_profile_id ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-input-set-profile-id"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_ref ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-ref"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_unref ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-unref"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_result ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-result"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_ipv6_address_preference ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-ipv6-address-preference"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_profile_name ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-profile-name"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_pdp_type ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-pdp-type"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_apn_name ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-apn-name"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_primary_ipv4_dns_address ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-primary-ipv4-dns-address"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_secondary_ipv4_dns_address ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-secondary-ipv4-dns-address"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_gprs_requested_qos ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-gprs-requested-qos"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_gprs_minimum_qos ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-gprs-minimum-qos"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_username ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-username"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_password ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-password"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_authentication ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-authentication"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_ipv4_address_preference ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-ipv4-address-preference"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_pcscf_address_using_pco ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-pcscf-address-using-pco"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_pcscf_address_using_dhcp ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-pcscf-address-using-dhcp"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_imcn_flag ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-imcn-flag"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_ipv6_primary_dns_address_preference ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-ipv6-primary-dns-address-preference"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_ipv6_secondary_dns_address_preference ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-ipv6-secondary-dns-address-preference"/>
+    <keyword type="function" name="qmi_message_wds_get_profile_settings_output_get_extended_error_code ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-message-wds-get-profile-settings-output-get-extended-error-code"/>
+    <keyword type="function" name="qmi_client_wds_get_profile_settings ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-client-wds-get-profile-settings"/>
+    <keyword type="function" name="qmi_client_wds_get_profile_settings_finish ()" link="libqmi-glib-WDS-Get-Profile-Settings.html#qmi-client-wds-get-profile-settings-finish"/>
+    <keyword type="struct" name="QmiMessageWdsGetDefaultSettingsInput" link="libqmi-glib-WDS-Get-Default-Settings.html#QmiMessageWdsGetDefaultSettingsInput-struct"/>
+    <keyword type="struct" name="QmiMessageWdsGetDefaultSettingsOutput" link="libqmi-glib-WDS-Get-Default-Settings.html#QmiMessageWdsGetDefaultSettingsOutput-struct"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_input_new ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-input-new"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_input_ref ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-input-ref"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_input_unref ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-input-unref"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_input_get_profile_type ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-input-get-profile-type"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_input_set_profile_type ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-input-set-profile-type"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_ref ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-ref"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_unref ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-unref"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_result ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-result"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_ipv6_address_preference ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-ipv6-address-preference"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_profile_name ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-profile-name"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_pdp_type ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-pdp-type"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_apn_name ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-apn-name"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_primary_ipv4_dns_address ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-primary-ipv4-dns-address"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_secondary_ipv4_dns_address ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-secondary-ipv4-dns-address"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_gprs_requested_qos ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-gprs-requested-qos"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_gprs_minimum_qos ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-gprs-minimum-qos"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_username ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-username"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_password ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-password"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_authentication ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-authentication"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_ipv4_address_preference ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-ipv4-address-preference"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_pcscf_address_using_pco ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-pcscf-address-using-pco"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_pcscf_address_using_dhcp ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-pcscf-address-using-dhcp"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_imcn_flag ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-imcn-flag"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_ipv6_primary_dns_address_preference ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-ipv6-primary-dns-address-preference"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_ipv6_secondary_dns_address_preference ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-ipv6-secondary-dns-address-preference"/>
+    <keyword type="function" name="qmi_message_wds_get_default_settings_output_get_extended_error_code ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-message-wds-get-default-settings-output-get-extended-error-code"/>
+    <keyword type="function" name="qmi_client_wds_get_default_settings ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-client-wds-get-default-settings"/>
+    <keyword type="function" name="qmi_client_wds_get_default_settings_finish ()" link="libqmi-glib-WDS-Get-Default-Settings.html#qmi-client-wds-get-default-settings-finish"/>
     <keyword type="struct" name="QmiMessageWdsGetCurrentSettingsInput" link="libqmi-glib-WDS-Get-Current-Settings.html#QmiMessageWdsGetCurrentSettingsInput-struct"/>
     <keyword type="struct" name="QmiMessageWdsGetCurrentSettingsOutput" link="libqmi-glib-WDS-Get-Current-Settings.html#QmiMessageWdsGetCurrentSettingsOutput-struct"/>
     <keyword type="function" name="qmi_message_wds_get_current_settings_input_new ()" link="libqmi-glib-WDS-Get-Current-Settings.html#qmi-message-wds-get-current-settings-input-new"/>
@@ -2165,6 +2257,7 @@
     <keyword type="constant" name="QMI_DEVICE_OPEN_FLAGS_NET_RAW_IP" link="QmiDevice.html#QMI-DEVICE-OPEN-FLAGS-NET-RAW-IP:CAPS"/>
     <keyword type="constant" name="QMI_DEVICE_OPEN_FLAGS_NET_QOS_HEADER" link="QmiDevice.html#QMI-DEVICE-OPEN-FLAGS-NET-QOS-HEADER:CAPS"/>
     <keyword type="constant" name="QMI_DEVICE_OPEN_FLAGS_NET_NO_QOS_HEADER" link="QmiDevice.html#QMI-DEVICE-OPEN-FLAGS-NET-NO-QOS-HEADER:CAPS"/>
+    <keyword type="constant" name="QMI_DEVICE_OPEN_FLAGS_PROXY" link="QmiDevice.html#QMI-DEVICE-OPEN-FLAGS-PROXY:CAPS"/>
     <keyword type="constant" name="QMI_DEVICE_RELEASE_CLIENT_FLAGS_NONE" link="QmiDevice.html#QMI-DEVICE-RELEASE-CLIENT-FLAGS-NONE:CAPS"/>
     <keyword type="constant" name="QMI_DEVICE_RELEASE_CLIENT_FLAGS_RELEASE_CID" link="QmiDevice.html#QMI-DEVICE-RELEASE-CLIENT-FLAGS-RELEASE-CID:CAPS"/>
     <keyword type="constant" name="QMI_SERVICE_UNKNOWN" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-UNKNOWN:CAPS"/>
@@ -2181,9 +2274,35 @@
     <keyword type="constant" name="QMI_SERVICE_CAT2" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-CAT2:CAPS"/>
     <keyword type="constant" name="QMI_SERVICE_UIM" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-UIM:CAPS"/>
     <keyword type="constant" name="QMI_SERVICE_PBM" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-PBM:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_QCHAT" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-QCHAT:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_RMTFS" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-RMTFS:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_TEST" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-TEST:CAPS"/>
     <keyword type="constant" name="QMI_SERVICE_LOC" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-LOC:CAPS"/>
     <keyword type="constant" name="QMI_SERVICE_SAR" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-SAR:CAPS"/>
-    <keyword type="constant" name="QMI_SERVICE_RMTFS" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-RMTFS:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_IMS" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-IMS:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_ADC" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-ADC:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_CSD" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-CSD:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_MFS" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-MFS:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_TIME" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-TIME:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_TS" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-TS:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_TMD" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-TMD:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_SAP" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-SAP:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_WDA" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-WDA:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_TSYNC" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-TSYNC:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_RFSA" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-RFSA:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_CSVT" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-CSVT:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_QCMAP" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-QCMAP:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_IMSP" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-IMSP:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_IMSVT" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-IMSVT:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_IMSA" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-IMSA:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_COEX" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-COEX:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_PDC" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-PDC:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_STX" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-STX:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_BIT" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-BIT:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_IMSRTP" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-IMSRTP:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_RFRPE" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-RFRPE:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_DSD" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-DSD:CAPS"/>
+    <keyword type="constant" name="QMI_SERVICE_SSCTL" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-SSCTL:CAPS"/>
     <keyword type="constant" name="QMI_SERVICE_CAT" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-CAT:CAPS"/>
     <keyword type="constant" name="QMI_SERVICE_RMS" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-RMS:CAPS"/>
     <keyword type="constant" name="QMI_SERVICE_OMA" link="libqmi-glib-Common-enumerations-and-flags.html#QMI-SERVICE-OMA:CAPS"/>
@@ -3106,6 +3225,26 @@
     <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_RX_BYTES_OK" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-RX-BYTES-OK:CAPS"/>
     <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_TX_PACKETS_DROPPED" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-TX-PACKETS-DROPPED:CAPS"/>
     <keyword type="constant" name="QMI_WDS_PACKET_STATISTICS_MASK_FLAG_RX_PACKETS_DROPPED" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-PACKET-STATISTICS-MASK-FLAG-RX-PACKETS-DROPPED:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_UNKNOWN" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-UNKNOWN:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_FAIL" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-FAIL:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_INVALID_HANDLE" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-INVALID-HANDLE:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_INVALID_OPERATION" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-INVALID-OPERATION:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_INVALID_PROFILE_TYPE" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-INVALID-PROFILE-TYPE:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_INVALID_PROFILE_NUMBER" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-INVALID-PROFILE-NUMBER:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_INVALID_PROFILE_ID" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-INVALID-PROFILE-ID:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_INVALID_ARGUMENT" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-INVALID-ARGUMENT:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_REGISTRY_NOT_INITIALIZED" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-REGISTRY-NOT-INITIALIZED:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_INVALID_PARAMETER_LENGTH" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-INVALID-PARAMETER-LENGTH:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_LIST_END" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-LIST-END:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_INVALID_SUBSCRIPTION_ID" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-INVALID-SUBSCRIPTION-ID:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_INVALID_PROFILE_FAMILY" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-INVALID-PROFILE-FAMILY:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_3GPP_INVALID_PROFILE_FAMILY" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-3GPP-INVALID-PROFILE-FAMILY:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_3GPP_ACCESS_ERROR" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-3GPP-ACCESS-ERROR:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_3GPP_CONTEXT_NOT_DEFINED" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-3GPP-CONTEXT-NOT-DEFINED:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_3GPP_VALID_FLAG_NOT_SET" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-3GPP-VALID-FLAG-NOT-SET:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_3GPP_READ_ONLY_FLAG_SET" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-3GPP-READ-ONLY-FLAG-SET:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_3GPP_OUT_OF_PROFILES" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-3GPP-OUT-OF-PROFILES:CAPS"/>
+    <keyword type="constant" name="QMI_WDS_DS_PROFILE_ERROR_3GPP2_INVALID_PROFILE_ID" link="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-DS-PROFILE-ERROR-3GPP2-INVALID-PROFILE-ID:CAPS"/>
     <keyword type="constant" name="QMI_WMS_STORAGE_TYPE_UIM" link="libqmi-glib-WMS-enumerations-and-flags.html#QMI-WMS-STORAGE-TYPE-UIM:CAPS"/>
     <keyword type="constant" name="QMI_WMS_STORAGE_TYPE_NV" link="libqmi-glib-WMS-enumerations-and-flags.html#QMI-WMS-STORAGE-TYPE-NV:CAPS"/>
     <keyword type="constant" name="QMI_WMS_STORAGE_TYPE_NONE" link="libqmi-glib-WMS-enumerations-and-flags.html#QMI-WMS-STORAGE-TYPE-NONE:CAPS"/>
