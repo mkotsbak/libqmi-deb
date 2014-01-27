@@ -5,6 +5,8 @@ libqmi-glib.so.1 libqmi-glib1 #MINVER#
  qmi_client_ctl_get_type@Base 1.6.0
  qmi_client_ctl_get_version_info@Base 1.6.0
  qmi_client_ctl_get_version_info_finish@Base 1.6.0
+ qmi_client_ctl_internal_proxy_open@Base 1.8.0
+ qmi_client_ctl_internal_proxy_open_finish@Base 1.8.0
  qmi_client_ctl_release_cid@Base 1.6.0
  qmi_client_ctl_release_cid_finish@Base 1.6.0
  qmi_client_ctl_set_data_format@Base 1.6.0
@@ -207,10 +209,16 @@ libqmi-glib.so.1 libqmi-glib1 #MINVER#
  qmi_client_wds_get_current_settings_finish@Base 1.6.0
  qmi_client_wds_get_data_bearer_technology@Base 1.6.0
  qmi_client_wds_get_data_bearer_technology_finish@Base 1.6.0
+ qmi_client_wds_get_default_settings@Base 1.8.0
+ qmi_client_wds_get_default_settings_finish@Base 1.8.0
  qmi_client_wds_get_packet_service_status@Base 1.6.0
  qmi_client_wds_get_packet_service_status_finish@Base 1.6.0
  qmi_client_wds_get_packet_statistics@Base 1.6.0
  qmi_client_wds_get_packet_statistics_finish@Base 1.6.0
+ qmi_client_wds_get_profile_list@Base 1.8.0
+ qmi_client_wds_get_profile_list_finish@Base 1.8.0
+ qmi_client_wds_get_profile_settings@Base 1.8.0
+ qmi_client_wds_get_profile_settings_finish@Base 1.8.0
  qmi_client_wds_get_type@Base 1.6.0
  qmi_client_wds_reset@Base 1.6.0
  qmi_client_wds_reset_finish@Base 1.6.0
@@ -445,6 +453,16 @@ libqmi-glib.so.1 libqmi-glib1 #MINVER#
  qmi_message_ctl_get_version_info_output_get_type@Base 1.6.0
  qmi_message_ctl_get_version_info_output_ref@Base 1.6.0
  qmi_message_ctl_get_version_info_output_unref@Base 1.6.0
+ qmi_message_ctl_internal_proxy_open_input_get_device_path@Base 1.8.0
+ qmi_message_ctl_internal_proxy_open_input_get_type@Base 1.8.0
+ qmi_message_ctl_internal_proxy_open_input_new@Base 1.8.0
+ qmi_message_ctl_internal_proxy_open_input_ref@Base 1.8.0
+ qmi_message_ctl_internal_proxy_open_input_set_device_path@Base 1.8.0
+ qmi_message_ctl_internal_proxy_open_input_unref@Base 1.8.0
+ qmi_message_ctl_internal_proxy_open_output_get_result@Base 1.8.0
+ qmi_message_ctl_internal_proxy_open_output_get_type@Base 1.8.0
+ qmi_message_ctl_internal_proxy_open_output_ref@Base 1.8.0
+ qmi_message_ctl_internal_proxy_open_output_unref@Base 1.8.0
  qmi_message_ctl_release_cid_input_get_release_info@Base 1.6.0
  qmi_message_ctl_release_cid_input_get_type@Base 1.6.0
  qmi_message_ctl_release_cid_input_new@Base 1.6.0
@@ -894,6 +912,7 @@ libqmi-glib.so.1 libqmi-glib1 #MINVER#
  qmi_message_get_transaction_id@Base 1.6.0
  qmi_message_get_version_introduced@Base 1.6.0
  qmi_message_is_indication@Base 1.6.0
+ qmi_message_is_request@Base 1.8.0
  qmi_message_is_response@Base 1.6.0
  qmi_message_nas_abort_output_get_result@Base 1.6.0
  qmi_message_nas_config_signal_info_input_get_ecio_threshold@Base 1.6.0
@@ -1400,6 +1419,8 @@ libqmi-glib.so.1 libqmi-glib1 #MINVER#
  qmi_message_pds_set_gps_service_state_output_ref@Base 1.6.0
  qmi_message_pds_set_gps_service_state_output_unref@Base 1.6.0
  qmi_message_ref@Base 1.6.0
+ qmi_message_response_new@Base 1.8.0
+ qmi_message_set_transaction_id@Base 1.8.0
  qmi_message_uim_get_file_attributes_input_get_file@Base 1.6.0
  qmi_message_uim_get_file_attributes_input_get_response_in_indication_token@Base 1.6.0
  qmi_message_uim_get_file_attributes_input_get_session_information@Base 1.6.0
@@ -1513,6 +1534,34 @@ libqmi-glib.so.1 libqmi-glib1 #MINVER#
  qmi_message_wds_get_data_bearer_technology_output_get_type@Base 1.6.0
  qmi_message_wds_get_data_bearer_technology_output_ref@Base 1.6.0
  qmi_message_wds_get_data_bearer_technology_output_unref@Base 1.6.0
+ qmi_message_wds_get_default_settings_input_get_profile_type@Base 1.8.0
+ qmi_message_wds_get_default_settings_input_get_type@Base 1.8.0
+ qmi_message_wds_get_default_settings_input_new@Base 1.8.0
+ qmi_message_wds_get_default_settings_input_ref@Base 1.8.0
+ qmi_message_wds_get_default_settings_input_set_profile_type@Base 1.8.0
+ qmi_message_wds_get_default_settings_input_unref@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_apn_name@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_authentication@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_extended_error_code@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_gprs_minimum_qos@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_gprs_requested_qos@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_imcn_flag@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_ipv4_address_preference@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_ipv6_address_preference@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_ipv6_primary_dns_address_preference@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_ipv6_secondary_dns_address_preference@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_password@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_pcscf_address_using_dhcp@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_pcscf_address_using_pco@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_pdp_type@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_primary_ipv4_dns_address@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_profile_name@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_result@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_secondary_ipv4_dns_address@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_type@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_get_username@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_ref@Base 1.8.0
+ qmi_message_wds_get_default_settings_output_unref@Base 1.8.0
  qmi_message_wds_get_packet_service_status_output_get_connection_status@Base 1.6.0
  qmi_message_wds_get_packet_service_status_output_get_result@Base 1.6.0
  qmi_message_wds_get_packet_service_status_output_get_type@Base 1.6.0
@@ -1540,6 +1589,46 @@ libqmi-glib.so.1 libqmi-glib1 #MINVER#
  qmi_message_wds_get_packet_statistics_output_get_type@Base 1.6.0
  qmi_message_wds_get_packet_statistics_output_ref@Base 1.6.0
  qmi_message_wds_get_packet_statistics_output_unref@Base 1.6.0
+ qmi_message_wds_get_profile_list_input_get_profile_type@Base 1.8.0
+ qmi_message_wds_get_profile_list_input_get_type@Base 1.8.0
+ qmi_message_wds_get_profile_list_input_new@Base 1.8.0
+ qmi_message_wds_get_profile_list_input_ref@Base 1.8.0
+ qmi_message_wds_get_profile_list_input_set_profile_type@Base 1.8.0
+ qmi_message_wds_get_profile_list_input_unref@Base 1.8.0
+ qmi_message_wds_get_profile_list_output_get_extended_error_code@Base 1.8.0
+ qmi_message_wds_get_profile_list_output_get_profile_list@Base 1.8.0
+ qmi_message_wds_get_profile_list_output_get_result@Base 1.8.0
+ qmi_message_wds_get_profile_list_output_get_type@Base 1.8.0
+ qmi_message_wds_get_profile_list_output_ref@Base 1.8.0
+ qmi_message_wds_get_profile_list_output_unref@Base 1.8.0
+ qmi_message_wds_get_profile_settings_input_get_profile_id@Base 1.8.0
+ qmi_message_wds_get_profile_settings_input_get_type@Base 1.8.0
+ qmi_message_wds_get_profile_settings_input_new@Base 1.8.0
+ qmi_message_wds_get_profile_settings_input_ref@Base 1.8.0
+ qmi_message_wds_get_profile_settings_input_set_profile_id@Base 1.8.0
+ qmi_message_wds_get_profile_settings_input_unref@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_apn_name@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_authentication@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_extended_error_code@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_gprs_minimum_qos@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_gprs_requested_qos@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_imcn_flag@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_ipv4_address_preference@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_ipv6_address_preference@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_ipv6_primary_dns_address_preference@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_ipv6_secondary_dns_address_preference@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_password@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_pcscf_address_using_dhcp@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_pcscf_address_using_pco@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_pdp_type@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_primary_ipv4_dns_address@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_profile_name@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_result@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_secondary_ipv4_dns_address@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_type@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_get_username@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_ref@Base 1.8.0
+ qmi_message_wds_get_profile_settings_output_unref@Base 1.8.0
  qmi_message_wds_reset_output_get_result@Base 1.6.0
  qmi_message_wds_reset_output_get_type@Base 1.6.0
  qmi_message_wds_reset_output_ref@Base 1.6.0
@@ -1854,6 +1943,9 @@ libqmi-glib.so.1 libqmi-glib1 #MINVER#
  qmi_protocol_error_get_string@Base 1.6.0
  qmi_protocol_error_get_type@Base 1.6.0
  qmi_protocol_error_quark@Base 1.6.0
+ qmi_proxy_get_n_clients@Base 1.8.0
+ qmi_proxy_get_type@Base 1.8.0
+ qmi_proxy_new@Base 1.8.0
  qmi_service_flag_build_string_from_mask@Base 1.6.0
  qmi_service_flag_get_type@Base 1.6.0
  qmi_service_get_string@Base 1.6.0
@@ -1900,6 +1992,8 @@ libqmi-glib.so.1 libqmi-glib1 #MINVER#
  qmi_wds_connection_status_get_type@Base 1.6.0
  qmi_wds_data_bearer_technology_get_string@Base 1.6.0
  qmi_wds_data_bearer_technology_get_type@Base 1.6.0
+ qmi_wds_ds_profile_error_get_string@Base 1.8.0
+ qmi_wds_ds_profile_error_get_type@Base 1.8.0
  qmi_wds_extended_technology_preference_get_string@Base 1.6.0
  qmi_wds_extended_technology_preference_get_type@Base 1.6.0
  qmi_wds_get_current_settings_requested_settings_build_string_from_mask@Base 1.6.0

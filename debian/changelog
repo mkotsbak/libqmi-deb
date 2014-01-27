@@ -1,6 +1,31 @@
-libqmi (1.6.0-1) UNRELEASED; urgency=low
+libqmi (1.8.0-1) UNRELEASED; urgency=low
 
-  * New upstream stable release 1.6.0 (Closes: #731002)
+  * New upstream stable release 1.8.0 (Closes: #731002, #731907)
+    - Support for sharing the QMI port through multiple processes with the new
+      'qmi-proxy' infrastructure.
+    - api: added new known service ID enumeration values
+    - wds: added "Get Profile List" request/response
+    - wds: added "Get Profile Settings" request/response
+    - wds: added "Get Default Settings" request/response
+    - cli: add --wds-get-profile-list
+    - cli: add --wds-get-default-settings
+    - dms: 'SID' TLV in "Activate Manual" is a guint8, not a string
+    - Extended API with macros to check for the libqmi-glib version in use
+    - Setup libtool versioning in libqmi-glib
+    - Added initial support for the PBM (phonebook) service
+    - Added initial support for the UIM service
+    - Added initial support for the OMA (Open Mobile Alliance) service
+    - nas: added "Get Tx Rx Info" request/response
+    - wds: added "Get Packet Statistics" request/response
+    - dms: added support for the 'PRL' TLV in "Activate Manual"
+    - cli: add --nas-get-tx-rx-info
+    - cli: add --wds-get-packet-statistics
+    - cli: add --get-service-version-info
+    - cli: add --uim-read-transparent
+    - cli: add --uim-get-file-attributes
+    - cli: fix following network status until disconnected
+    - tests: use gtester to run unit tests
+    - Also fixed several minor bugs and memory leaks
   * Replaced "help2man" in Debian package with the same from upstream
 
  -- Marius Kotsbak <marius@kotsbak.com>  Thu, 05 Sep 2013 10:09:30 +0200
