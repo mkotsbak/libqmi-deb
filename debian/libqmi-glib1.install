@@ -1,1 +1,2 @@
 usr/lib/*/lib*.so.*
+usr/lib/*/qmi-glib1/qmi-proxy

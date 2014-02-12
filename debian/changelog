@@ -28,7 +28,7 @@ libqmi (1.8.0-1) UNRELEASED; urgency=low
     - Also fixed several minor bugs and memory leaks
   * Replaced "help2man" in Debian package with the same from upstream
 
- -- Marius Kotsbak <marius@kotsbak.com>  Thu, 05 Sep 2013 10:09:30 +0200
+ -- Marius Kotsbak <marius@kotsbak.com>  Wed, 12 Feb 2014 22:54:12 +0100
 
 libqmi (1.4.0-1) unstable; urgency=low
 
