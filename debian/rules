@@ -9,7 +9,7 @@ override_dh_auto_configure:
 		--with-tests \
 		--enable-gtk-doc \
 		--enable-gtk-doc-html \
-		--libexecdir=/usr/lib/$(DEB_HOST_MULTIARCH)/qmi-glib1
+		--libexecdir=/usr/lib/libqmi
 
 override_dh_strip:
 	dh_strip --dbg-package=libqmi-glib1-dbg

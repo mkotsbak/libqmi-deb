@@ -32,7 +32,7 @@ Section: libs
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqmi-proxy (>= ${binary:Version})
 Description: Support library to use the Qualcomm MSM Interface (QMI) protocol
  Libraries for adding QMI support to applications that use glib.
 
@@ -51,3 +51,12 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Utilities to use the QMI protocol from the command line
  This package contains the utilities that make it easier to use QMI
  functionality from the command line.
+
+Package: libqmi-proxy
+Section: net
+Architecture: any
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Proxy to communicate with QMI ports
+ This package contains the binary qmi-proxy used by libqmi to allow multiple
+ clients to use the same QMI port simultaneously.
