@@ -1,5 +1,6 @@
-libqmi (1.8.0-1) UNRELEASED; urgency=low
+libqmi (1.8.0-1) unstable; urgency=low
 
+  [ Marius Kotsbak ]
   * New upstream stable release 1.8.0 (Closes: #731002, #731907)
     - Support for sharing the QMI port through multiple processes with the new
       'qmi-proxy' infrastructure.
@@ -28,7 +29,7 @@ libqmi (1.8.0-1) UNRELEASED; urgency=low
     - Also fixed several minor bugs and memory leaks
   * Replaced "help2man" in Debian package with the same from upstream
 
- -- Marius Kotsbak <marius@kotsbak.com>  Wed, 12 Feb 2014 22:54:12 +0100
+ -- Marius B. Kotsbak <marius@kotsbak.com>  Sat, 21 Jun 2014 08:02:00 +0200
 
 libqmi (1.4.0-1) unstable; urgency=low
 
